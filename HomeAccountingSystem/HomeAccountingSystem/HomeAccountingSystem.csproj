@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,6 +50,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\jt_jc_sz.cs" />
+    <Compile Include="BLL\jt_jc_zm.cs" />
+    <Compile Include="BLL\jt_jr_zm.cs" />
+    <Compile Include="BLL\jt_sr_lx.cs" />
+    <Compile Include="BLL\jt_sr_zm.cs" />
+    <Compile Include="BLL\jt_yh_zl.cs" />
+    <Compile Include="BLL\jt_ys_zm.cs" />
+    <Compile Include="BLL\jt_zc_lx.cs" />
+    <Compile Include="BLL\jt_zc_zm.cs" />
+    <Compile Include="BLL\jt_zffs.cs" />
     <Compile Include="CommandInfo.cs" />
     <Compile Include="DAl\jt_jc_sz.cs" />
     <Compile Include="DAl\jt_jc_zm.cs" />
@@ -285,9 +296,7 @@
   <ItemGroup>
     <None Include="Resources\image\main\设置%283%29.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BLL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
