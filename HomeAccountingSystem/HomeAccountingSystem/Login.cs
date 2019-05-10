@@ -16,5 +16,10 @@ namespace HomeAccountingSystem
         {
             InitializeComponent();
         }
+
+        private void escBtn_Click(object sender, EventArgs e)
+        {
+            base.Close();
+        }
     }
 }
