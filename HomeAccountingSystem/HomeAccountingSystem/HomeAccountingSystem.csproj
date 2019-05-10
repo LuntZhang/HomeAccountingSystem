@@ -103,6 +103,16 @@
     <Compile Include="MainUserControl\TopUserInfoUserControl.Designer.cs">
       <DependentUpon>TopUserInfoUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\jt_jc_sz.cs" />
+    <Compile Include="Model\jt_jc_zm.cs" />
+    <Compile Include="Model\jt_jr_zm.cs" />
+    <Compile Include="Model\jt_sr_lx.cs" />
+    <Compile Include="Model\jt_sr_zm.cs" />
+    <Compile Include="Model\jt_yh_zl.cs" />
+    <Compile Include="Model\jt_ys_zm.cs" />
+    <Compile Include="Model\jt_zc_lx.cs" />
+    <Compile Include="Model\jt_zc_zm.cs" />
+    <Compile Include="Model\jt_zffs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Login.resx">
@@ -262,6 +272,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image\main\设置%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BLL\" />
+    <Folder Include="DAl\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
