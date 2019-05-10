@@ -49,6 +49,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandInfo.cs" />
+    <Compile Include="DAl\jt_jc_sz.cs" />
+    <Compile Include="DAl\jt_jc_zm.cs" />
+    <Compile Include="DAl\jt_jr_zm.cs" />
+    <Compile Include="DAl\jt_sr_lx.cs" />
+    <Compile Include="DAl\jt_sr_zm.cs" />
+    <Compile Include="DAl\jt_yh_zl.cs" />
+    <Compile Include="DAl\jt_ys_zm.cs" />
+    <Compile Include="DAl\jt_zc_lx.cs" />
+    <Compile Include="DAl\jt_zc_zm.cs" />
+    <Compile Include="DAl\jt_zffs.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +126,7 @@
     <Compile Include="Model\jt_zffs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLServerHelper.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,7 +287,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BLL\" />
-    <Folder Include="DAl\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
