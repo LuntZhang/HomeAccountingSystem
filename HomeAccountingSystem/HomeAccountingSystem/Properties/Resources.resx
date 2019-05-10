@@ -118,6 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="jizhang2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\login\jizhang2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loginJizhang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\login\loginJizhang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_491bc8d8d5789fc030c98ef0ba115bbf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image\login\491bc8d8d5789fc030c98ef0ba115bbf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -126,5 +132,92 @@
   </data>
   <data name="_9bc7f20ad85f3b1c33e6c180972348ea" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image\login\9bc7f20ad85f3b1c33e6c180972348ea.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="主页" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\主页.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="主页_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\主页(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="借" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\借.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="借_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\借(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="借贷" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\借贷.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="借贷_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\借贷(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="密码" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\login\密码.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="密码_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\login\密码(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="密码_2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\login\密码(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="报表" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\报表.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="报表_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\报表(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="支出" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\支出.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="支出_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\支出(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="支出_2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\支出(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="收入" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\收入.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="收入_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\收入(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="收入_2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\收入(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="笔" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\login\笔.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="笔_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\login\笔(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="记账" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\login\记账.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="记账_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\login\记账(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="设置" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\设置.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="设置_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\设置(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="账号" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\login\账号.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="账号_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\login\账号(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="账号_2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\login\账号(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="账号_3_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\login\账号(3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="预算" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\预算.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="预算_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\预算(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

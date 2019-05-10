@@ -55,10 +55,82 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUserControl\BottomUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainUserControl\BottomUserControl.Designer.cs">
+      <DependentUpon>BottomUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUserControl\BudgetUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainUserControl\BudgetUserControl.Designer.cs">
+      <DependentUpon>BudgetUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUserControl\CompareUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainUserControl\CompareUserControl.Designer.cs">
+      <DependentUpon>CompareUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUserControl\ControlChartUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainUserControl\ControlChartUserControl.Designer.cs">
+      <DependentUpon>ControlChartUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUserControl\IncomeAndExpensesUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainUserControl\IncomeAndExpensesUserControl.Designer.cs">
+      <DependentUpon>IncomeAndExpensesUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUserControl\MenuBarUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainUserControl\MenuBarUserControl.Designer.cs">
+      <DependentUpon>MenuBarUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUserControl\TopUserInfoUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainUserControl\TopUserInfoUserControl.Designer.cs">
+      <DependentUpon>TopUserInfoUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUserControl\BottomUserControl.resx">
+      <DependentUpon>BottomUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUserControl\BudgetUserControl.resx">
+      <DependentUpon>BudgetUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUserControl\CompareUserControl.resx">
+      <DependentUpon>CompareUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUserControl\ControlChartUserControl.resx">
+      <DependentUpon>ControlChartUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUserControl\IncomeAndExpensesUserControl.resx">
+      <DependentUpon>IncomeAndExpensesUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUserControl\MenuBarUserControl.resx">
+      <DependentUpon>MenuBarUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUserControl\TopUserInfoUserControl.resx">
+      <DependentUpon>TopUserInfoUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,7 +155,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\image\login\loginJizhang.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image\login\9bc7f20ad85f3b1c33e6c180972348ea.jpg" />
   </ItemGroup>
@@ -93,6 +167,97 @@
   <ItemGroup>
     <None Include="Resources\image\login\8175dadce7a302e8646876edd74e26c1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\login\jizhang2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\login\记账.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\login\记账%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\login\笔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\login\笔%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\login\密码.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\login\账号%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\login\账号.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\login\密码%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\login\账号%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\login\密码%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\login\账号%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\报表%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\借%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\借.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\借贷%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\借贷.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\收入%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\收入%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\收入.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\预算%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\预算.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\支出%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\支出%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\支出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\主页%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\主页.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\报表.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\设置%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\设置.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
