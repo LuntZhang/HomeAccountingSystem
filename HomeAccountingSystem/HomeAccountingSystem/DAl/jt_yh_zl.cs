@@ -361,7 +361,7 @@ namespace HomeAccountingSystem.DAL
 			return SQLServerHelper.Query(strSql.ToString());
 		}
 
-		/*
+        /*
 		/// <summary>
 		/// 分页获取数据列表
 		/// </summary>
@@ -386,10 +386,27 @@ namespace HomeAccountingSystem.DAL
 			return SQLServerHelper.RunProcedure("UP_GetRecordByPage",parameters,"ds");
 		}*/
 
-		#endregion  BasicMethod
-		#region  ExtensionMethod
+        #endregion  BasicMethod
 
-		#endregion  ExtensionMethod
-	}
+        #region  ExtensionMethod
+        /// <summary>
+        /// 是否存在该记录
+        /// </summary>
+        public bool Exists(string account, string password)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select count(1) from jt_yh_zl");
+            strSql.Append(" where v_yh_no=@v_yh_no and v_yh_pwd=@v_yh_pwd  ");
+            SqlParameter[] parameters = {
+                    new SqlParameter("@v_yh_no", SqlDbType.VarChar,256) ,
+                    new SqlParameter("@v_yh_pwd", SqlDbType.VarChar,256)
+            };
+            parameters[0].Value = account;
+            parameters[1].Value = password;
+
+            return SQLServerHelper.Exists(strSql.ToString(), parameters);
+        }
+        #endregion  ExtensionMethod
+    }
 }
 

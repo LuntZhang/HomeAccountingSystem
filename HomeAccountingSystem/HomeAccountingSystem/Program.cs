@@ -8,6 +8,10 @@ namespace HomeAccountingSystem
 {
     static class Program
     {
+        public static LoginForm m_LoginForm = null;
+
+        public static MainForm m_MainForm = null;
+
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>
@@ -16,8 +20,9 @@ namespace HomeAccountingSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new MainForm());
-            Application.Run(new Login());
+            m_LoginForm = new LoginForm();
+            m_MainForm = new MainForm();
+            Application.Run(m_LoginForm);
         }
     }
 }

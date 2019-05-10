@@ -1,6 +1,6 @@
 ﻿namespace HomeAccountingSystem
 {
-    partial class Login
+    partial class LoginForm
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -239,6 +239,7 @@
             this.loginBtn.Text = "登录";
             this.loginBtn.Tip = "";
             this.loginBtn.TipColor = System.Drawing.Color.Red;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // textBoxPwd
             // 
@@ -247,6 +248,7 @@
             this.textBoxPwd.Name = "textBoxPwd";
             this.textBoxPwd.Size = new System.Drawing.Size(180, 29);
             this.textBoxPwd.TabIndex = 68;
+            this.textBoxPwd.Text = "000";
             // 
             // textBoxAccount
             // 
@@ -255,6 +257,7 @@
             this.textBoxAccount.Name = "textBoxAccount";
             this.textBoxAccount.Size = new System.Drawing.Size(180, 29);
             this.textBoxAccount.TabIndex = 67;
+            this.textBoxAccount.Text = "000";
             // 
             // label1
             // 
@@ -319,14 +322,14 @@
             this.label2.TabIndex = 64;
             this.label2.Text = "账号：";
             // 
-            // Login
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(977, 550);
             this.Controls.Add(this.panelLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Login";
+            this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "登录";
             this.panelLogin.ResumeLayout(false);

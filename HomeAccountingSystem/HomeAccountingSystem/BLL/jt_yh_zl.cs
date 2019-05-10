@@ -19,7 +19,15 @@ namespace HomeAccountingSystem.BLL
 	/// </summary>
 	public partial class jt_yh_zl
 	{
-		private readonly HomeAccountingSystem.DAL.jt_yh_zl dal=new HomeAccountingSystem.DAL.jt_yh_zl();
+        #region Instance
+        private static jt_yh_zl instance = new jt_yh_zl();
+        public static jt_yh_zl Instance
+        {
+            get { return jt_yh_zl.instance; }
+        }
+
+        #endregion
+        private readonly HomeAccountingSystem.DAL.jt_yh_zl dal=new HomeAccountingSystem.DAL.jt_yh_zl();
 		public jt_yh_zl()
 		{}
 		#region  BasicMethod
@@ -70,7 +78,6 @@ namespace HomeAccountingSystem.BLL
 		/// </summary>
 		public HomeAccountingSystem.Model.jt_yh_zl GetModel(int pk)
 		{
-			
 			return dal.GetModel(pk);
 		}
 
@@ -140,18 +147,25 @@ namespace HomeAccountingSystem.BLL
 		{
 			return dal.GetListByPage( strWhere,  orderby,  startIndex,  endIndex);
 		}
-		/// <summary>
-		/// 分页获取数据列表
-		/// </summary>
-		//public DataSet GetList(int PageSize,int PageIndex,string strWhere)
-		//{
-			//return dal.GetList(PageSize,PageIndex,strWhere);
-		//}
+        /// <summary>
+        /// 分页获取数据列表
+        /// </summary>
+        //public DataSet GetList(int PageSize,int PageIndex,string strWhere)
+        //{
+        //return dal.GetList(PageSize,PageIndex,strWhere);
+        //}
 
-		#endregion  BasicMethod
-		#region  ExtensionMethod
+        #endregion  BasicMethod
 
-		#endregion  ExtensionMethod
-	}
+        #region  ExtensionMethod
+        /// <summary>
+        /// 是否存在该记录
+        /// </summary>
+        public bool Exists(string account, string password)
+        {
+            return dal.Exists(account, password);
+        }
+        #endregion  ExtensionMethod
+    }
 }
 

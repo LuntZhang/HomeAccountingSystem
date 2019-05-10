@@ -16,5 +16,24 @@ namespace HomeAccountingSystem
         {
             InitializeComponent();
         }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+ 
+        }
+
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("确定要退出系统？", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)== DialogResult.OK)
+            {
+                // 隐藏的登录页面也退出
+                Program.m_LoginForm.Close();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }
