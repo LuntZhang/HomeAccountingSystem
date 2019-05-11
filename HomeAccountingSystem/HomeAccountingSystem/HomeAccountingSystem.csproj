@@ -71,12 +71,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUserInfo\UserPhotoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUserInfo\UserPhotoForm.Designer.cs">
+      <DependentUpon>UserPhotoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BLL\jt_jc_sz.cs" />
     <Compile Include="BLL\jt_jc_zm.cs" />
     <Compile Include="BLL\jt_jr_zm.cs" />
     <Compile Include="BLL\jt_sr_lx.cs" />
     <Compile Include="BLL\jt_sr_zm.cs" />
-    <Compile Include="BLL\jt_yh_zl.cs" />
+    <Compile Include="BLL\LoginAccountManager.cs" />
+    <Compile Include="BLL\UserInfoManager.cs" />
     <Compile Include="BLL\jt_ys_zm.cs" />
     <Compile Include="BLL\jt_zc_lx.cs" />
     <Compile Include="BLL\jt_zc_zm.cs" />
@@ -160,6 +167,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLServerHelper.cs" />
+    <EmbeddedResource Include="AboutUserInfo\UserPhotoForm.resx">
+      <DependentUpon>UserPhotoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +329,93 @@
     <None Include="Resources\image\main\设置%283%29.png" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\photo\photo29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

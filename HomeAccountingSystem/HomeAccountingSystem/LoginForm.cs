@@ -30,7 +30,7 @@ namespace HomeAccountingSystem
         {
             string strAccount = this.textBoxAccount.Text.Trim();
             string strPwd = this.textBoxPwd.Text.Trim();
-            bool isSuccess = jt_yh_zl.Instance.Exists(strAccount, strPwd);
+            bool isSuccess = UserInfoManager.Instance.Exists(strAccount, strPwd);
             if(isSuccess == false)
             {
                 MessageBox.Show("用户名或密码错误，请重新输入！","提示信息",MessageBoxButtons.OK,MessageBoxIcon.Warning);
@@ -38,6 +38,8 @@ namespace HomeAccountingSystem
             }
             else
             {
+                LoginAccountManager.Instance.m_yhzlModel = UserInfoManager.Instance.GetModel(strAccount, strPwd);
+                // 打开主页面
                 this.Hide();
                 MainForm formMain = new MainForm();
                 formMain.ShowDialog();

@@ -218,6 +218,7 @@
             this.escBtn.Tip = "";
             this.escBtn.TipColor = System.Drawing.Color.Red;
             this.escBtn.UseVisualStyleBackColor = false;
+            this.escBtn.Click += new System.EventHandler(this.escBtn_Click);
             // 
             // loginBtn
             // 

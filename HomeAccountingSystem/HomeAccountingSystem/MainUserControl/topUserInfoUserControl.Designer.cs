@@ -31,13 +31,16 @@
             this.panelPhoto = new System.Windows.Forms.Panel();
             this.labelUserName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tzxButtonRegister = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.linkLabelChangePhoto = new System.Windows.Forms.LinkLabel();
+            this.pictureBoxPhoto = new System.Windows.Forms.PictureBox();
+            this.panelPhoto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
             this.SuspendLayout();
             // 
             // panelPhoto
             // 
             this.panelPhoto.BackColor = System.Drawing.Color.White;
-            this.panelPhoto.BackgroundImage = global::HomeAccountingSystem.Properties.Resources.账号;
+            this.panelPhoto.Controls.Add(this.pictureBoxPhoto);
             this.panelPhoto.Location = new System.Drawing.Point(12, 3);
             this.panelPhoto.Name = "panelPhoto";
             this.panelPhoto.Size = new System.Drawing.Size(64, 64);
@@ -67,40 +70,42 @@
             this.label1.TabIndex = 81;
             this.label1.Text = "，你好！";
             // 
-            // tzxButtonRegister
+            // linkLabelChangePhoto
             // 
-            this.tzxButtonRegister.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.tzxButtonRegister.BackColor = System.Drawing.Color.Transparent;
-            this.tzxButtonRegister.BaseColor = System.Drawing.Color.Transparent;
-            this.tzxButtonRegister.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.tzxButtonRegister.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.tzxButtonRegister.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.tzxButtonRegister.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Pixel);
-            this.tzxButtonRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(152)))), ((int)(((byte)(96)))));
-            this.tzxButtonRegister.HasArrow = false;
-            this.tzxButtonRegister.ImageTextSpace = 5;
-            this.tzxButtonRegister.Location = new System.Drawing.Point(78, 32);
-            this.tzxButtonRegister.Name = "tzxButtonRegister";
-            this.tzxButtonRegister.Radius = 5;
-            this.tzxButtonRegister.Size = new System.Drawing.Size(77, 34);
-            this.tzxButtonRegister.TabIndex = 82;
-            this.tzxButtonRegister.Text = "更换头像";
-            this.tzxButtonRegister.Tip = "";
-            this.tzxButtonRegister.TipColor = System.Drawing.Color.Red;
-            this.tzxButtonRegister.UseVisualStyleBackColor = false;
-            this.tzxButtonRegister.Click += new System.EventHandler(this.tzxButtonRegister_Click);
+            this.linkLabelChangePhoto.AutoSize = true;
+            this.linkLabelChangePhoto.Font = new System.Drawing.Font("宋体", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabelChangePhoto.Location = new System.Drawing.Point(89, 42);
+            this.linkLabelChangePhoto.Name = "linkLabelChangePhoto";
+            this.linkLabelChangePhoto.Size = new System.Drawing.Size(67, 15);
+            this.linkLabelChangePhoto.TabIndex = 83;
+            this.linkLabelChangePhoto.TabStop = true;
+            this.linkLabelChangePhoto.Text = "更换头像";
+            this.linkLabelChangePhoto.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelChangePhoto_LinkClicked);
+            // 
+            // pictureBoxPhoto
+            // 
+            this.pictureBoxPhoto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxPhoto.Image = global::HomeAccountingSystem.Properties.Resources.账号;
+            this.pictureBoxPhoto.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxPhoto.Name = "pictureBoxPhoto";
+            this.pictureBoxPhoto.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxPhoto.TabIndex = 0;
+            this.pictureBoxPhoto.TabStop = false;
             // 
             // TopUserInfoUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.tzxButtonRegister);
+            this.Controls.Add(this.linkLabelChangePhoto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelUserName);
             this.Controls.Add(this.panelPhoto);
             this.Name = "TopUserInfoUserControl";
             this.Size = new System.Drawing.Size(659, 70);
+            this.Load += new System.EventHandler(this.TopUserInfoUserControl_Load);
+            this.panelPhoto.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,6 +116,7 @@
         private System.Windows.Forms.Panel panelPhoto;
         private System.Windows.Forms.Label labelUserName;
         private System.Windows.Forms.Label label1;
-        private TZXControlLibrary.ButtonEx.TzxRoundedButton tzxButtonRegister;
+        private System.Windows.Forms.LinkLabel linkLabelChangePhoto;
+        private System.Windows.Forms.PictureBox pictureBoxPhoto;
     }
 }

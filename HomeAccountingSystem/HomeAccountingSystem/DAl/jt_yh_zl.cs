@@ -54,9 +54,9 @@ namespace HomeAccountingSystem.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into jt_yh_zl(");
-			strSql.Append("pk,v_yh_no,v_yh_name,v_yh_pwd,i_yh_type,v_phone,t_birthday_gregorian,t_birthday_lunar,t_create_time,i_delete,v_photo,v_age)");
+			strSql.Append("pk,v_yh_no,v_yh_name,v_yh_pwd,i_yh_type,v_phone,t_birthday_gregorian,t_birthday_lunar,t_create_time,i_delete,v_photo,v_age,v_photo_path)");
 			strSql.Append(" values (");
-			strSql.Append("@pk,@v_yh_no,@v_yh_name,@v_yh_pwd,@i_yh_type,@v_phone,@t_birthday_gregorian,@t_birthday_lunar,@t_create_time,@i_delete,@v_photo,@v_age)");
+			strSql.Append("@pk,@v_yh_no,@v_yh_name,@v_yh_pwd,@i_yh_type,@v_phone,@t_birthday_gregorian,@t_birthday_lunar,@t_create_time,@i_delete,@v_photo,@v_age,@v_photo_path)");
 			SqlParameter[] parameters = {
 					new SqlParameter("@pk", SqlDbType.Int,4),
 					new SqlParameter("@v_yh_no", SqlDbType.VarChar,256),
@@ -68,8 +68,10 @@ namespace HomeAccountingSystem.DAL
 					new SqlParameter("@t_birthday_lunar", SqlDbType.VarChar,4000),
 					new SqlParameter("@t_create_time", SqlDbType.DateTime),
 					new SqlParameter("@i_delete", SqlDbType.Int,4),
-					new SqlParameter("@v_photo", SqlDbType.VarChar,256),
-					new SqlParameter("@v_age", SqlDbType.VarChar,256)};
+					new SqlParameter("@v_photo", SqlDbType.Image),
+					new SqlParameter("@v_age", SqlDbType.VarChar,256), 
+                    new SqlParameter("@v_photo_path", SqlDbType.VarChar,256)
+            };
 			parameters[0].Value = model.pk;
 			parameters[1].Value = model.v_yh_no;
 			parameters[2].Value = model.v_yh_name;
@@ -81,9 +83,9 @@ namespace HomeAccountingSystem.DAL
 			parameters[8].Value = model.t_create_time;
 			parameters[9].Value = model.i_delete;
 			parameters[10].Value = model.v_photo;
-			parameters[11].Value = model.v_age;
-
-			int rows=SQLServerHelper.ExecuteSql(strSql.ToString(),parameters);
+			parameters[11].Value = model.v_age; 
+            parameters[12].Value = model.v_photo_path;
+            int rows=SQLServerHelper.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
 			{
 				return true;
@@ -110,8 +112,9 @@ namespace HomeAccountingSystem.DAL
 			strSql.Append("t_create_time=@t_create_time,");
 			strSql.Append("i_delete=@i_delete,");
 			strSql.Append("v_photo=@v_photo,");
-			strSql.Append("v_age=@v_age");
-			strSql.Append(" where pk=@pk ");
+			strSql.Append("v_age=@v_age,"); 
+            strSql.Append("v_photo_path=@v_photo_path");
+            strSql.Append(" where pk=@pk ");
 			SqlParameter[] parameters = {
 					new SqlParameter("@v_yh_no", SqlDbType.VarChar,256),
 					new SqlParameter("@v_yh_name", SqlDbType.VarChar,256),
@@ -122,9 +125,10 @@ namespace HomeAccountingSystem.DAL
 					new SqlParameter("@t_birthday_lunar", SqlDbType.VarChar,4000),
 					new SqlParameter("@t_create_time", SqlDbType.DateTime),
 					new SqlParameter("@i_delete", SqlDbType.Int,4),
-					new SqlParameter("@v_photo", SqlDbType.VarChar,256),
-					new SqlParameter("@v_age", SqlDbType.VarChar,256),
-					new SqlParameter("@pk", SqlDbType.Int,4)};
+					new SqlParameter("@v_photo", SqlDbType.Image),
+					new SqlParameter("@v_age", SqlDbType.VarChar,256),  
+                    new SqlParameter("@v_photo_path", SqlDbType.VarChar,256),
+                    new SqlParameter("@pk", SqlDbType.Int,4)};
 			parameters[0].Value = model.v_yh_no;
 			parameters[1].Value = model.v_yh_name;
 			parameters[2].Value = model.v_yh_pwd;
@@ -135,8 +139,9 @@ namespace HomeAccountingSystem.DAL
 			parameters[7].Value = model.t_create_time;
 			parameters[8].Value = model.i_delete;
 			parameters[9].Value = model.v_photo;
-			parameters[10].Value = model.v_age;
-			parameters[11].Value = model.pk;
+			parameters[10].Value = model.v_age; 
+            parameters[11].Value = model.v_photo_path;
+            parameters[12].Value = model.pk;
 
 			int rows=SQLServerHelper.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
@@ -199,7 +204,7 @@ namespace HomeAccountingSystem.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 pk,v_yh_no,v_yh_name,v_yh_pwd,i_yh_type,v_phone,t_birthday_gregorian,t_birthday_lunar,t_create_time,i_delete,v_photo,v_age from jt_yh_zl ");
+			strSql.Append("select  top 1 pk,v_yh_no,v_yh_name,v_yh_pwd,i_yh_type,v_phone,t_birthday_gregorian,t_birthday_lunar,t_create_time,i_delete,v_photo,v_age,v_photo_path from jt_yh_zl ");
 			strSql.Append(" where pk=@pk ");
 			SqlParameter[] parameters = {
 					new SqlParameter("@pk", SqlDbType.Int,4)			};
@@ -266,15 +271,20 @@ namespace HomeAccountingSystem.DAL
 				{
 					model.i_delete=int.Parse(row["i_delete"].ToString());
 				}
-				if(row["v_photo"]!=null)
-				{
-					model.v_photo=row["v_photo"].ToString();
-				}
+				//if(row["v_photo"]!=null)
+				//{
+				//	model.v_photo=row["v_photo"].ToString();
+				//}
 				if(row["v_age"]!=null)
 				{
 					model.v_age=row["v_age"].ToString();
-				}
-			}
+                }
+                if (row["v_photo_path"] != null)
+                {
+                    model.v_photo_path = row["v_photo_path"].ToString();
+                }
+                
+            }
 			return model;
 		}
 
@@ -284,7 +294,7 @@ namespace HomeAccountingSystem.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select pk,v_yh_no,v_yh_name,v_yh_pwd,i_yh_type,v_phone,t_birthday_gregorian,t_birthday_lunar,t_create_time,i_delete,v_photo,v_age ");
+			strSql.Append("select pk,v_yh_no,v_yh_name,v_yh_pwd,i_yh_type,v_phone,t_birthday_gregorian,t_birthday_lunar,t_create_time,i_delete,v_photo,v_age,v_photo_path ");
 			strSql.Append(" FROM jt_yh_zl ");
 			if(strWhere.Trim()!="")
 			{
@@ -304,7 +314,7 @@ namespace HomeAccountingSystem.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" pk,v_yh_no,v_yh_name,v_yh_pwd,i_yh_type,v_phone,t_birthday_gregorian,t_birthday_lunar,t_create_time,i_delete,v_photo,v_age ");
+			strSql.Append(" pk,v_yh_no,v_yh_name,v_yh_pwd,i_yh_type,v_phone,t_birthday_gregorian,t_birthday_lunar,t_create_time,i_delete,v_photo,v_age,v_photo_path ");
 			strSql.Append(" FROM jt_yh_zl ");
 			if(strWhere.Trim()!="")
 			{
@@ -389,9 +399,13 @@ namespace HomeAccountingSystem.DAL
         #endregion  BasicMethod
 
         #region  ExtensionMethod
+
         /// <summary>
         /// 是否存在该记录
         /// </summary>
+        ///  /// <param name="account"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         public bool Exists(string account, string password)
         {
             StringBuilder strSql = new StringBuilder();
@@ -405,6 +419,36 @@ namespace HomeAccountingSystem.DAL
             parameters[1].Value = password;
 
             return SQLServerHelper.Exists(strSql.ToString(), parameters);
+        }
+
+        /// <summary>
+        /// 通过账号和密码得到一个对象实体
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+		public HomeAccountingSystem.Model.jt_yh_zl GetLoginUserModel(string account, string password)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select  top 1 pk,v_yh_no,v_yh_name,v_yh_pwd,i_yh_type,v_phone,t_birthday_gregorian,t_birthday_lunar,t_create_time,i_delete,v_photo,v_age,v_photo_path from jt_yh_zl ");
+            strSql.Append(" where v_yh_no=@v_yh_no and v_yh_pwd=@v_yh_pwd ");
+            SqlParameter[] parameters = {
+                    new SqlParameter("@v_yh_no", SqlDbType.VarChar,256) ,
+                    new SqlParameter("@v_yh_pwd", SqlDbType.VarChar,256)
+            };
+            parameters[0].Value = account;
+            parameters[1].Value = password;
+
+            HomeAccountingSystem.Model.jt_yh_zl model = new HomeAccountingSystem.Model.jt_yh_zl();
+            DataSet ds = SQLServerHelper.Query(strSql.ToString(), parameters);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                return DataRowToModel(ds.Tables[0].Rows[0]);
+            }
+            else
+            {
+                return null;
+            }
         }
         #endregion  ExtensionMethod
     }

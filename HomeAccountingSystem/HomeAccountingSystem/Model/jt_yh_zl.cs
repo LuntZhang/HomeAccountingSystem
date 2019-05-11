@@ -30,12 +30,22 @@ namespace HomeAccountingSystem.Model
 		private string _t_birthday_lunar= "getdate";
 		private DateTime? _t_create_time;
 		private int? _i_delete;
-		private string _v_photo;
+		private byte[] _v_photo;
 		private string _v_age;
-		/// <summary>
-		/// 
-		/// </summary>
-		public int pk
+        private string _v_photo_path;
+
+        /// <summary>
+        /// 头像路径
+        /// </summary>
+        public string v_photo_path
+        {
+            set { _v_photo_path = value; }
+            get { return _v_photo_path; }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public int pk
 		{
 			set{ _pk=value;}
 			get{return _pk;}
@@ -115,7 +125,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 头像
 		/// </summary>
-		public string v_photo
+		public byte[] v_photo
 		{
 			set{ _v_photo=value;}
 			get{return _v_photo;}

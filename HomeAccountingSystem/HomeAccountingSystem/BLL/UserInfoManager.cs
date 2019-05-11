@@ -10,25 +10,27 @@
 */
 using System;
 using System.Data;
-using System.Collections.Generic;     
+using System.Collections.Generic;
 using HomeAccountingSystem.Model;
+using System.IO;
+
 namespace HomeAccountingSystem.BLL
 {
 	/// <summary>
 	/// 用户资料表
 	/// </summary>
-	public partial class jt_yh_zl
+	public partial class UserInfoManager
 	{
         #region Instance
-        private static jt_yh_zl instance = new jt_yh_zl();
-        public static jt_yh_zl Instance
+        private static UserInfoManager instance = new UserInfoManager();
+        public static UserInfoManager Instance
         {
-            get { return jt_yh_zl.instance; }
+            get { return UserInfoManager.instance; }
         }
 
         #endregion
         private readonly HomeAccountingSystem.DAL.jt_yh_zl dal=new HomeAccountingSystem.DAL.jt_yh_zl();
-		public jt_yh_zl()
+		public UserInfoManager()
 		{}
 		#region  BasicMethod
 
@@ -81,10 +83,18 @@ namespace HomeAccountingSystem.BLL
 			return dal.GetModel(pk);
 		}
 
-		/// <summary>
-		/// 获得数据列表
+        /// <summary>
+		/// 通过账号密码得到一个对象实体
 		/// </summary>
-		public DataSet GetList(string strWhere)
+		public HomeAccountingSystem.Model.jt_yh_zl GetModel(string account, string password)
+        {
+            return dal.GetLoginUserModel(account, password);
+        }
+
+        /// <summary>
+        /// 获得数据列表
+        /// </summary>
+        public DataSet GetList(string strWhere)
 		{
 			return dal.GetList(strWhere);
 		}
@@ -164,6 +174,30 @@ namespace HomeAccountingSystem.BLL
         public bool Exists(string account, string password)
         {
             return dal.Exists(account, password);
+        }
+
+        /// <summary>
+        /// 上传图片到数据库
+        /// </summary>
+        public bool UploadPhotoToDataBase(jt_yh_zl yhzlModel,string strPath)
+        {
+            // 以文件流读取文件内容
+            FileStream fileStream = new FileStream(strPath, FileMode.Open, FileAccess.Read);
+            byte[] byteFile = new byte[fileStream.Length];
+            fileStream.Read(byteFile, 0, (int)fileStream.Length);
+            fileStream.Close();
+            // 更改用户头像
+            yhzlModel.v_photo_path = strPath;
+            yhzlModel.v_photo = byteFile;
+            bool updateSuccess=this.Update(yhzlModel);
+            if (updateSuccess==false)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
         #endregion  ExtensionMethod
     }

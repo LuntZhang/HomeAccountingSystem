@@ -226,4 +226,91 @@
   <data name="设置_3_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image\main\设置(3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="photo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\photo\photo9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
