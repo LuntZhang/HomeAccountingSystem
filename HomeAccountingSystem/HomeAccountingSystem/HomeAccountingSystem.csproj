@@ -54,6 +54,7 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.7.0.6, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -82,6 +83,12 @@
     </Compile>
     <Compile Include="AboutUserInfo\UserPhotoForm.Designer.cs">
       <DependentUpon>UserPhotoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInformation\BaseInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInformation\BaseInfoForm.Designer.cs">
+      <DependentUpon>BaseInfoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BLL\jt_jc_sz.cs" />
     <Compile Include="BLL\jt_jc_zm.cs" />
@@ -178,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AboutUserInfo\UserPhotoForm.resx">
       <DependentUpon>UserPhotoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInformation\BaseInfoForm.resx">
+      <DependentUpon>BaseInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -468,6 +478,261 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image\main\工具.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BaseInfo_菜品半价.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BaseInfo_菜品促销.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BaseInfo_菜品买赠.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BaseInfo_菜品资料.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BaseInfo_菜品做法.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BaseInfo_餐桌资料.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BaseInfo_卷票维护.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BaseInfo_全部类型.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BaseInfo_市别设置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BaseInfo_收银方式.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BaseInfo_套菜资料.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BaseInfo_特价菜品.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BaseInfo_折扣方案.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BaseInfo_做法关联.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\BillsFormatManager_结账单格式设置.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\circular_progress_gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\FrontManager_菜品时价.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\FrontManager_交班查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\FrontManager_历史日结查询报表.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\FrontManager_前台营业参数.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\FrontManager_收银流水.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\FrontManager_销售流水.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\FrontManager_营业单据查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\FrontManager_营业日结.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\InventoryCenter_采购入库.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\InventoryCenter_采购退货.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\InventoryCenter_菜品配比.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\InventoryCenter_仓库部门.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\InventoryCenter_供应商.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\InventoryCenter_供应商结算账款.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\InventoryCenter_库存查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\InventoryCenter_库存盘点.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\InventoryCenter_原料报损.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\InventoryCenter_原料耗料.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\InventoryCenter_原料进销存报表.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\InventoryCenter_原料信息.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MemberManager_会员参数设置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MemberManager_会员充值.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MemberManager_会员储值报表.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MemberManager_会员短信群发.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MemberManager_会员短信提醒.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MemberManager_会员挂账管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MemberManager_会员汇总报表.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MemberManager_会员积分管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MemberManager_会员类型变更.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MemberManager_会员明细报表.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MemberManager_会员状态管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MemberManager_会员资料维护.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MemberManager_协议单位挂账管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MyDesk_客单数.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MyDesk_上升箭头.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MyDesk_退菜数量.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MyDesk_销菜数量.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\MyDesk_营业额.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\PrinterProduct_菜品厨打关联.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\PrinterProduct_厨打参数设置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\PrinterProduct_厨打方案设置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\PrinterProduct_厨打格式设置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ReportsCenter_菜品销售查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ReportsCenter_菜品赠送查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ReportsCenter_菜品折扣查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ReportsCenter_服务员提成.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ReportsCenter_收银员明细查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ReportsCenter_收银员收银汇总.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ReportsCenter_套菜消费查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ReportsCenter_特价销售查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ReportsCenter_退菜查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\SystemManager_操作员权限.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\SystemManager_公司信息.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\SystemManager_关于我们.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\SystemManager_量支付.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\SystemManager_使用手册.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\SystemManager_数据库管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\SystemManager_系统日志.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\SystemManager_员工资料.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\SystemManager_注册软件.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ToolStrip_保存.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ToolStrip_打印.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ToolStrip_确定.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ToolStrip_删菜.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ToolStrip_刷新.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ToolStrip_添加.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ToolStrip_退出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\ToolStrip_应用.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

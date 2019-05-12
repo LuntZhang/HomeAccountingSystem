@@ -93,6 +93,366 @@ namespace HomeAccountingSystem.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap BaseInfo_做法关联 {
+            get {
+                object obj = ResourceManager.GetObject("BaseInfo_做法关联", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseInfo_全部类型 {
+            get {
+                object obj = ResourceManager.GetObject("BaseInfo_全部类型", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseInfo_卷票维护 {
+            get {
+                object obj = ResourceManager.GetObject("BaseInfo_卷票维护", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseInfo_套菜资料 {
+            get {
+                object obj = ResourceManager.GetObject("BaseInfo_套菜资料", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseInfo_市别设置 {
+            get {
+                object obj = ResourceManager.GetObject("BaseInfo_市别设置", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseInfo_折扣方案 {
+            get {
+                object obj = ResourceManager.GetObject("BaseInfo_折扣方案", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseInfo_收银方式 {
+            get {
+                object obj = ResourceManager.GetObject("BaseInfo_收银方式", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseInfo_特价菜品 {
+            get {
+                object obj = ResourceManager.GetObject("BaseInfo_特价菜品", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseInfo_菜品买赠 {
+            get {
+                object obj = ResourceManager.GetObject("BaseInfo_菜品买赠", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseInfo_菜品促销 {
+            get {
+                object obj = ResourceManager.GetObject("BaseInfo_菜品促销", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseInfo_菜品做法 {
+            get {
+                object obj = ResourceManager.GetObject("BaseInfo_菜品做法", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseInfo_菜品半价 {
+            get {
+                object obj = ResourceManager.GetObject("BaseInfo_菜品半价", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseInfo_菜品资料 {
+            get {
+                object obj = ResourceManager.GetObject("BaseInfo_菜品资料", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseInfo_餐桌资料 {
+            get {
+                object obj = ResourceManager.GetObject("BaseInfo_餐桌资料", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BillsFormatManager_结账单格式设置 {
+            get {
+                object obj = ResourceManager.GetObject("BillsFormatManager_结账单格式设置", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap circular_progress_gif {
+            get {
+                object obj = ResourceManager.GetObject("circular_progress_gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap FrontManager_交班查询 {
+            get {
+                object obj = ResourceManager.GetObject("FrontManager_交班查询", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap FrontManager_前台营业参数 {
+            get {
+                object obj = ResourceManager.GetObject("FrontManager_前台营业参数", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap FrontManager_历史日结查询报表 {
+            get {
+                object obj = ResourceManager.GetObject("FrontManager_历史日结查询报表", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap FrontManager_收银流水 {
+            get {
+                object obj = ResourceManager.GetObject("FrontManager_收银流水", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap FrontManager_菜品时价 {
+            get {
+                object obj = ResourceManager.GetObject("FrontManager_菜品时价", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap FrontManager_营业单据查询 {
+            get {
+                object obj = ResourceManager.GetObject("FrontManager_营业单据查询", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap FrontManager_营业日结 {
+            get {
+                object obj = ResourceManager.GetObject("FrontManager_营业日结", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap FrontManager_销售流水 {
+            get {
+                object obj = ResourceManager.GetObject("FrontManager_销售流水", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap InventoryCenter_仓库部门 {
+            get {
+                object obj = ResourceManager.GetObject("InventoryCenter_仓库部门", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap InventoryCenter_供应商 {
+            get {
+                object obj = ResourceManager.GetObject("InventoryCenter_供应商", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap InventoryCenter_供应商结算账款 {
+            get {
+                object obj = ResourceManager.GetObject("InventoryCenter_供应商结算账款", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap InventoryCenter_原料信息 {
+            get {
+                object obj = ResourceManager.GetObject("InventoryCenter_原料信息", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap InventoryCenter_原料报损 {
+            get {
+                object obj = ResourceManager.GetObject("InventoryCenter_原料报损", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap InventoryCenter_原料耗料 {
+            get {
+                object obj = ResourceManager.GetObject("InventoryCenter_原料耗料", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap InventoryCenter_原料进销存报表 {
+            get {
+                object obj = ResourceManager.GetObject("InventoryCenter_原料进销存报表", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap InventoryCenter_库存查询 {
+            get {
+                object obj = ResourceManager.GetObject("InventoryCenter_库存查询", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap InventoryCenter_库存盘点 {
+            get {
+                object obj = ResourceManager.GetObject("InventoryCenter_库存盘点", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap InventoryCenter_菜品配比 {
+            get {
+                object obj = ResourceManager.GetObject("InventoryCenter_菜品配比", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap InventoryCenter_采购入库 {
+            get {
+                object obj = ResourceManager.GetObject("InventoryCenter_采购入库", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap InventoryCenter_采购退货 {
+            get {
+                object obj = ResourceManager.GetObject("InventoryCenter_采购退货", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap jizhang2 {
             get {
                 object obj = ResourceManager.GetObject("jizhang2", resourceCulture);
@@ -106,6 +466,186 @@ namespace HomeAccountingSystem.Properties {
         internal static System.Drawing.Bitmap loginJizhang {
             get {
                 object obj = ResourceManager.GetObject("loginJizhang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MemberManager_会员储值报表 {
+            get {
+                object obj = ResourceManager.GetObject("MemberManager_会员储值报表", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MemberManager_会员充值 {
+            get {
+                object obj = ResourceManager.GetObject("MemberManager_会员充值", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MemberManager_会员参数设置 {
+            get {
+                object obj = ResourceManager.GetObject("MemberManager_会员参数设置", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MemberManager_会员挂账管理 {
+            get {
+                object obj = ResourceManager.GetObject("MemberManager_会员挂账管理", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MemberManager_会员明细报表 {
+            get {
+                object obj = ResourceManager.GetObject("MemberManager_会员明细报表", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MemberManager_会员汇总报表 {
+            get {
+                object obj = ResourceManager.GetObject("MemberManager_会员汇总报表", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MemberManager_会员状态管理 {
+            get {
+                object obj = ResourceManager.GetObject("MemberManager_会员状态管理", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MemberManager_会员短信提醒 {
+            get {
+                object obj = ResourceManager.GetObject("MemberManager_会员短信提醒", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MemberManager_会员短信群发 {
+            get {
+                object obj = ResourceManager.GetObject("MemberManager_会员短信群发", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MemberManager_会员积分管理 {
+            get {
+                object obj = ResourceManager.GetObject("MemberManager_会员积分管理", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MemberManager_会员类型变更 {
+            get {
+                object obj = ResourceManager.GetObject("MemberManager_会员类型变更", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MemberManager_会员资料维护 {
+            get {
+                object obj = ResourceManager.GetObject("MemberManager_会员资料维护", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MemberManager_协议单位挂账管理 {
+            get {
+                object obj = ResourceManager.GetObject("MemberManager_协议单位挂账管理", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MyDesk_上升箭头 {
+            get {
+                object obj = ResourceManager.GetObject("MyDesk_上升箭头", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MyDesk_客单数 {
+            get {
+                object obj = ResourceManager.GetObject("MyDesk_客单数", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MyDesk_营业额 {
+            get {
+                object obj = ResourceManager.GetObject("MyDesk_营业额", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MyDesk_退菜数量 {
+            get {
+                object obj = ResourceManager.GetObject("MyDesk_退菜数量", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MyDesk_销菜数量 {
+            get {
+                object obj = ResourceManager.GetObject("MyDesk_销菜数量", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -396,6 +936,306 @@ namespace HomeAccountingSystem.Properties {
         internal static System.Drawing.Bitmap photo9 {
             get {
                 object obj = ResourceManager.GetObject("photo9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap PrinterProduct_厨打参数设置 {
+            get {
+                object obj = ResourceManager.GetObject("PrinterProduct_厨打参数设置", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap PrinterProduct_厨打方案设置 {
+            get {
+                object obj = ResourceManager.GetObject("PrinterProduct_厨打方案设置", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap PrinterProduct_厨打格式设置 {
+            get {
+                object obj = ResourceManager.GetObject("PrinterProduct_厨打格式设置", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap PrinterProduct_菜品厨打关联 {
+            get {
+                object obj = ResourceManager.GetObject("PrinterProduct_菜品厨打关联", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ReportsCenter_套菜消费查询 {
+            get {
+                object obj = ResourceManager.GetObject("ReportsCenter_套菜消费查询", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ReportsCenter_收银员收银汇总 {
+            get {
+                object obj = ResourceManager.GetObject("ReportsCenter_收银员收银汇总", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ReportsCenter_收银员明细查询 {
+            get {
+                object obj = ResourceManager.GetObject("ReportsCenter_收银员明细查询", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ReportsCenter_服务员提成 {
+            get {
+                object obj = ResourceManager.GetObject("ReportsCenter_服务员提成", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ReportsCenter_特价销售查询 {
+            get {
+                object obj = ResourceManager.GetObject("ReportsCenter_特价销售查询", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ReportsCenter_菜品折扣查询 {
+            get {
+                object obj = ResourceManager.GetObject("ReportsCenter_菜品折扣查询", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ReportsCenter_菜品赠送查询 {
+            get {
+                object obj = ResourceManager.GetObject("ReportsCenter_菜品赠送查询", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ReportsCenter_菜品销售查询 {
+            get {
+                object obj = ResourceManager.GetObject("ReportsCenter_菜品销售查询", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ReportsCenter_退菜查询 {
+            get {
+                object obj = ResourceManager.GetObject("ReportsCenter_退菜查询", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap SystemManager_使用手册 {
+            get {
+                object obj = ResourceManager.GetObject("SystemManager_使用手册", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap SystemManager_公司信息 {
+            get {
+                object obj = ResourceManager.GetObject("SystemManager_公司信息", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap SystemManager_关于我们 {
+            get {
+                object obj = ResourceManager.GetObject("SystemManager_关于我们", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap SystemManager_员工资料 {
+            get {
+                object obj = ResourceManager.GetObject("SystemManager_员工资料", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap SystemManager_操作员权限 {
+            get {
+                object obj = ResourceManager.GetObject("SystemManager_操作员权限", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap SystemManager_数据库管理 {
+            get {
+                object obj = ResourceManager.GetObject("SystemManager_数据库管理", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap SystemManager_注册软件 {
+            get {
+                object obj = ResourceManager.GetObject("SystemManager_注册软件", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap SystemManager_系统日志 {
+            get {
+                object obj = ResourceManager.GetObject("SystemManager_系统日志", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap SystemManager_量支付 {
+            get {
+                object obj = ResourceManager.GetObject("SystemManager_量支付", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ToolStrip_保存 {
+            get {
+                object obj = ResourceManager.GetObject("ToolStrip_保存", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ToolStrip_删菜 {
+            get {
+                object obj = ResourceManager.GetObject("ToolStrip_删菜", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ToolStrip_刷新 {
+            get {
+                object obj = ResourceManager.GetObject("ToolStrip_刷新", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ToolStrip_应用 {
+            get {
+                object obj = ResourceManager.GetObject("ToolStrip_应用", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ToolStrip_打印 {
+            get {
+                object obj = ResourceManager.GetObject("ToolStrip_打印", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ToolStrip_添加 {
+            get {
+                object obj = ResourceManager.GetObject("ToolStrip_添加", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ToolStrip_确定 {
+            get {
+                object obj = ResourceManager.GetObject("ToolStrip_确定", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ToolStrip_退出 {
+            get {
+                object obj = ResourceManager.GetObject("ToolStrip_退出", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

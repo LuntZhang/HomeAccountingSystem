@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HomeAccountingSystem.BaseInformation;
 using HomeAccountingSystem.MainUserControl;
 
 namespace HomeAccountingSystem
@@ -73,6 +74,12 @@ namespace HomeAccountingSystem
                 }
             }
             return isClosePage;
+        }
+
+        private void btnInitialValue_Click(object sender, EventArgs e)
+        {
+            BaseInfoForm formBaseInfo = new BaseInfoForm();
+            formBaseInfo.ShowDialog();
         }
     }
 }

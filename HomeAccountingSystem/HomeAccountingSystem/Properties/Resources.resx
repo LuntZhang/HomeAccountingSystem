@@ -370,4 +370,256 @@
   <data name="工具_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image\main\工具(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BaseInfo_做法关联" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BaseInfo_做法关联.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseInfo_全部类型" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BaseInfo_全部类型.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseInfo_卷票维护" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BaseInfo_卷票维护.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseInfo_套菜资料" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BaseInfo_套菜资料.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseInfo_市别设置" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BaseInfo_市别设置.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseInfo_折扣方案" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BaseInfo_折扣方案.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseInfo_收银方式" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BaseInfo_收银方式.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseInfo_特价菜品" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BaseInfo_特价菜品.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseInfo_菜品买赠" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BaseInfo_菜品买赠.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseInfo_菜品促销" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BaseInfo_菜品促销.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseInfo_菜品做法" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BaseInfo_菜品做法.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseInfo_菜品半价" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BaseInfo_菜品半价.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseInfo_菜品资料" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BaseInfo_菜品资料.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseInfo_餐桌资料" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BaseInfo_餐桌资料.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BillsFormatManager_结账单格式设置" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\BillsFormatManager_结账单格式设置.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circular_progress_gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\circular_progress_gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrontManager_交班查询" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\FrontManager_交班查询.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrontManager_前台营业参数" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\FrontManager_前台营业参数.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrontManager_历史日结查询报表" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\FrontManager_历史日结查询报表.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrontManager_收银流水" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\FrontManager_收银流水.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrontManager_菜品时价" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\FrontManager_菜品时价.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrontManager_营业单据查询" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\FrontManager_营业单据查询.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrontManager_营业日结" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\FrontManager_营业日结.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrontManager_销售流水" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\FrontManager_销售流水.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryCenter_仓库部门" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\InventoryCenter_仓库部门.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryCenter_供应商" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\InventoryCenter_供应商.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryCenter_供应商结算账款" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\InventoryCenter_供应商结算账款.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryCenter_原料信息" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\InventoryCenter_原料信息.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryCenter_原料报损" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\InventoryCenter_原料报损.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryCenter_原料耗料" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\InventoryCenter_原料耗料.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryCenter_原料进销存报表" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\InventoryCenter_原料进销存报表.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryCenter_库存查询" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\InventoryCenter_库存查询.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryCenter_库存盘点" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\InventoryCenter_库存盘点.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryCenter_菜品配比" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\InventoryCenter_菜品配比.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryCenter_采购入库" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\InventoryCenter_采购入库.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryCenter_采购退货" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\InventoryCenter_采购退货.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberManager_会员储值报表" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MemberManager_会员储值报表.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberManager_会员充值" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MemberManager_会员充值.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberManager_会员参数设置" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MemberManager_会员参数设置.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberManager_会员挂账管理" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MemberManager_会员挂账管理.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberManager_会员明细报表" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MemberManager_会员明细报表.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberManager_会员汇总报表" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MemberManager_会员汇总报表.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberManager_会员状态管理" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MemberManager_会员状态管理.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberManager_会员短信提醒" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MemberManager_会员短信提醒.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberManager_会员短信群发" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MemberManager_会员短信群发.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberManager_会员积分管理" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MemberManager_会员积分管理.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberManager_会员类型变更" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MemberManager_会员类型变更.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberManager_会员资料维护" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MemberManager_会员资料维护.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberManager_协议单位挂账管理" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MemberManager_协议单位挂账管理.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MyDesk_上升箭头" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MyDesk_上升箭头.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MyDesk_客单数" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MyDesk_客单数.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MyDesk_营业额" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MyDesk_营业额.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MyDesk_退菜数量" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MyDesk_退菜数量.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MyDesk_销菜数量" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\MyDesk_销菜数量.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrinterProduct_厨打参数设置" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\PrinterProduct_厨打参数设置.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrinterProduct_厨打方案设置" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\PrinterProduct_厨打方案设置.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrinterProduct_厨打格式设置" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\PrinterProduct_厨打格式设置.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrinterProduct_菜品厨打关联" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\PrinterProduct_菜品厨打关联.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportsCenter_套菜消费查询" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ReportsCenter_套菜消费查询.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportsCenter_收银员收银汇总" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ReportsCenter_收银员收银汇总.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportsCenter_收银员明细查询" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ReportsCenter_收银员明细查询.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportsCenter_服务员提成" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ReportsCenter_服务员提成.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportsCenter_特价销售查询" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ReportsCenter_特价销售查询.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportsCenter_菜品折扣查询" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ReportsCenter_菜品折扣查询.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportsCenter_菜品赠送查询" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ReportsCenter_菜品赠送查询.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportsCenter_菜品销售查询" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ReportsCenter_菜品销售查询.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportsCenter_退菜查询" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ReportsCenter_退菜查询.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemManager_使用手册" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\SystemManager_使用手册.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemManager_公司信息" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\SystemManager_公司信息.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemManager_关于我们" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\SystemManager_关于我们.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemManager_员工资料" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\SystemManager_员工资料.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemManager_操作员权限" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\SystemManager_操作员权限.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemManager_数据库管理" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\SystemManager_数据库管理.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemManager_注册软件" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\SystemManager_注册软件.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemManager_系统日志" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\SystemManager_系统日志.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemManager_量支付" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\SystemManager_量支付.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolStrip_保存" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ToolStrip_保存.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolStrip_删菜" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ToolStrip_删菜.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolStrip_刷新" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ToolStrip_刷新.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolStrip_应用" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ToolStrip_应用.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolStrip_打印" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ToolStrip_打印.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolStrip_添加" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ToolStrip_添加.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolStrip_确定" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ToolStrip_确定.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolStrip_退出" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\common\ToolStrip_退出.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -562,6 +562,7 @@
             this.btnInitialValue.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnInitialValue.Tip = "";
             this.btnInitialValue.TipColor = System.Drawing.Color.Red;
+            this.btnInitialValue.Click += new System.EventHandler(this.btnInitialValue_Click);
             // 
             // tzxPanelBottom
             // 
