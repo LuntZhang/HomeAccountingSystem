@@ -74,7 +74,5 @@ namespace HomeAccountingSystem
             }
             return isClosePage;
         }
-
-        
     }
 }

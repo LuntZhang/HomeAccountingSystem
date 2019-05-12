@@ -439,6 +439,36 @@
   <ItemGroup>
     <None Include="Resources\image\main\退出%281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\用户管理%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\用户管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\其他%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\其他.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\日志%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\日志.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\小工具%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\小工具.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\工具%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\工具.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

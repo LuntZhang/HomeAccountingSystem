@@ -42,7 +42,19 @@
             this.tzxPanelLeftUp = new TZXControlLibrary.PanelEx.TzxPanel();
             this.incomeAndExpensesUserControl1 = new HomeAccountingSystem.MainUserControl.IncomeAndExpensesUserControl();
             this.tzxPanelLeft = new TZXControlLibrary.PanelEx.TzxPanel();
-            this.menuBarUserControl1 = new HomeAccountingSystem.MainUserControl.MenuBarUserControl();
+            this.tzxPanel1 = new TZXControlLibrary.PanelEx.TzxPanel();
+            this.tzxRoundedButton4 = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.tzxRoundedButton3 = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.tzxRoundedButton2 = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.tzxRoundedButton1 = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.btnReport = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.btnBudget = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.btnBorrowing = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.btnExpenditure = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.btnIncome = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.btnLending = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.btnSystemSetting = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.btnInitialValue = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.tzxPanelBottom = new TZXControlLibrary.PanelEx.TzxPanel();
             this.bottomUserControl1 = new HomeAccountingSystem.MainUserControl.BottomUserControl();
             this.tzxPanelTop = new TZXControlLibrary.PanelEx.TzxPanel();
@@ -55,6 +67,7 @@
             this.tzxPanelRightUp.SuspendLayout();
             this.tzxPanelLeftUp.SuspendLayout();
             this.tzxPanelLeft.SuspendLayout();
+            this.tzxPanel1.SuspendLayout();
             this.tzxPanelBottom.SuspendLayout();
             this.tzxPanelTop.SuspendLayout();
             this.SuspendLayout();
@@ -225,7 +238,7 @@
             // 
             this.tzxPanelLeft.BorderColor = System.Drawing.Color.Empty;
             this.tzxPanelLeft.BorderSize = 0;
-            this.tzxPanelLeft.Controls.Add(this.menuBarUserControl1);
+            this.tzxPanelLeft.Controls.Add(this.tzxPanel1);
             this.tzxPanelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.tzxPanelLeft.HasBottomBorder = false;
             this.tzxPanelLeft.HasLeftBorder = false;
@@ -236,14 +249,319 @@
             this.tzxPanelLeft.Size = new System.Drawing.Size(144, 538);
             this.tzxPanelLeft.TabIndex = 1;
             // 
-            // menuBarUserControl1
+            // tzxPanel1
             // 
-            this.menuBarUserControl1.BackColor = System.Drawing.Color.White;
-            this.menuBarUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.menuBarUserControl1.Location = new System.Drawing.Point(0, 0);
-            this.menuBarUserControl1.Name = "menuBarUserControl1";
-            this.menuBarUserControl1.Size = new System.Drawing.Size(144, 538);
-            this.menuBarUserControl1.TabIndex = 0;
+            this.tzxPanel1.BorderColor = System.Drawing.Color.Empty;
+            this.tzxPanel1.BorderSize = 0;
+            this.tzxPanel1.Controls.Add(this.tzxRoundedButton4);
+            this.tzxPanel1.Controls.Add(this.tzxRoundedButton3);
+            this.tzxPanel1.Controls.Add(this.tzxRoundedButton2);
+            this.tzxPanel1.Controls.Add(this.tzxRoundedButton1);
+            this.tzxPanel1.Controls.Add(this.btnReport);
+            this.tzxPanel1.Controls.Add(this.btnBudget);
+            this.tzxPanel1.Controls.Add(this.btnBorrowing);
+            this.tzxPanel1.Controls.Add(this.btnExpenditure);
+            this.tzxPanel1.Controls.Add(this.btnIncome);
+            this.tzxPanel1.Controls.Add(this.btnLending);
+            this.tzxPanel1.Controls.Add(this.btnSystemSetting);
+            this.tzxPanel1.Controls.Add(this.btnInitialValue);
+            this.tzxPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tzxPanel1.HasBottomBorder = false;
+            this.tzxPanel1.HasLeftBorder = false;
+            this.tzxPanel1.HasRightBorder = false;
+            this.tzxPanel1.HasTopBorder = false;
+            this.tzxPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tzxPanel1.Name = "tzxPanel1";
+            this.tzxPanel1.Size = new System.Drawing.Size(144, 538);
+            this.tzxPanel1.TabIndex = 45;
+            // 
+            // tzxRoundedButton4
+            // 
+            this.tzxRoundedButton4.AccessibleName = "2-1100";
+            this.tzxRoundedButton4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.tzxRoundedButton4.BaseColor = System.Drawing.Color.Transparent;
+            this.tzxRoundedButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.tzxRoundedButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.tzxRoundedButton4.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tzxRoundedButton4.ForeColor = System.Drawing.Color.Black;
+            this.tzxRoundedButton4.HasArrow = false;
+            this.tzxRoundedButton4.Image = global::HomeAccountingSystem.Properties.Resources.其他_1_;
+            this.tzxRoundedButton4.ImageHeight = 50;
+            this.tzxRoundedButton4.ImageTextSpace = 5;
+            this.tzxRoundedButton4.ImageWidth = 50;
+            this.tzxRoundedButton4.Location = new System.Drawing.Point(73, 452);
+            this.tzxRoundedButton4.Name = "tzxRoundedButton4";
+            this.tzxRoundedButton4.Radius = 5;
+            this.tzxRoundedButton4.Size = new System.Drawing.Size(65, 80);
+            this.tzxRoundedButton4.TabIndex = 99;
+            this.tzxRoundedButton4.Text = "其他";
+            this.tzxRoundedButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tzxRoundedButton4.Tip = "";
+            this.tzxRoundedButton4.TipColor = System.Drawing.Color.Red;
+            // 
+            // tzxRoundedButton3
+            // 
+            this.tzxRoundedButton3.AccessibleName = "2-1100";
+            this.tzxRoundedButton3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.tzxRoundedButton3.BaseColor = System.Drawing.Color.Transparent;
+            this.tzxRoundedButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.tzxRoundedButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.tzxRoundedButton3.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tzxRoundedButton3.ForeColor = System.Drawing.Color.Black;
+            this.tzxRoundedButton3.HasArrow = false;
+            this.tzxRoundedButton3.Image = global::HomeAccountingSystem.Properties.Resources.工具;
+            this.tzxRoundedButton3.ImageHeight = 50;
+            this.tzxRoundedButton3.ImageTextSpace = 5;
+            this.tzxRoundedButton3.ImageWidth = 50;
+            this.tzxRoundedButton3.Location = new System.Drawing.Point(3, 452);
+            this.tzxRoundedButton3.Name = "tzxRoundedButton3";
+            this.tzxRoundedButton3.Radius = 5;
+            this.tzxRoundedButton3.Size = new System.Drawing.Size(65, 80);
+            this.tzxRoundedButton3.TabIndex = 98;
+            this.tzxRoundedButton3.Text = "小工具";
+            this.tzxRoundedButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tzxRoundedButton3.Tip = "";
+            this.tzxRoundedButton3.TipColor = System.Drawing.Color.Red;
+            // 
+            // tzxRoundedButton2
+            // 
+            this.tzxRoundedButton2.AccessibleName = "2-1100";
+            this.tzxRoundedButton2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.tzxRoundedButton2.BaseColor = System.Drawing.Color.Transparent;
+            this.tzxRoundedButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.tzxRoundedButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.tzxRoundedButton2.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tzxRoundedButton2.ForeColor = System.Drawing.Color.Black;
+            this.tzxRoundedButton2.HasArrow = false;
+            this.tzxRoundedButton2.Image = global::HomeAccountingSystem.Properties.Resources.日志;
+            this.tzxRoundedButton2.ImageHeight = 50;
+            this.tzxRoundedButton2.ImageTextSpace = 5;
+            this.tzxRoundedButton2.ImageWidth = 50;
+            this.tzxRoundedButton2.Location = new System.Drawing.Point(73, 368);
+            this.tzxRoundedButton2.Name = "tzxRoundedButton2";
+            this.tzxRoundedButton2.Radius = 5;
+            this.tzxRoundedButton2.Size = new System.Drawing.Size(65, 80);
+            this.tzxRoundedButton2.TabIndex = 97;
+            this.tzxRoundedButton2.Text = "系统日志";
+            this.tzxRoundedButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tzxRoundedButton2.Tip = "";
+            this.tzxRoundedButton2.TipColor = System.Drawing.Color.Red;
+            // 
+            // tzxRoundedButton1
+            // 
+            this.tzxRoundedButton1.AccessibleName = "2-1100";
+            this.tzxRoundedButton1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.tzxRoundedButton1.BaseColor = System.Drawing.Color.Transparent;
+            this.tzxRoundedButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.tzxRoundedButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.tzxRoundedButton1.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tzxRoundedButton1.ForeColor = System.Drawing.Color.Black;
+            this.tzxRoundedButton1.HasArrow = false;
+            this.tzxRoundedButton1.Image = global::HomeAccountingSystem.Properties.Resources.用户管理;
+            this.tzxRoundedButton1.ImageHeight = 50;
+            this.tzxRoundedButton1.ImageTextSpace = 5;
+            this.tzxRoundedButton1.ImageWidth = 50;
+            this.tzxRoundedButton1.Location = new System.Drawing.Point(2, 368);
+            this.tzxRoundedButton1.Name = "tzxRoundedButton1";
+            this.tzxRoundedButton1.Radius = 5;
+            this.tzxRoundedButton1.Size = new System.Drawing.Size(65, 80);
+            this.tzxRoundedButton1.TabIndex = 96;
+            this.tzxRoundedButton1.Text = "用户管理";
+            this.tzxRoundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tzxRoundedButton1.Tip = "";
+            this.tzxRoundedButton1.TipColor = System.Drawing.Color.Red;
+            // 
+            // btnReport
+            // 
+            this.btnReport.AccessibleName = "2-1100";
+            this.btnReport.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnReport.BaseColor = System.Drawing.Color.Transparent;
+            this.btnReport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnReport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnReport.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnReport.ForeColor = System.Drawing.Color.Black;
+            this.btnReport.HasArrow = false;
+            this.btnReport.Image = global::HomeAccountingSystem.Properties.Resources.报表_1_;
+            this.btnReport.ImageHeight = 50;
+            this.btnReport.ImageTextSpace = 5;
+            this.btnReport.ImageWidth = 50;
+            this.btnReport.Location = new System.Drawing.Point(73, 282);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Radius = 5;
+            this.btnReport.Size = new System.Drawing.Size(65, 80);
+            this.btnReport.TabIndex = 95;
+            this.btnReport.Text = "报表统计";
+            this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnReport.Tip = "";
+            this.btnReport.TipColor = System.Drawing.Color.Red;
+            // 
+            // btnBudget
+            // 
+            this.btnBudget.AccessibleName = "2-1100";
+            this.btnBudget.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnBudget.BaseColor = System.Drawing.Color.Transparent;
+            this.btnBudget.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnBudget.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnBudget.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnBudget.ForeColor = System.Drawing.Color.Black;
+            this.btnBudget.HasArrow = false;
+            this.btnBudget.Image = global::HomeAccountingSystem.Properties.Resources.预算_1_;
+            this.btnBudget.ImageHeight = 50;
+            this.btnBudget.ImageTextSpace = 5;
+            this.btnBudget.ImageWidth = 50;
+            this.btnBudget.Location = new System.Drawing.Point(3, 282);
+            this.btnBudget.Name = "btnBudget";
+            this.btnBudget.Radius = 5;
+            this.btnBudget.Size = new System.Drawing.Size(65, 80);
+            this.btnBudget.TabIndex = 94;
+            this.btnBudget.Text = "账目预算";
+            this.btnBudget.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnBudget.Tip = "";
+            this.btnBudget.TipColor = System.Drawing.Color.Red;
+            // 
+            // btnBorrowing
+            // 
+            this.btnBorrowing.AccessibleName = "2-1100";
+            this.btnBorrowing.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnBorrowing.BaseColor = System.Drawing.Color.Transparent;
+            this.btnBorrowing.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnBorrowing.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnBorrowing.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnBorrowing.ForeColor = System.Drawing.Color.Black;
+            this.btnBorrowing.HasArrow = false;
+            this.btnBorrowing.Image = global::HomeAccountingSystem.Properties.Resources.借;
+            this.btnBorrowing.ImageHeight = 50;
+            this.btnBorrowing.ImageTextSpace = 5;
+            this.btnBorrowing.ImageWidth = 50;
+            this.btnBorrowing.Location = new System.Drawing.Point(73, 196);
+            this.btnBorrowing.Name = "btnBorrowing";
+            this.btnBorrowing.Radius = 5;
+            this.btnBorrowing.Size = new System.Drawing.Size(65, 80);
+            this.btnBorrowing.TabIndex = 93;
+            this.btnBorrowing.Text = "借入账目";
+            this.btnBorrowing.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnBorrowing.Tip = "";
+            this.btnBorrowing.TipColor = System.Drawing.Color.Red;
+            // 
+            // btnExpenditure
+            // 
+            this.btnExpenditure.AccessibleName = "2-1100";
+            this.btnExpenditure.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnExpenditure.BaseColor = System.Drawing.Color.Transparent;
+            this.btnExpenditure.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnExpenditure.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnExpenditure.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnExpenditure.ForeColor = System.Drawing.Color.Black;
+            this.btnExpenditure.HasArrow = false;
+            this.btnExpenditure.Image = global::HomeAccountingSystem.Properties.Resources.支出_2_;
+            this.btnExpenditure.ImageHeight = 50;
+            this.btnExpenditure.ImageTextSpace = 5;
+            this.btnExpenditure.ImageWidth = 50;
+            this.btnExpenditure.Location = new System.Drawing.Point(3, 110);
+            this.btnExpenditure.Name = "btnExpenditure";
+            this.btnExpenditure.Radius = 5;
+            this.btnExpenditure.Size = new System.Drawing.Size(65, 80);
+            this.btnExpenditure.TabIndex = 92;
+            this.btnExpenditure.Text = "支出账目";
+            this.btnExpenditure.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnExpenditure.Tip = "";
+            this.btnExpenditure.TipColor = System.Drawing.Color.Red;
+            // 
+            // btnIncome
+            // 
+            this.btnIncome.AccessibleName = "2-1100";
+            this.btnIncome.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnIncome.BaseColor = System.Drawing.Color.Transparent;
+            this.btnIncome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnIncome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnIncome.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnIncome.ForeColor = System.Drawing.Color.Black;
+            this.btnIncome.HasArrow = false;
+            this.btnIncome.Image = global::HomeAccountingSystem.Properties.Resources.收入_1_;
+            this.btnIncome.ImageHeight = 50;
+            this.btnIncome.ImageTextSpace = 5;
+            this.btnIncome.ImageWidth = 50;
+            this.btnIncome.Location = new System.Drawing.Point(73, 110);
+            this.btnIncome.Name = "btnIncome";
+            this.btnIncome.Radius = 5;
+            this.btnIncome.Size = new System.Drawing.Size(65, 80);
+            this.btnIncome.TabIndex = 91;
+            this.btnIncome.Text = "收入账目";
+            this.btnIncome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnIncome.Tip = "";
+            this.btnIncome.TipColor = System.Drawing.Color.Red;
+            // 
+            // btnLending
+            // 
+            this.btnLending.AccessibleName = "2-1100";
+            this.btnLending.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnLending.BaseColor = System.Drawing.Color.Transparent;
+            this.btnLending.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnLending.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnLending.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnLending.ForeColor = System.Drawing.Color.Black;
+            this.btnLending.HasArrow = false;
+            this.btnLending.Image = global::HomeAccountingSystem.Properties.Resources.借贷_1_;
+            this.btnLending.ImageHeight = 50;
+            this.btnLending.ImageTextSpace = 5;
+            this.btnLending.ImageWidth = 50;
+            this.btnLending.Location = new System.Drawing.Point(3, 196);
+            this.btnLending.Name = "btnLending";
+            this.btnLending.Radius = 5;
+            this.btnLending.Size = new System.Drawing.Size(65, 80);
+            this.btnLending.TabIndex = 90;
+            this.btnLending.Text = "借出账目";
+            this.btnLending.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnLending.Tip = "";
+            this.btnLending.TipColor = System.Drawing.Color.Red;
+            // 
+            // btnSystemSetting
+            // 
+            this.btnSystemSetting.AccessibleName = "2-1100";
+            this.btnSystemSetting.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnSystemSetting.BaseColor = System.Drawing.Color.Transparent;
+            this.btnSystemSetting.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnSystemSetting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnSystemSetting.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnSystemSetting.ForeColor = System.Drawing.Color.Black;
+            this.btnSystemSetting.HasArrow = false;
+            this.btnSystemSetting.Image = global::HomeAccountingSystem.Properties.Resources.设置_2_;
+            this.btnSystemSetting.ImageHeight = 50;
+            this.btnSystemSetting.ImageTextSpace = 5;
+            this.btnSystemSetting.ImageWidth = 50;
+            this.btnSystemSetting.Location = new System.Drawing.Point(73, 24);
+            this.btnSystemSetting.Name = "btnSystemSetting";
+            this.btnSystemSetting.Radius = 5;
+            this.btnSystemSetting.Size = new System.Drawing.Size(65, 80);
+            this.btnSystemSetting.TabIndex = 89;
+            this.btnSystemSetting.Text = "系统设置";
+            this.btnSystemSetting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSystemSetting.Tip = "";
+            this.btnSystemSetting.TipColor = System.Drawing.Color.Red;
+            // 
+            // btnInitialValue
+            // 
+            this.btnInitialValue.AccessibleName = "2-1100";
+            this.btnInitialValue.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnInitialValue.BaseColor = System.Drawing.Color.Transparent;
+            this.btnInitialValue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnInitialValue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnInitialValue.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnInitialValue.ForeColor = System.Drawing.Color.Black;
+            this.btnInitialValue.HasArrow = false;
+            this.btnInitialValue.Image = global::HomeAccountingSystem.Properties.Resources.jizhang2;
+            this.btnInitialValue.ImageHeight = 50;
+            this.btnInitialValue.ImageTextSpace = 5;
+            this.btnInitialValue.ImageWidth = 50;
+            this.btnInitialValue.Location = new System.Drawing.Point(3, 24);
+            this.btnInitialValue.Name = "btnInitialValue";
+            this.btnInitialValue.Radius = 5;
+            this.btnInitialValue.Size = new System.Drawing.Size(65, 80);
+            this.btnInitialValue.TabIndex = 87;
+            this.btnInitialValue.Text = "基础资料";
+            this.btnInitialValue.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnInitialValue.Tip = "";
+            this.btnInitialValue.TipColor = System.Drawing.Color.Red;
             // 
             // tzxPanelBottom
             // 
@@ -317,6 +635,7 @@
             this.tzxPanelRightUp.ResumeLayout(false);
             this.tzxPanelLeftUp.ResumeLayout(false);
             this.tzxPanelLeft.ResumeLayout(false);
+            this.tzxPanel1.ResumeLayout(false);
             this.tzxPanelBottom.ResumeLayout(false);
             this.tzxPanelTop.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -338,10 +657,22 @@
         private TZXControlLibrary.PanelEx.TzxPanel tzxPanelMainBottom;
         private TZXControlLibrary.PanelEx.TzxPanel tzxPanelLeftDown;
         private TZXControlLibrary.PanelEx.TzxPanel tzxPanelRightDown;
-        private MainUserControl.MenuBarUserControl menuBarUserControl1;
         private MainUserControl.BottomUserControl bottomUserControl1;
         private MainUserControl.TopUserInfoUserControl topUserInfoUserControl1;
         private MainUserControl.CompareUserControl compareUserControl1;
         private MainUserControl.BudgetUserControl budgetUserControl1;
+        private TZXControlLibrary.PanelEx.TzxPanel tzxPanel1;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnInitialValue;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnReport;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnBudget;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnBorrowing;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnExpenditure;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnIncome;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnLending;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnSystemSetting;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton tzxRoundedButton2;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton tzxRoundedButton1;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton tzxRoundedButton4;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton tzxRoundedButton3;
     }
 }

@@ -38,6 +38,8 @@
             this.tzxButtonEx2 = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.tzxButtonEx1 = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.buttonXBillsSearch = new TZXControlLibrary.ButtonEx.TzxButtonEx();
+            this.tzxPanel1 = new TZXControlLibrary.PanelEx.TzxPanel();
+            this.tzxPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tzxButtonEx9
@@ -54,7 +56,7 @@
             this.tzxButtonEx9.ImageHeight = 50;
             this.tzxButtonEx9.ImageTextSpace = 5;
             this.tzxButtonEx9.ImageWidth = 50;
-            this.tzxButtonEx9.Location = new System.Drawing.Point(0, 337);
+            this.tzxButtonEx9.Location = new System.Drawing.Point(3, 329);
             this.tzxButtonEx9.Name = "tzxButtonEx9";
             this.tzxButtonEx9.Size = new System.Drawing.Size(65, 80);
             this.tzxButtonEx9.TabIndex = 43;
@@ -76,7 +78,7 @@
             this.tzxButtonEx8.ImageHeight = 50;
             this.tzxButtonEx8.ImageTextSpace = 5;
             this.tzxButtonEx8.ImageWidth = 50;
-            this.tzxButtonEx8.Location = new System.Drawing.Point(70, 337);
+            this.tzxButtonEx8.Location = new System.Drawing.Point(73, 329);
             this.tzxButtonEx8.Name = "tzxButtonEx8";
             this.tzxButtonEx8.Size = new System.Drawing.Size(65, 80);
             this.tzxButtonEx8.TabIndex = 42;
@@ -98,7 +100,7 @@
             this.tzxButtonEx7.ImageHeight = 50;
             this.tzxButtonEx7.ImageTextSpace = 5;
             this.tzxButtonEx7.ImageWidth = 50;
-            this.tzxButtonEx7.Location = new System.Drawing.Point(70, 257);
+            this.tzxButtonEx7.Location = new System.Drawing.Point(73, 249);
             this.tzxButtonEx7.Name = "tzxButtonEx7";
             this.tzxButtonEx7.Size = new System.Drawing.Size(65, 80);
             this.tzxButtonEx7.TabIndex = 41;
@@ -120,7 +122,7 @@
             this.tzxButtonEx6.ImageHeight = 50;
             this.tzxButtonEx6.ImageTextSpace = 5;
             this.tzxButtonEx6.ImageWidth = 50;
-            this.tzxButtonEx6.Location = new System.Drawing.Point(0, 257);
+            this.tzxButtonEx6.Location = new System.Drawing.Point(3, 249);
             this.tzxButtonEx6.Name = "tzxButtonEx6";
             this.tzxButtonEx6.Size = new System.Drawing.Size(65, 80);
             this.tzxButtonEx6.TabIndex = 40;
@@ -142,7 +144,7 @@
             this.tzxButtonEx5.ImageHeight = 50;
             this.tzxButtonEx5.ImageTextSpace = 5;
             this.tzxButtonEx5.ImageWidth = 50;
-            this.tzxButtonEx5.Location = new System.Drawing.Point(0, 177);
+            this.tzxButtonEx5.Location = new System.Drawing.Point(3, 169);
             this.tzxButtonEx5.Name = "tzxButtonEx5";
             this.tzxButtonEx5.Size = new System.Drawing.Size(65, 80);
             this.tzxButtonEx5.TabIndex = 39;
@@ -164,7 +166,7 @@
             this.tzxButtonEx4.ImageHeight = 50;
             this.tzxButtonEx4.ImageTextSpace = 5;
             this.tzxButtonEx4.ImageWidth = 50;
-            this.tzxButtonEx4.Location = new System.Drawing.Point(70, 97);
+            this.tzxButtonEx4.Location = new System.Drawing.Point(73, 89);
             this.tzxButtonEx4.Name = "tzxButtonEx4";
             this.tzxButtonEx4.Size = new System.Drawing.Size(65, 80);
             this.tzxButtonEx4.TabIndex = 38;
@@ -186,7 +188,7 @@
             this.tzxButtonEx3.ImageHeight = 50;
             this.tzxButtonEx3.ImageTextSpace = 5;
             this.tzxButtonEx3.ImageWidth = 50;
-            this.tzxButtonEx3.Location = new System.Drawing.Point(70, 177);
+            this.tzxButtonEx3.Location = new System.Drawing.Point(73, 169);
             this.tzxButtonEx3.Name = "tzxButtonEx3";
             this.tzxButtonEx3.Size = new System.Drawing.Size(65, 80);
             this.tzxButtonEx3.TabIndex = 37;
@@ -208,7 +210,7 @@
             this.tzxButtonEx2.ImageHeight = 50;
             this.tzxButtonEx2.ImageTextSpace = 5;
             this.tzxButtonEx2.ImageWidth = 50;
-            this.tzxButtonEx2.Location = new System.Drawing.Point(0, 97);
+            this.tzxButtonEx2.Location = new System.Drawing.Point(3, 89);
             this.tzxButtonEx2.Name = "tzxButtonEx2";
             this.tzxButtonEx2.Size = new System.Drawing.Size(65, 80);
             this.tzxButtonEx2.TabIndex = 36;
@@ -230,7 +232,7 @@
             this.tzxButtonEx1.ImageHeight = 50;
             this.tzxButtonEx1.ImageTextSpace = 5;
             this.tzxButtonEx1.ImageWidth = 50;
-            this.tzxButtonEx1.Location = new System.Drawing.Point(70, 17);
+            this.tzxButtonEx1.Location = new System.Drawing.Point(73, 9);
             this.tzxButtonEx1.Name = "tzxButtonEx1";
             this.tzxButtonEx1.Size = new System.Drawing.Size(65, 80);
             this.tzxButtonEx1.TabIndex = 35;
@@ -252,31 +254,49 @@
             this.buttonXBillsSearch.ImageHeight = 50;
             this.buttonXBillsSearch.ImageTextSpace = 5;
             this.buttonXBillsSearch.ImageWidth = 50;
-            this.buttonXBillsSearch.Location = new System.Drawing.Point(0, 17);
+            this.buttonXBillsSearch.Location = new System.Drawing.Point(3, 9);
             this.buttonXBillsSearch.Name = "buttonXBillsSearch";
             this.buttonXBillsSearch.Size = new System.Drawing.Size(65, 80);
             this.buttonXBillsSearch.TabIndex = 34;
             this.buttonXBillsSearch.Text = "主页";
             this.buttonXBillsSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonXBillsSearch.UseVisualStyleBackColor = false;
+            this.buttonXBillsSearch.Click += new System.EventHandler(this.buttonXBillsSearch_Click);
+            // 
+            // tzxPanel1
+            // 
+            this.tzxPanel1.BorderColor = System.Drawing.Color.Empty;
+            this.tzxPanel1.BorderSize = 0;
+            this.tzxPanel1.Controls.Add(this.tzxButtonEx5);
+            this.tzxPanel1.Controls.Add(this.tzxButtonEx9);
+            this.tzxPanel1.Controls.Add(this.buttonXBillsSearch);
+            this.tzxPanel1.Controls.Add(this.tzxButtonEx8);
+            this.tzxPanel1.Controls.Add(this.tzxButtonEx1);
+            this.tzxPanel1.Controls.Add(this.tzxButtonEx7);
+            this.tzxPanel1.Controls.Add(this.tzxButtonEx2);
+            this.tzxPanel1.Controls.Add(this.tzxButtonEx6);
+            this.tzxPanel1.Controls.Add(this.tzxButtonEx3);
+            this.tzxPanel1.Controls.Add(this.tzxButtonEx4);
+            this.tzxPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tzxPanel1.HasBottomBorder = false;
+            this.tzxPanel1.HasLeftBorder = false;
+            this.tzxPanel1.HasRightBorder = false;
+            this.tzxPanel1.HasTopBorder = false;
+            this.tzxPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tzxPanel1.Name = "tzxPanel1";
+            this.tzxPanel1.Size = new System.Drawing.Size(141, 432);
+            this.tzxPanel1.TabIndex = 44;
             // 
             // MenuBarUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Controls.Add(this.tzxButtonEx9);
-            this.Controls.Add(this.tzxButtonEx8);
-            this.Controls.Add(this.tzxButtonEx7);
-            this.Controls.Add(this.tzxButtonEx6);
-            this.Controls.Add(this.tzxButtonEx5);
-            this.Controls.Add(this.tzxButtonEx4);
-            this.Controls.Add(this.tzxButtonEx3);
-            this.Controls.Add(this.tzxButtonEx2);
-            this.Controls.Add(this.tzxButtonEx1);
-            this.Controls.Add(this.buttonXBillsSearch);
+            this.Controls.Add(this.tzxPanel1);
             this.Name = "MenuBarUserControl";
-            this.Size = new System.Drawing.Size(137, 432);
+            this.Size = new System.Drawing.Size(141, 432);
+            this.Load += new System.EventHandler(this.MenuBarUserControl_Load);
+            this.tzxPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -292,5 +312,6 @@
         private TZXControlLibrary.ButtonEx.TzxButtonEx tzxButtonEx7;
         private TZXControlLibrary.ButtonEx.TzxButtonEx tzxButtonEx8;
         private TZXControlLibrary.ButtonEx.TzxButtonEx tzxButtonEx9;
+        private TZXControlLibrary.PanelEx.TzxPanel tzxPanel1;
     }
 }

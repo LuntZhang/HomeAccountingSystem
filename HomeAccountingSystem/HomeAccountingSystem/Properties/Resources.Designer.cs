@@ -463,6 +463,26 @@ namespace HomeAccountingSystem.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 其他 {
+            get {
+                object obj = ResourceManager.GetObject("其他", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 其他_1_ {
+            get {
+                object obj = ResourceManager.GetObject("其他_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 密码 {
             get {
                 object obj = ResourceManager.GetObject("密码", resourceCulture);
@@ -486,6 +506,46 @@ namespace HomeAccountingSystem.Properties {
         internal static System.Drawing.Bitmap 密码_2_ {
             get {
                 object obj = ResourceManager.GetObject("密码_2_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 小工具 {
+            get {
+                object obj = ResourceManager.GetObject("小工具", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 小工具_1_ {
+            get {
+                object obj = ResourceManager.GetObject("小工具_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 工具 {
+            get {
+                object obj = ResourceManager.GetObject("工具", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 工具_1_ {
+            get {
+                object obj = ResourceManager.GetObject("工具_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -573,6 +633,26 @@ namespace HomeAccountingSystem.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 日志 {
+            get {
+                object obj = ResourceManager.GetObject("日志", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 日志_1_ {
+            get {
+                object obj = ResourceManager.GetObject("日志_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 注销 {
             get {
                 object obj = ResourceManager.GetObject("注销", resourceCulture);
@@ -586,6 +666,46 @@ namespace HomeAccountingSystem.Properties {
         internal static System.Drawing.Bitmap 注销1 {
             get {
                 object obj = ResourceManager.GetObject("注销1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 用户管理 {
+            get {
+                object obj = ResourceManager.GetObject("用户管理", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 用户管理_1_ {
+            get {
+                object obj = ResourceManager.GetObject("用户管理_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 用户管理_1_1 {
+            get {
+                object obj = ResourceManager.GetObject("用户管理_1_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 用户管理1 {
+            get {
+                object obj = ResourceManager.GetObject("用户管理1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
