@@ -337,7 +337,9 @@
   <ItemGroup>
     <None Include="Resources\image\main\设置%283%29.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\image\main\退出 .png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image\photo\photo1.png" />
   </ItemGroup>
@@ -424,6 +426,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image\photo\photo29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\注销.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\设置1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\退出1 .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\退出%281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

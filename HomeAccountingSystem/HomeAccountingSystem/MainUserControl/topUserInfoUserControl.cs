@@ -16,6 +16,10 @@ namespace HomeAccountingSystem.MainUserControl
 {
     public partial class TopUserInfoUserControl : UserControl
     {
+        // 定义关闭页面的委托
+        public delegate void CloseMainPage(bool isTuichu);
+        public CloseMainPage delegateCloseMainPage = null;
+
         public TopUserInfoUserControl()
         {
             InitializeComponent();
@@ -53,6 +57,28 @@ namespace HomeAccountingSystem.MainUserControl
             formUserPhoto.ShowDialog();
         }
 
-       
+        // 设置
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // 退出
+        private void btnESC_Click(object sender, EventArgs e)
+        {
+            if(this.delegateCloseMainPage != null)
+            {
+                this.delegateCloseMainPage(true);
+            }
+        }
+
+        // 注销
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            if (this.delegateCloseMainPage != null)
+            {
+                this.delegateCloseMainPage(false);
+            }
+        }
     }
 }

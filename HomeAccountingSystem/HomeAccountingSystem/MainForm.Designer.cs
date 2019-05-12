@@ -270,7 +270,7 @@
             // 
             // tzxPanelTop
             // 
-            this.tzxPanelTop.BackColor = System.Drawing.Color.Transparent;
+            this.tzxPanelTop.BackColor = System.Drawing.Color.White;
             this.tzxPanelTop.BorderColor = System.Drawing.Color.Silver;
             this.tzxPanelTop.BorderSize = 1;
             this.tzxPanelTop.Controls.Add(this.topUserInfoUserControl1);
@@ -288,7 +288,7 @@
             // 
             // topUserInfoUserControl1
             // 
-            this.topUserInfoUserControl1.BackColor = System.Drawing.Color.White;
+            this.topUserInfoUserControl1.BackColor = System.Drawing.Color.Transparent;
             this.topUserInfoUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.topUserInfoUserControl1.Location = new System.Drawing.Point(2, 2);
             this.topUserInfoUserControl1.Margin = new System.Windows.Forms.Padding(0);
@@ -308,6 +308,7 @@
             this.Text = "家庭记账管理系统";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.tzxPanelAll.ResumeLayout(false);
             this.tzxPanelMain.ResumeLayout(false);
             this.tzxPanelMainBottom.ResumeLayout(false);
