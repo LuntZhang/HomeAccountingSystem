@@ -38,7 +38,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.tzxButtonRegister = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.escBtn = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.loginBtn = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.textBoxPwd = new System.Windows.Forms.TextBox();
@@ -48,12 +47,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.linkLabelRegister = new System.Windows.Forms.LinkLabel();
             this.panelLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLogin
             // 
             this.panelLogin.BackgroundImage = global::HomeAccountingSystem.Properties.Resources._9bc7f20ad85f3b1c33e6c180972348ea;
+            this.panelLogin.Controls.Add(this.linkLabelRegister);
             this.panelLogin.Controls.Add(this.panel4);
             this.panelLogin.Controls.Add(this.panel3);
             this.panelLogin.Controls.Add(this.panel1);
@@ -63,7 +64,6 @@
             this.panelLogin.Controls.Add(this.label6);
             this.panelLogin.Controls.Add(this.panel2);
             this.panelLogin.Controls.Add(this.label5);
-            this.panelLogin.Controls.Add(this.tzxButtonRegister);
             this.panelLogin.Controls.Add(this.escBtn);
             this.panelLogin.Controls.Add(this.loginBtn);
             this.panelLogin.Controls.Add(this.textBoxPwd);
@@ -174,28 +174,6 @@
             this.label5.Size = new System.Drawing.Size(128, 16);
             this.label5.TabIndex = 75;
             this.label5.Text = "-账目的报表统计";
-            // 
-            // tzxButtonRegister
-            // 
-            this.tzxButtonRegister.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.tzxButtonRegister.BackColor = System.Drawing.Color.Transparent;
-            this.tzxButtonRegister.BaseColor = System.Drawing.Color.Transparent;
-            this.tzxButtonRegister.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.tzxButtonRegister.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.tzxButtonRegister.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.tzxButtonRegister.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Pixel);
-            this.tzxButtonRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(152)))), ((int)(((byte)(96)))));
-            this.tzxButtonRegister.HasArrow = false;
-            this.tzxButtonRegister.ImageTextSpace = 5;
-            this.tzxButtonRegister.Location = new System.Drawing.Point(815, 186);
-            this.tzxButtonRegister.Name = "tzxButtonRegister";
-            this.tzxButtonRegister.Radius = 5;
-            this.tzxButtonRegister.Size = new System.Drawing.Size(77, 34);
-            this.tzxButtonRegister.TabIndex = 73;
-            this.tzxButtonRegister.Text = "点击注册";
-            this.tzxButtonRegister.Tip = "";
-            this.tzxButtonRegister.TipColor = System.Drawing.Color.Red;
-            this.tzxButtonRegister.UseVisualStyleBackColor = false;
             // 
             // escBtn
             // 
@@ -323,6 +301,20 @@
             this.label2.TabIndex = 64;
             this.label2.Text = "账号：";
             // 
+            // linkLabelRegister
+            // 
+            this.linkLabelRegister.AutoSize = true;
+            this.linkLabelRegister.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabelRegister.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Pixel);
+            this.linkLabelRegister.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(152)))), ((int)(((byte)(96)))));
+            this.linkLabelRegister.Location = new System.Drawing.Point(823, 195);
+            this.linkLabelRegister.Name = "linkLabelRegister";
+            this.linkLabelRegister.Size = new System.Drawing.Size(69, 20);
+            this.linkLabelRegister.TabIndex = 81;
+            this.linkLabelRegister.TabStop = true;
+            this.linkLabelRegister.Text = "点击注册";
+            this.linkLabelRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelRegister_LinkClicked);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -351,7 +343,6 @@
         private System.Windows.Forms.TextBox textBoxAccount;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton escBtn;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton loginBtn;
-        private TZXControlLibrary.ButtonEx.TzxRoundedButton tzxButtonRegister;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -361,6 +352,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.LinkLabel linkLabelRegister;
     }
 }
 

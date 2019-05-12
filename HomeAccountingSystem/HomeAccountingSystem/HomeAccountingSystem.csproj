@@ -71,6 +71,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUserInfo\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUserInfo\RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AboutUserInfo\UserPhotoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLServerHelper.cs" />
+    <EmbeddedResource Include="AboutUserInfo\RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AboutUserInfo\UserPhotoForm.resx">
       <DependentUpon>UserPhotoForm.cs</DependentUpon>
     </EmbeddedResource>

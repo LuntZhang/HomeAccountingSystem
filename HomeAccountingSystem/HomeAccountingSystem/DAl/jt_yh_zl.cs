@@ -54,11 +54,10 @@ namespace HomeAccountingSystem.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into jt_yh_zl(");
-			strSql.Append("pk,v_yh_no,v_yh_name,v_yh_pwd,i_yh_type,v_phone,t_birthday_gregorian,t_birthday_lunar,t_create_time,i_delete,v_photo,v_age,v_photo_path)");
+			strSql.Append("v_yh_no,v_yh_name,v_yh_pwd,i_yh_type,v_phone,t_birthday_gregorian,t_birthday_lunar,t_create_time,i_delete,v_photo,v_age,v_photo_path)");
 			strSql.Append(" values (");
-			strSql.Append("@pk,@v_yh_no,@v_yh_name,@v_yh_pwd,@i_yh_type,@v_phone,@t_birthday_gregorian,@t_birthday_lunar,@t_create_time,@i_delete,@v_photo,@v_age,@v_photo_path)");
+			strSql.Append("@v_yh_no,@v_yh_name,@v_yh_pwd,@i_yh_type,@v_phone,@t_birthday_gregorian,@t_birthday_lunar,@t_create_time,@i_delete,@v_photo,@v_age,@v_photo_path)");
 			SqlParameter[] parameters = {
-					new SqlParameter("@pk", SqlDbType.Int,4),
 					new SqlParameter("@v_yh_no", SqlDbType.VarChar,256),
 					new SqlParameter("@v_yh_name", SqlDbType.VarChar,256),
 					new SqlParameter("@v_yh_pwd", SqlDbType.VarChar,256),
@@ -72,19 +71,18 @@ namespace HomeAccountingSystem.DAL
 					new SqlParameter("@v_age", SqlDbType.VarChar,256), 
                     new SqlParameter("@v_photo_path", SqlDbType.VarChar,256)
             };
-			parameters[0].Value = model.pk;
-			parameters[1].Value = model.v_yh_no;
-			parameters[2].Value = model.v_yh_name;
-			parameters[3].Value = model.v_yh_pwd;
-			parameters[4].Value = model.i_yh_type;
-			parameters[5].Value = model.v_phone;
-			parameters[6].Value = model.t_birthday_gregorian;
-			parameters[7].Value = model.t_birthday_lunar;
-			parameters[8].Value = model.t_create_time;
-			parameters[9].Value = model.i_delete;
-			parameters[10].Value = model.v_photo;
-			parameters[11].Value = model.v_age; 
-            parameters[12].Value = model.v_photo_path;
+			parameters[0].Value = model.v_yh_no;
+			parameters[1].Value = model.v_yh_name;
+			parameters[2].Value = model.v_yh_pwd;
+			parameters[3].Value = model.i_yh_type;
+			parameters[4].Value = model.v_phone;
+			parameters[5].Value = model.t_birthday_gregorian;
+			parameters[6].Value = model.t_birthday_lunar;
+			parameters[7].Value = model.t_create_time;
+			parameters[8].Value = model.i_delete;
+			parameters[9].Value = model.v_photo;
+			parameters[10].Value = model.v_age; 
+            parameters[11].Value = model.v_photo_path;
             int rows=SQLServerHelper.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
 			{

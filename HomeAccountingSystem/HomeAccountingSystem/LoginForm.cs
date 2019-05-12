@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HomeAccountingSystem.AboutUserInfo;
 using HomeAccountingSystem.BLL;
 
 namespace HomeAccountingSystem
@@ -45,6 +46,12 @@ namespace HomeAccountingSystem
                 formMain.ShowDialog();
             }
 
+        }
+
+        private void linkLabelRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RegisterForm formRegister = new RegisterForm();
+            formRegister.ShowDialog();
         }
     }
 }
