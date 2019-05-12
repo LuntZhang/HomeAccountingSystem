@@ -27,6 +27,7 @@ namespace HomeAccountingSystem.MainUserControl
         {
             m_yhzlModel = LoginAccountManager.Instance.getLoginUserModel();
             this.labelUserName.Text = m_yhzlModel.v_yh_name;
+            this.labelUserName.Text = string.Format("{0}，你好！", m_yhzlModel.v_yh_name);
             // 转换图片格式
             this.loadPhoto();
         }
@@ -34,36 +35,17 @@ namespace HomeAccountingSystem.MainUserControl
         // 转换图片格式
         public void loadPhoto()
         {
-            if(m_yhzlModel.v_photo==null)
+            // 转换图片格式
+            byte[] bytFile=UserInfoManager.Instance.getPhoto(m_yhzlModel.pk);
+            if (bytFile == null)
             {
                 return;
             }
-            // 转换图片格式
-            MemoryStream ms = new MemoryStream(m_yhzlModel.v_photo);
-            Image ReturnImage = Image.FromStream(ms);
+            MemoryStream ms = new MemoryStream(bytFile, 0, bytFile.Length); Image ReturnImage = Image.FromStream(ms);
             this.pictureBoxPhoto.Image = ReturnImage;
         }
 
-        private void tzxButtonRegister_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog();
-
-            ofd.Title = "选择要上传的图片";
-
-            ofd.Filter = "All Files(*.*)|*.*|位图(*.bmp)|*.bmp|JPEG(*.jpg)|*.jpg";
-
-            ofd.ShowDialog();
-
-            if (!File.Exists(ofd.FileName))
-            {
-                MessageBox.Show("照片为空");
-                return;
-            }
-
-
-
-        }
-
+        // 更改头像按钮
         private void linkLabelChangePhoto_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             UserPhotoForm formUserPhoto = new UserPhotoForm();

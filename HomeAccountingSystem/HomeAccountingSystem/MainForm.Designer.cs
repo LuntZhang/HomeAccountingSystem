@@ -33,19 +33,19 @@
             this.tzxPanelMain = new TZXControlLibrary.PanelEx.TzxPanel();
             this.tzxPanelMainBottom = new TZXControlLibrary.PanelEx.TzxPanel();
             this.tzxPanelRightDown = new TZXControlLibrary.PanelEx.TzxPanel();
+            this.compareUserControl1 = new HomeAccountingSystem.MainUserControl.CompareUserControl();
+            this.budgetUserControl1 = new HomeAccountingSystem.MainUserControl.BudgetUserControl();
             this.tzxPanelLeftDown = new TZXControlLibrary.PanelEx.TzxPanel();
             this.tzxPanelMainTop = new TZXControlLibrary.PanelEx.TzxPanel();
             this.tzxPanelRightUp = new TZXControlLibrary.PanelEx.TzxPanel();
-            this.tzxPanelLeftUp = new TZXControlLibrary.PanelEx.TzxPanel();
-            this.tzxPanelLeft = new TZXControlLibrary.PanelEx.TzxPanel();
-            this.tzxPanelBottom = new TZXControlLibrary.PanelEx.TzxPanel();
-            this.tzxPanelTop = new TZXControlLibrary.PanelEx.TzxPanel();
-            this.compareUserControl1 = new HomeAccountingSystem.MainUserControl.CompareUserControl();
-            this.budgetUserControl1 = new HomeAccountingSystem.MainUserControl.BudgetUserControl();
             this.controlChartUserControl1 = new HomeAccountingSystem.MainUserControl.ControlChartUserControl();
+            this.tzxPanelLeftUp = new TZXControlLibrary.PanelEx.TzxPanel();
             this.incomeAndExpensesUserControl1 = new HomeAccountingSystem.MainUserControl.IncomeAndExpensesUserControl();
+            this.tzxPanelLeft = new TZXControlLibrary.PanelEx.TzxPanel();
             this.menuBarUserControl1 = new HomeAccountingSystem.MainUserControl.MenuBarUserControl();
+            this.tzxPanelBottom = new TZXControlLibrary.PanelEx.TzxPanel();
             this.bottomUserControl1 = new HomeAccountingSystem.MainUserControl.BottomUserControl();
+            this.tzxPanelTop = new TZXControlLibrary.PanelEx.TzxPanel();
             this.topUserInfoUserControl1 = new HomeAccountingSystem.MainUserControl.TopUserInfoUserControl();
             this.tzxPanelAll.SuspendLayout();
             this.tzxPanelMain.SuspendLayout();
@@ -125,6 +125,24 @@
             this.tzxPanelRightDown.Size = new System.Drawing.Size(578, 288);
             this.tzxPanelRightDown.TabIndex = 1;
             // 
+            // compareUserControl1
+            // 
+            this.compareUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.compareUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.compareUserControl1.Location = new System.Drawing.Point(0, 0);
+            this.compareUserControl1.Name = "compareUserControl1";
+            this.compareUserControl1.Size = new System.Drawing.Size(578, 288);
+            this.compareUserControl1.TabIndex = 1;
+            // 
+            // budgetUserControl1
+            // 
+            this.budgetUserControl1.BackColor = System.Drawing.Color.Yellow;
+            this.budgetUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.budgetUserControl1.Location = new System.Drawing.Point(0, 0);
+            this.budgetUserControl1.Name = "budgetUserControl1";
+            this.budgetUserControl1.Size = new System.Drawing.Size(578, 288);
+            this.budgetUserControl1.TabIndex = 0;
+            // 
             // tzxPanelLeftDown
             // 
             this.tzxPanelLeftDown.BorderColor = System.Drawing.Color.Empty;
@@ -170,6 +188,15 @@
             this.tzxPanelRightUp.Size = new System.Drawing.Size(578, 250);
             this.tzxPanelRightUp.TabIndex = 2;
             // 
+            // controlChartUserControl1
+            // 
+            this.controlChartUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.controlChartUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controlChartUserControl1.Location = new System.Drawing.Point(0, 0);
+            this.controlChartUserControl1.Name = "controlChartUserControl1";
+            this.controlChartUserControl1.Size = new System.Drawing.Size(578, 250);
+            this.controlChartUserControl1.TabIndex = 0;
+            // 
             // tzxPanelLeftUp
             // 
             this.tzxPanelLeftUp.BorderColor = System.Drawing.Color.Empty;
@@ -184,6 +211,15 @@
             this.tzxPanelLeftUp.Name = "tzxPanelLeftUp";
             this.tzxPanelLeftUp.Size = new System.Drawing.Size(562, 250);
             this.tzxPanelLeftUp.TabIndex = 0;
+            // 
+            // incomeAndExpensesUserControl1
+            // 
+            this.incomeAndExpensesUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.incomeAndExpensesUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.incomeAndExpensesUserControl1.Location = new System.Drawing.Point(0, 0);
+            this.incomeAndExpensesUserControl1.Name = "incomeAndExpensesUserControl1";
+            this.incomeAndExpensesUserControl1.Size = new System.Drawing.Size(562, 250);
+            this.incomeAndExpensesUserControl1.TabIndex = 0;
             // 
             // tzxPanelLeft
             // 
@@ -200,6 +236,15 @@
             this.tzxPanelLeft.Size = new System.Drawing.Size(144, 538);
             this.tzxPanelLeft.TabIndex = 1;
             // 
+            // menuBarUserControl1
+            // 
+            this.menuBarUserControl1.BackColor = System.Drawing.Color.White;
+            this.menuBarUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.menuBarUserControl1.Location = new System.Drawing.Point(0, 0);
+            this.menuBarUserControl1.Name = "menuBarUserControl1";
+            this.menuBarUserControl1.Size = new System.Drawing.Size(144, 538);
+            this.menuBarUserControl1.TabIndex = 0;
+            // 
             // tzxPanelBottom
             // 
             this.tzxPanelBottom.BorderColor = System.Drawing.Color.Empty;
@@ -214,6 +259,14 @@
             this.tzxPanelBottom.Name = "tzxPanelBottom";
             this.tzxPanelBottom.Size = new System.Drawing.Size(1284, 28);
             this.tzxPanelBottom.TabIndex = 2;
+            // 
+            // bottomUserControl1
+            // 
+            this.bottomUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bottomUserControl1.Location = new System.Drawing.Point(0, 0);
+            this.bottomUserControl1.Name = "bottomUserControl1";
+            this.bottomUserControl1.Size = new System.Drawing.Size(1284, 28);
+            this.bottomUserControl1.TabIndex = 0;
             // 
             // tzxPanelTop
             // 
@@ -232,59 +285,6 @@
             this.tzxPanelTop.Padding = new System.Windows.Forms.Padding(2);
             this.tzxPanelTop.Size = new System.Drawing.Size(1284, 75);
             this.tzxPanelTop.TabIndex = 0;
-            // 
-            // compareUserControl1
-            // 
-            this.compareUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.compareUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.compareUserControl1.Location = new System.Drawing.Point(0, 0);
-            this.compareUserControl1.Name = "compareUserControl1";
-            this.compareUserControl1.Size = new System.Drawing.Size(578, 288);
-            this.compareUserControl1.TabIndex = 1;
-            // 
-            // budgetUserControl1
-            // 
-            this.budgetUserControl1.BackColor = System.Drawing.Color.Yellow;
-            this.budgetUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.budgetUserControl1.Location = new System.Drawing.Point(0, 0);
-            this.budgetUserControl1.Name = "budgetUserControl1";
-            this.budgetUserControl1.Size = new System.Drawing.Size(578, 288);
-            this.budgetUserControl1.TabIndex = 0;
-            // 
-            // controlChartUserControl1
-            // 
-            this.controlChartUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.controlChartUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.controlChartUserControl1.Location = new System.Drawing.Point(0, 0);
-            this.controlChartUserControl1.Name = "controlChartUserControl1";
-            this.controlChartUserControl1.Size = new System.Drawing.Size(578, 250);
-            this.controlChartUserControl1.TabIndex = 0;
-            // 
-            // incomeAndExpensesUserControl1
-            // 
-            this.incomeAndExpensesUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.incomeAndExpensesUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.incomeAndExpensesUserControl1.Location = new System.Drawing.Point(0, 0);
-            this.incomeAndExpensesUserControl1.Name = "incomeAndExpensesUserControl1";
-            this.incomeAndExpensesUserControl1.Size = new System.Drawing.Size(562, 250);
-            this.incomeAndExpensesUserControl1.TabIndex = 0;
-            // 
-            // menuBarUserControl1
-            // 
-            this.menuBarUserControl1.BackColor = System.Drawing.Color.White;
-            this.menuBarUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.menuBarUserControl1.Location = new System.Drawing.Point(0, 0);
-            this.menuBarUserControl1.Name = "menuBarUserControl1";
-            this.menuBarUserControl1.Size = new System.Drawing.Size(144, 538);
-            this.menuBarUserControl1.TabIndex = 0;
-            // 
-            // bottomUserControl1
-            // 
-            this.bottomUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bottomUserControl1.Location = new System.Drawing.Point(0, 0);
-            this.bottomUserControl1.Name = "bottomUserControl1";
-            this.bottomUserControl1.Size = new System.Drawing.Size(1284, 28);
-            this.bottomUserControl1.TabIndex = 0;
             // 
             // topUserInfoUserControl1
             // 
@@ -305,7 +305,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "主页面";
+            this.Text = "家庭记账管理系统";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.tzxPanelAll.ResumeLayout(false);

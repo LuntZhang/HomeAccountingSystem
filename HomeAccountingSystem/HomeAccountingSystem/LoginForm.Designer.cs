@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panelLogin = new System.Windows.Forms.Panel();
+            this.linkLabelRegister = new System.Windows.Forms.LinkLabel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -47,7 +49,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.linkLabelRegister = new System.Windows.Forms.LinkLabel();
             this.panelLogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,6 +79,22 @@
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(977, 550);
             this.panelLogin.TabIndex = 0;
+            // 
+            // linkLabelRegister
+            // 
+            this.linkLabelRegister.ActiveLinkColor = System.Drawing.Color.Blue;
+            this.linkLabelRegister.AutoSize = true;
+            this.linkLabelRegister.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabelRegister.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Pixel);
+            this.linkLabelRegister.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(152)))), ((int)(((byte)(96)))));
+            this.linkLabelRegister.Location = new System.Drawing.Point(823, 195);
+            this.linkLabelRegister.Name = "linkLabelRegister";
+            this.linkLabelRegister.Size = new System.Drawing.Size(69, 20);
+            this.linkLabelRegister.TabIndex = 81;
+            this.linkLabelRegister.TabStop = true;
+            this.linkLabelRegister.Text = "点击注册";
+            this.linkLabelRegister.VisitedLinkColor = System.Drawing.Color.Blue;
+            this.linkLabelRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelRegister_LinkClicked);
             // 
             // panel4
             // 
@@ -301,20 +318,6 @@
             this.label2.TabIndex = 64;
             this.label2.Text = "账号：";
             // 
-            // linkLabelRegister
-            // 
-            this.linkLabelRegister.AutoSize = true;
-            this.linkLabelRegister.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabelRegister.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Pixel);
-            this.linkLabelRegister.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(152)))), ((int)(((byte)(96)))));
-            this.linkLabelRegister.Location = new System.Drawing.Point(823, 195);
-            this.linkLabelRegister.Name = "linkLabelRegister";
-            this.linkLabelRegister.Size = new System.Drawing.Size(69, 20);
-            this.linkLabelRegister.TabIndex = 81;
-            this.linkLabelRegister.TabStop = true;
-            this.linkLabelRegister.Text = "点击注册";
-            this.linkLabelRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelRegister_LinkClicked);
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -322,6 +325,7 @@
             this.ClientSize = new System.Drawing.Size(977, 550);
             this.Controls.Add(this.panelLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "登录";

@@ -199,6 +199,29 @@ namespace HomeAccountingSystem.BLL
                 return true;
             }
         }
+
+        public byte[] getPhoto(int pk)
+        {
+            byte[] bytFile = null;
+            string strSql = "";
+            strSql = string.Format(
+                "select v_photo from jt_yh_zl where pk={0}",pk
+                );
+            DataTable dt = SQLServerHelper.GetTable(strSql);
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                foreach (DataRow item in dt.Rows)
+                {
+                    string strPhoto = item["v_photo"].ToString().Trim();
+                    if (!string.IsNullOrEmpty(strPhoto))
+                    {
+                        bytFile = (Byte[])item["v_photo"];
+                    }
+                    
+                }
+            }
+            return bytFile;
+        }
         #endregion  ExtensionMethod
     }
 }
