@@ -55,9 +55,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar2, Version=11.7.0.6, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Printing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -89,6 +99,24 @@
     </Compile>
     <Compile Include="BaseInformation\BaseInfoForm.Designer.cs">
       <DependentUpon>BaseInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInformation\ExpendType\ExpendTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInformation\ExpendType\ExpendTypeForm.Designer.cs">
+      <DependentUpon>ExpendTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInformation\IncomeType\IncomeTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInformation\IncomeType\IncomeTypeForm.Designer.cs">
+      <DependentUpon>IncomeTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInformation\PaymentType\PaymentTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInformation\PaymentType\PaymentTypeForm.Designer.cs">
+      <DependentUpon>PaymentTypeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BLL\jt_jc_sz.cs" />
     <Compile Include="BLL\jt_jc_zm.cs" />
@@ -180,6 +208,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLServerHelper.cs" />
+    <Compile Include="Utility\BaseSettingparameter.cs" />
     <EmbeddedResource Include="AboutUserInfo\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +217,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BaseInformation\BaseInfoForm.resx">
       <DependentUpon>BaseInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInformation\ExpendType\ExpendTypeForm.resx">
+      <DependentUpon>ExpendTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInformation\IncomeType\IncomeTypeForm.resx">
+      <DependentUpon>IncomeTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInformation\PaymentType\PaymentTypeForm.resx">
+      <DependentUpon>PaymentTypeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -216,6 +254,7 @@
     <EmbeddedResource Include="MainUserControl\TopUserInfoUserControl.resx">
       <DependentUpon>TopUserInfoUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -734,6 +773,190 @@
   <ItemGroup>
     <None Include="Resources\image\common\ToolStrip_应用.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\保存.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\补打账单.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\补卡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\查看.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\充积分.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\充值.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\打印.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\大类.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\单位.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\导出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\读卡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\短信.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\兑换礼品.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\发卡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\发送短信.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\复制.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\挂失.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\行政部门.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\积分转储值.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\减积分.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\今日单据.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\今日流水.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\类型.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\离职.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\礼品资料.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\密码.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\默认头像.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\批量新增.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\启动.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\启用.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\区域设置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\取款.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\确定.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\日志清除.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\删除.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\上一条.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\设置价格.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\审核.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\收银分组.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\刷新.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\替换菜品.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\停用.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\退出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\退卡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\退现.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\下一条.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\详情.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\小类.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\新增.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\修改.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\余额调整.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\止付.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\指定时间.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\制卡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\重置密码.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\桌类设置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\昨日.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\昨日单据.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\昨日流水.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\common\作废.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
