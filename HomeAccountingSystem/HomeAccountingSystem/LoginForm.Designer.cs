@@ -242,6 +242,7 @@
             this.textBoxPwd.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.textBoxPwd.Location = new System.Drawing.Point(712, 297);
             this.textBoxPwd.Name = "textBoxPwd";
+            this.textBoxPwd.PasswordChar = '*';
             this.textBoxPwd.Size = new System.Drawing.Size(180, 29);
             this.textBoxPwd.TabIndex = 68;
             this.textBoxPwd.Text = "000";

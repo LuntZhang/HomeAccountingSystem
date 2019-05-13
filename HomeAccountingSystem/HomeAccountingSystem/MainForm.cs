@@ -20,6 +20,8 @@ namespace HomeAccountingSystem
         }
         // 退出系统
         public bool m_isTuichu = true;
+        // 退出系统是否询问
+        public bool m_isInquiry = true;
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -28,6 +30,7 @@ namespace HomeAccountingSystem
 
         private void delegateCloseMainPage(bool isTuichu)
         {
+            m_isInquiry = Program.m_MainForm.m_isInquiry;
             m_isTuichu = isTuichu;
             this.Close();
         }
@@ -40,6 +43,7 @@ namespace HomeAccountingSystem
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            
             if (!this.formMainClose())
             {
                 e.Cancel = true;
@@ -64,14 +68,26 @@ namespace HomeAccountingSystem
                 }
             }
             else
-            {
-                if (MessageBox.Show("确定要注销系统？", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {   
+                // 退出是否询问
+                if (this.m_isInquiry == true)
+                {
+                    if (MessageBox.Show("确定要注销系统？", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                    {
+                        // 隐藏的登录页面显示
+                        Program.m_LoginForm.Show();
+
+                        isClosePage = true;
+                    }
+                }
+                else
                 {
                     // 隐藏的登录页面显示
                     Program.m_LoginForm.Show();
 
                     isClosePage = true;
                 }
+                    
             }
             return isClosePage;
         }

@@ -80,5 +80,22 @@ namespace HomeAccountingSystem.MainUserControl
                 this.delegateCloseMainPage(false);
             }
         }
+
+        private void btnChangePassword_Click(object sender, EventArgs e)
+        {
+            ChangePasswordForm formChangePassword = new ChangePasswordForm();
+            formChangePassword.ShowDialog();
+            // 修改成功返回登录页面
+            if(formChangePassword.m_isClosePage==true)
+            {
+                // 不询问直接退出到注册页面
+                Program.m_MainForm.m_isInquiry = false;
+
+                if (this.delegateCloseMainPage != null)
+                {
+                    this.delegateCloseMainPage(false);
+                }
+            }
+        }
     }
 }

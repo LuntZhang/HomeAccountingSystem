@@ -36,6 +36,7 @@
             this.btnLogout = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.btnESC = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.btnSetting = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.btnChangePassword = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.panelPhoto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
             this.tzxPanel1.SuspendLayout();
@@ -90,6 +91,7 @@
             // 
             this.tzxPanel1.BorderColor = System.Drawing.Color.Empty;
             this.tzxPanel1.BorderSize = 0;
+            this.tzxPanel1.Controls.Add(this.btnChangePassword);
             this.tzxPanel1.Controls.Add(this.btnLogout);
             this.tzxPanel1.Controls.Add(this.btnESC);
             this.tzxPanel1.Controls.Add(this.btnSetting);
@@ -162,15 +164,38 @@
             this.btnSetting.HasArrow = false;
             this.btnSetting.Image = global::HomeAccountingSystem.Properties.Resources.设置1;
             this.btnSetting.ImageTextSpace = 5;
-            this.btnSetting.Location = new System.Drawing.Point(136, 6);
+            this.btnSetting.Location = new System.Drawing.Point(113, 6);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Radius = 5;
-            this.btnSetting.Size = new System.Drawing.Size(61, 25);
+            this.btnSetting.Size = new System.Drawing.Size(84, 25);
             this.btnSetting.TabIndex = 86;
-            this.btnSetting.Text = "设置";
+            this.btnSetting.Text = "基础设置";
             this.btnSetting.Tip = "";
             this.btnSetting.TipColor = System.Drawing.Color.Red;
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
+            // 
+            // btnChangePassword
+            // 
+            this.btnChangePassword.AccessibleName = "2-1100";
+            this.btnChangePassword.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnChangePassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(152)))), ((int)(((byte)(96)))));
+            this.btnChangePassword.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(152)))), ((int)(((byte)(96)))));
+            this.btnChangePassword.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(34)))));
+            this.btnChangePassword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(34)))));
+            this.btnChangePassword.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnChangePassword.ForeColor = System.Drawing.Color.White;
+            this.btnChangePassword.HasArrow = false;
+            this.btnChangePassword.Image = global::HomeAccountingSystem.Properties.Resources.重置密码;
+            this.btnChangePassword.ImageTextSpace = 5;
+            this.btnChangePassword.Location = new System.Drawing.Point(23, 6);
+            this.btnChangePassword.Name = "btnChangePassword";
+            this.btnChangePassword.Radius = 5;
+            this.btnChangePassword.Size = new System.Drawing.Size(84, 25);
+            this.btnChangePassword.TabIndex = 87;
+            this.btnChangePassword.Text = "修改密码";
+            this.btnChangePassword.Tip = "";
+            this.btnChangePassword.TipColor = System.Drawing.Color.Red;
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
             // TopUserInfoUserControl
             // 
@@ -202,5 +227,6 @@
         private TZXControlLibrary.ButtonEx.TzxRoundedButton btnLogout;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton btnSetting;
         private TZXControlLibrary.PanelEx.TzxPanel tzxPanel1;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnChangePassword;
     }
 }
