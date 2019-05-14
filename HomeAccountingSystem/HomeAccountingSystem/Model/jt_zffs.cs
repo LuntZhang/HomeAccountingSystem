@@ -23,9 +23,9 @@ namespace HomeAccountingSystem.Model
 		private int _pk;
 		private string _v_zffs_no;
 		private string _v_zffs_name;
-		private DateTime? _t_create_time= DateTime.Now;
-		private int? _i_delete;
-		private int? _i_zffs_lx=0;
+		private DateTime _t_create_time= DateTime.Now;
+		private int _i_delete;
+		private int _i_zffs_lx=0;
 		/// <summary>
 		/// 
 		/// </summary>
@@ -53,7 +53,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 创建时间
 		/// </summary>
-		public DateTime? t_create_time
+		public DateTime t_create_time
 		{
 			set{ _t_create_time=value;}
 			get{return _t_create_time;}
@@ -61,7 +61,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 是否删除
 		/// </summary>
-		public int? i_delete
+		public int i_delete
 		{
 			set{ _i_delete=value;}
 			get{return _i_delete;}
@@ -69,7 +69,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 支付类型 枚举：0：现金；1：微信；2：支付宝；3：银行卡
 		/// </summary>
-		public int? i_zffs_lx
+		public int i_zffs_lx
 		{
 			set{ _i_zffs_lx=value;}
 			get{return _i_zffs_lx;}

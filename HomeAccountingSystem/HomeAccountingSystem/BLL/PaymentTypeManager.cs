@@ -17,10 +17,18 @@ namespace HomeAccountingSystem.BLL
 	/// <summary>
 	/// 支付方式表
 	/// </summary>
-	public partial class jt_zffs
+	public partial class PaymentTypeManager
 	{
-		private readonly HomeAccountingSystem.DAL.jt_zffs dal=new HomeAccountingSystem.DAL.jt_zffs();
-		public jt_zffs()
+        #region Instance
+        private static PaymentTypeManager instance = new PaymentTypeManager();
+        public static PaymentTypeManager Instance
+        {
+            get { return PaymentTypeManager.instance; }
+        }
+
+        #endregion
+        private readonly HomeAccountingSystem.DAL.jt_zffs dal=new HomeAccountingSystem.DAL.jt_zffs();
+		public PaymentTypeManager()
 		{}
 		#region  BasicMethod
 
@@ -61,7 +69,6 @@ namespace HomeAccountingSystem.BLL
 		/// </summary>
 		public bool Delete(int pk)
 		{
-			
 			return dal.Delete(pk);
 		}
 
@@ -70,7 +77,6 @@ namespace HomeAccountingSystem.BLL
 		/// </summary>
 		public HomeAccountingSystem.Model.jt_zffs GetModel(int pk)
 		{
-			
 			return dal.GetModel(pk);
 		}
                      
@@ -151,6 +157,48 @@ namespace HomeAccountingSystem.BLL
 		#endregion  BasicMethod
 		#region  ExtensionMethod
 
+        public DataTable PaymentTypeDataList()
+        {
+            DataTable dataTable = null;
+            DataSet dataSet = this.GetAllList();
+            if (dataSet == null || dataSet.Tables.Count == 0)
+            {
+                return null;
+            }
+            dataTable = dataSet.Tables[0];
+            dataTable.Columns.Add("row", typeof(string));
+            dataTable.Columns.Add("v_zffs_lx", typeof(string));
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                int index = 0;
+                foreach (DataRow item in dataTable.Rows)
+                {
+                    index++;
+                    item["row"] = index;
+
+                    switch (Convert.ToInt32(item["i_zffs_lx"].ToString()))
+                    {
+                        case 0:
+                            item["v_zffs_lx"] = "现金";
+                            break;
+                        case 1:
+                            item["v_zffs_lx"] = "微信";
+                            break;
+                        case 2:
+                            item["v_zffs_lx"] = "支付宝";
+                            break;
+                        case 3:
+                            item["v_zffs_lx"] = "银行卡";
+                            break;
+                        default:
+                            break;
+                    }
+
+                }
+                
+            }
+            return dataTable;
+        }
 		#endregion  ExtensionMethod
 	}
 }

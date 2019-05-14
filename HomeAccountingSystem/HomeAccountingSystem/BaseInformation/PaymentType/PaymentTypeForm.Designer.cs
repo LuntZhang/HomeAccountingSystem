@@ -36,8 +36,8 @@
             this.buttonXAdd = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.panelEx_top = new DevComponents.DotNetBar.PanelEx();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
-            this.gridProductList = new DevExpress.XtraGrid.GridControl();
-            this.gridViewProductList = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridControlDataList = new DevExpress.XtraGrid.GridControl();
+            this.gridViewDataList = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.RowIndex = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ddNo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TakeoutType = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -48,8 +48,8 @@
             this.VStatus = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelEx_top.SuspendLayout();
             this.panelEx1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridProductList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewProductList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlDataList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewDataList)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonXExit
@@ -68,6 +68,7 @@
             this.buttonXExit.Size = new System.Drawing.Size(80, 40);
             this.buttonXExit.TabIndex = 8;
             this.buttonXExit.Text = "退出";
+            this.buttonXExit.Click += new System.EventHandler(this.buttonXExit_Click);
             // 
             // buttonXRefresh
             // 
@@ -84,6 +85,7 @@
             this.buttonXRefresh.Size = new System.Drawing.Size(80, 40);
             this.buttonXRefresh.TabIndex = 6;
             this.buttonXRefresh.Text = "刷新";
+            this.buttonXRefresh.Click += new System.EventHandler(this.buttonXRefresh_Click);
             // 
             // buttonXModify
             // 
@@ -100,6 +102,7 @@
             this.buttonXModify.Size = new System.Drawing.Size(80, 40);
             this.buttonXModify.TabIndex = 4;
             this.buttonXModify.Text = "修改";
+            this.buttonXModify.Click += new System.EventHandler(this.buttonXModify_Click);
             // 
             // buttonXDelete
             // 
@@ -116,6 +119,7 @@
             this.buttonXDelete.Size = new System.Drawing.Size(80, 40);
             this.buttonXDelete.TabIndex = 3;
             this.buttonXDelete.Text = "删除";
+            this.buttonXDelete.Click += new System.EventHandler(this.buttonXDelete_Click);
             // 
             // buttonXAdd
             // 
@@ -132,6 +136,7 @@
             this.buttonXAdd.Size = new System.Drawing.Size(80, 40);
             this.buttonXAdd.TabIndex = 0;
             this.buttonXAdd.Text = "新增";
+            this.buttonXAdd.Click += new System.EventHandler(this.buttonXAdd_Click);
             // 
             // panelEx_top
             // 
@@ -161,7 +166,7 @@
             // 
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx1.Controls.Add(this.gridProductList);
+            this.panelEx1.Controls.Add(this.gridControlDataList);
             this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -177,54 +182,55 @@
             this.panelEx1.Style.GradientAngle = 90;
             this.panelEx1.TabIndex = 9;
             // 
-            // gridProductList
+            // gridControlDataList
             // 
-            this.gridProductList.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridProductList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridProductList.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gridProductList.Font = new System.Drawing.Font("微软雅黑", 11.5F);
-            this.gridProductList.Location = new System.Drawing.Point(0, 0);
-            this.gridProductList.LookAndFeel.SkinName = "Office 2010 Silver";
-            this.gridProductList.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.gridProductList.MainView = this.gridViewProductList;
-            this.gridProductList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gridProductList.Name = "gridProductList";
-            this.gridProductList.Size = new System.Drawing.Size(564, 350);
-            this.gridProductList.TabIndex = 36;
-            this.gridProductList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridViewProductList});
+            this.gridControlDataList.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridControlDataList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControlDataList.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gridControlDataList.Font = new System.Drawing.Font("微软雅黑", 11.5F);
+            this.gridControlDataList.Location = new System.Drawing.Point(0, 0);
+            this.gridControlDataList.LookAndFeel.SkinName = "Office 2010 Silver";
+            this.gridControlDataList.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.gridControlDataList.MainView = this.gridViewDataList;
+            this.gridControlDataList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gridControlDataList.Name = "gridControlDataList";
+            this.gridControlDataList.Size = new System.Drawing.Size(564, 350);
+            this.gridControlDataList.TabIndex = 36;
+            this.gridControlDataList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewDataList});
+            this.gridControlDataList.DoubleClick += new System.EventHandler(this.gridControlDataList_DoubleClick);
             // 
-            // gridViewProductList
+            // gridViewDataList
             // 
-            this.gridViewProductList.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(153)))), ((int)(((byte)(231)))));
-            this.gridViewProductList.Appearance.FocusedRow.Font = new System.Drawing.Font("微软雅黑", 10.5F);
-            this.gridViewProductList.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
-            this.gridViewProductList.Appearance.FocusedRow.Options.UseBackColor = true;
-            this.gridViewProductList.Appearance.FocusedRow.Options.UseFont = true;
-            this.gridViewProductList.Appearance.FocusedRow.Options.UseForeColor = true;
-            this.gridViewProductList.Appearance.FooterPanel.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Bold);
-            this.gridViewProductList.Appearance.FooterPanel.Options.UseFont = true;
-            this.gridViewProductList.Appearance.GroupFooter.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Bold);
-            this.gridViewProductList.Appearance.GroupFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.gridViewProductList.Appearance.GroupFooter.Options.UseFont = true;
-            this.gridViewProductList.Appearance.GroupFooter.Options.UseForeColor = true;
-            this.gridViewProductList.Appearance.GroupPanel.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold);
-            this.gridViewProductList.Appearance.GroupPanel.Options.UseFont = true;
-            this.gridViewProductList.Appearance.GroupPanel.Options.UseTextOptions = true;
-            this.gridViewProductList.Appearance.GroupPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridViewProductList.Appearance.GroupRow.Font = new System.Drawing.Font("微软雅黑", 11.5F);
-            this.gridViewProductList.Appearance.GroupRow.Options.UseFont = true;
-            this.gridViewProductList.Appearance.HeaderPanel.Font = new System.Drawing.Font("微软雅黑", 10.5F);
-            this.gridViewProductList.Appearance.HeaderPanel.Options.UseFont = true;
-            this.gridViewProductList.Appearance.Row.Font = new System.Drawing.Font("微软雅黑", 10.5F);
-            this.gridViewProductList.Appearance.Row.Options.UseFont = true;
-            this.gridViewProductList.AppearancePrint.FooterPanel.Font = new System.Drawing.Font("微软雅黑", 11.5F);
-            this.gridViewProductList.AppearancePrint.FooterPanel.Options.UseFont = true;
-            this.gridViewProductList.AppearancePrint.GroupRow.Font = new System.Drawing.Font("微软雅黑", 11.5F);
-            this.gridViewProductList.AppearancePrint.GroupRow.Options.UseFont = true;
-            this.gridViewProductList.AppearancePrint.Preview.Font = new System.Drawing.Font("微软雅黑", 11.5F);
-            this.gridViewProductList.AppearancePrint.Preview.Options.UseFont = true;
-            this.gridViewProductList.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridViewDataList.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(152)))), ((int)(((byte)(96)))));
+            this.gridViewDataList.Appearance.FocusedRow.Font = new System.Drawing.Font("微软雅黑", 10.5F);
+            this.gridViewDataList.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
+            this.gridViewDataList.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.gridViewDataList.Appearance.FocusedRow.Options.UseFont = true;
+            this.gridViewDataList.Appearance.FocusedRow.Options.UseForeColor = true;
+            this.gridViewDataList.Appearance.FooterPanel.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Bold);
+            this.gridViewDataList.Appearance.FooterPanel.Options.UseFont = true;
+            this.gridViewDataList.Appearance.GroupFooter.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Bold);
+            this.gridViewDataList.Appearance.GroupFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.gridViewDataList.Appearance.GroupFooter.Options.UseFont = true;
+            this.gridViewDataList.Appearance.GroupFooter.Options.UseForeColor = true;
+            this.gridViewDataList.Appearance.GroupPanel.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold);
+            this.gridViewDataList.Appearance.GroupPanel.Options.UseFont = true;
+            this.gridViewDataList.Appearance.GroupPanel.Options.UseTextOptions = true;
+            this.gridViewDataList.Appearance.GroupPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridViewDataList.Appearance.GroupRow.Font = new System.Drawing.Font("微软雅黑", 11.5F);
+            this.gridViewDataList.Appearance.GroupRow.Options.UseFont = true;
+            this.gridViewDataList.Appearance.HeaderPanel.Font = new System.Drawing.Font("微软雅黑", 10.5F);
+            this.gridViewDataList.Appearance.HeaderPanel.Options.UseFont = true;
+            this.gridViewDataList.Appearance.Row.Font = new System.Drawing.Font("微软雅黑", 10.5F);
+            this.gridViewDataList.Appearance.Row.Options.UseFont = true;
+            this.gridViewDataList.AppearancePrint.FooterPanel.Font = new System.Drawing.Font("微软雅黑", 11.5F);
+            this.gridViewDataList.AppearancePrint.FooterPanel.Options.UseFont = true;
+            this.gridViewDataList.AppearancePrint.GroupRow.Font = new System.Drawing.Font("微软雅黑", 11.5F);
+            this.gridViewDataList.AppearancePrint.GroupRow.Options.UseFont = true;
+            this.gridViewDataList.AppearancePrint.Preview.Font = new System.Drawing.Font("微软雅黑", 11.5F);
+            this.gridViewDataList.AppearancePrint.Preview.Options.UseFont = true;
+            this.gridViewDataList.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.RowIndex,
             this.ddNo,
             this.TakeoutType,
@@ -233,27 +239,27 @@
             this.pk,
             this.Total,
             this.VStatus});
-            this.gridViewProductList.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.gridViewProductList.GridControl = this.gridProductList;
-            this.gridViewProductList.GroupPanelText = "会员列表";
-            this.gridViewProductList.HorzScrollStep = 25;
-            this.gridViewProductList.IndicatorWidth = 30;
-            this.gridViewProductList.Name = "gridViewProductList";
-            this.gridViewProductList.OptionsBehavior.ReadOnly = true;
-            this.gridViewProductList.OptionsCustomization.AllowColumnMoving = false;
-            this.gridViewProductList.OptionsCustomization.AllowFilter = false;
-            this.gridViewProductList.OptionsCustomization.AllowGroup = false;
-            this.gridViewProductList.OptionsPrint.AutoWidth = false;
-            this.gridViewProductList.OptionsView.AllowHtmlDrawGroups = false;
-            this.gridViewProductList.OptionsView.AllowHtmlDrawHeaders = true;
-            this.gridViewProductList.OptionsView.ColumnAutoWidth = false;
-            this.gridViewProductList.OptionsView.EnableAppearanceEvenRow = true;
-            this.gridViewProductList.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
-            this.gridViewProductList.OptionsView.ShowFooter = true;
-            this.gridViewProductList.OptionsView.ShowGroupPanel = false;
-            this.gridViewProductList.OptionsView.ShowIndicator = false;
-            this.gridViewProductList.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.True;
-            this.gridViewProductList.RowHeight = 30;
+            this.gridViewDataList.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridViewDataList.GridControl = this.gridControlDataList;
+            this.gridViewDataList.GroupPanelText = "会员列表";
+            this.gridViewDataList.HorzScrollStep = 25;
+            this.gridViewDataList.IndicatorWidth = 30;
+            this.gridViewDataList.Name = "gridViewDataList";
+            this.gridViewDataList.OptionsBehavior.ReadOnly = true;
+            this.gridViewDataList.OptionsCustomization.AllowColumnMoving = false;
+            this.gridViewDataList.OptionsCustomization.AllowFilter = false;
+            this.gridViewDataList.OptionsCustomization.AllowGroup = false;
+            this.gridViewDataList.OptionsPrint.AutoWidth = false;
+            this.gridViewDataList.OptionsView.AllowHtmlDrawGroups = false;
+            this.gridViewDataList.OptionsView.AllowHtmlDrawHeaders = true;
+            this.gridViewDataList.OptionsView.ColumnAutoWidth = false;
+            this.gridViewDataList.OptionsView.EnableAppearanceEvenRow = true;
+            this.gridViewDataList.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
+            this.gridViewDataList.OptionsView.ShowFooter = true;
+            this.gridViewDataList.OptionsView.ShowGroupPanel = false;
+            this.gridViewDataList.OptionsView.ShowIndicator = false;
+            this.gridViewDataList.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.True;
+            this.gridViewDataList.RowHeight = 30;
             // 
             // RowIndex
             // 
@@ -304,7 +310,7 @@
             this.TakeoutType.AppearanceHeader.Options.UseTextOptions = true;
             this.TakeoutType.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.TakeoutType.Caption = "支付名称";
-            this.TakeoutType.FieldName = "v_zffs_no";
+            this.TakeoutType.FieldName = "v_zffs_name";
             this.TakeoutType.Name = "TakeoutType";
             this.TakeoutType.OptionsColumn.AllowEdit = false;
             this.TakeoutType.OptionsColumn.AllowFocus = false;
@@ -325,7 +331,7 @@
             this.PayType.AppearanceHeader.Options.UseTextOptions = true;
             this.PayType.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.PayType.Caption = "支付类型";
-            this.PayType.FieldName = "v_type";
+            this.PayType.FieldName = "v_zffs_lx";
             this.PayType.Name = "PayType";
             this.PayType.OptionsColumn.AllowEdit = false;
             this.PayType.OptionsColumn.AllowFocus = false;
@@ -414,10 +420,11 @@
             this.Name = "PaymentTypeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "支付类型";
+            this.Load += new System.EventHandler(this.PaymentTypeForm_Load);
             this.panelEx_top.ResumeLayout(false);
             this.panelEx1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridProductList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewProductList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlDataList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewDataList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -430,8 +437,8 @@
         private TZXControlLibrary.ButtonEx.TzxButtonEx buttonXAdd;
         private DevComponents.DotNetBar.PanelEx panelEx_top;
         private DevComponents.DotNetBar.PanelEx panelEx1;
-        private DevExpress.XtraGrid.GridControl gridProductList;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridViewProductList;
+        private DevExpress.XtraGrid.GridControl gridControlDataList;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewDataList;
         private DevExpress.XtraGrid.Columns.GridColumn RowIndex;
         private DevExpress.XtraGrid.Columns.GridColumn ddNo;
         private DevExpress.XtraGrid.Columns.GridColumn TakeoutType;

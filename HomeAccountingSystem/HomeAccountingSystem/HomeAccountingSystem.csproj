@@ -118,6 +118,12 @@
     <Compile Include="BaseInformation\IncomeType\IncomeTypeForm.Designer.cs">
       <DependentUpon>IncomeTypeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaseInformation\PaymentType\EditPaymentTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInformation\PaymentType\EditPaymentTypeForm.Designer.cs">
+      <DependentUpon>EditPaymentTypeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaseInformation\PaymentType\PaymentTypeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,7 +140,7 @@
     <Compile Include="BLL\jt_ys_zm.cs" />
     <Compile Include="BLL\jt_zc_lx.cs" />
     <Compile Include="BLL\jt_zc_zm.cs" />
-    <Compile Include="BLL\jt_zffs.cs" />
+    <Compile Include="BLL\PaymentTypeManager.cs" />
     <Compile Include="CommandInfo.cs" />
     <Compile Include="DAl\jt_jc_sz.cs" />
     <Compile Include="DAl\jt_jc_zm.cs" />
@@ -232,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BaseInformation\IncomeType\IncomeTypeForm.resx">
       <DependentUpon>IncomeTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInformation\PaymentType\EditPaymentTypeForm.resx">
+      <DependentUpon>EditPaymentTypeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BaseInformation\PaymentType\PaymentTypeForm.resx">
       <DependentUpon>PaymentTypeForm.cs</DependentUpon>
