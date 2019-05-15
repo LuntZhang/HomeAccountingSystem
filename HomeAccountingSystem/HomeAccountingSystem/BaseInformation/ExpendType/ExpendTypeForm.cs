@@ -21,6 +21,7 @@ namespace HomeAccountingSystem.BaseInformation.ExpendType
 
         // 要删除的pk集合
         private ArrayList m_pkArray = new ArrayList();
+
         private void ExpendTypeForm_Load(object sender, EventArgs e)
         {
             loadDataList();
@@ -116,8 +117,19 @@ namespace HomeAccountingSystem.BaseInformation.ExpendType
             int success = rowCount;
             int pk = -2;
             jt_zc_lx zclxModel = null;
+            string row = null;
+            string no = null;
             for (int i=0; i<rowCount;i++)
             {
+                row = this.gridViewDataList.GetRowCellValue(i, "row").ToString();
+                no = this.gridViewDataList.GetRowCellValue(i, "v_zc_no").ToString();
+                string name = this.gridViewDataList.GetRowCellValue(i, "v_zclx_name").ToString();
+                if (string.IsNullOrEmpty(row) || string.IsNullOrEmpty(no) || string.IsNullOrEmpty(name))
+                {
+                    MessageBox.Show("不能填空值！", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 pk = Convert.ToInt32(this.gridViewDataList.GetRowCellValue(i,"pk").ToString());
                 if (pk > -1)    // 修改
                 {

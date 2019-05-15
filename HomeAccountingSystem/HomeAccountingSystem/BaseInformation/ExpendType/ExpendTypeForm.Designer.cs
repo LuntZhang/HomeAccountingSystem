@@ -125,12 +125,12 @@
             this.v_zclx_name.AppearanceHeader.Options.UseFont = true;
             this.v_zclx_name.AppearanceHeader.Options.UseTextOptions = true;
             this.v_zclx_name.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.v_zclx_name.Caption = "支出用途名";
+            this.v_zclx_name.Caption = "支出用途";
             this.v_zclx_name.FieldName = "v_zclx_name";
             this.v_zclx_name.Name = "v_zclx_name";
             this.v_zclx_name.Visible = true;
             this.v_zclx_name.VisibleIndex = 2;
-            this.v_zclx_name.Width = 100;
+            this.v_zclx_name.Width = 180;
             // 
             // v_zc_no
             // 
@@ -149,7 +149,7 @@
             this.v_zc_no.OptionsColumn.AllowFocus = false;
             this.v_zc_no.Visible = true;
             this.v_zc_no.VisibleIndex = 1;
-            this.v_zc_no.Width = 100;
+            this.v_zc_no.Width = 120;
             // 
             // row
             // 
@@ -168,7 +168,7 @@
             this.row.OptionsColumn.AllowFocus = false;
             this.row.Visible = true;
             this.row.VisibleIndex = 0;
-            this.row.Width = 60;
+            this.row.Width = 80;
             // 
             // Total
             // 
@@ -266,7 +266,7 @@
             this.gridControlDataList.MainView = this.gridViewDataList;
             this.gridControlDataList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gridControlDataList.Name = "gridControlDataList";
-            this.gridControlDataList.Size = new System.Drawing.Size(445, 350);
+            this.gridControlDataList.Size = new System.Drawing.Size(564, 350);
             this.gridControlDataList.TabIndex = 36;
             this.gridControlDataList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewDataList});
@@ -281,7 +281,7 @@
             this.panelEx1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.panelEx1.Location = new System.Drawing.Point(0, 61);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(445, 350);
+            this.panelEx1.Size = new System.Drawing.Size(564, 350);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.panelEx1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
@@ -305,7 +305,7 @@
             this.panelEx_top.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.panelEx_top.Location = new System.Drawing.Point(0, 0);
             this.panelEx_top.Name = "panelEx_top";
-            this.panelEx_top.Size = new System.Drawing.Size(445, 61);
+            this.panelEx_top.Size = new System.Drawing.Size(564, 61);
             this.panelEx_top.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx_top.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.panelEx_top.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
@@ -405,7 +405,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(445, 411);
+            this.ClientSize = new System.Drawing.Size(564, 411);
             this.Controls.Add(this.panelEx1);
             this.Controls.Add(this.panelEx_top);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

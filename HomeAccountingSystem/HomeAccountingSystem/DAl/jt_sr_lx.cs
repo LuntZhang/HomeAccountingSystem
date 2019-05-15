@@ -54,9 +54,9 @@ namespace HomeAccountingSystem.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into jt_sr_lx(");
-			strSql.Append("pk,v_sr_no,v_srlx_name,t_create_time,i_delete)");
+			strSql.Append("v_sr_no,v_srlx_name,t_create_time,i_delete)");
 			strSql.Append(" values (");
-			strSql.Append("@pk,@v_sr_no,@v_srlx_name,@t_create_time,@i_delete)");
+			strSql.Append("@v_sr_no,@v_srlx_name,@t_create_time,@i_delete)");
 			SqlParameter[] parameters = {
 					new SqlParameter("@pk", SqlDbType.Int,4),
 					new SqlParameter("@v_sr_no", SqlDbType.VarChar,4000),

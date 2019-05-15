@@ -133,7 +133,7 @@
     <Compile Include="BLL\jt_jc_sz.cs" />
     <Compile Include="BLL\jt_jc_zm.cs" />
     <Compile Include="BLL\jt_jr_zm.cs" />
-    <Compile Include="BLL\jt_sr_lx.cs" />
+    <Compile Include="BLL\IncomeTypeManager.cs" />
     <Compile Include="BLL\jt_sr_zm.cs" />
     <Compile Include="BLL\LoginAccountManager.cs" />
     <Compile Include="BLL\UserInfoManager.cs" />

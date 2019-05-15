@@ -17,10 +17,24 @@ namespace HomeAccountingSystem.BLL
 	/// <summary>
 	/// 收入类型表
 	/// </summary>
-	public partial class jt_sr_lx
+	public partial class IncomeTypeManager
 	{
-		private readonly HomeAccountingSystem.DAL.jt_sr_lx dal=new HomeAccountingSystem.DAL.jt_sr_lx();
-		public jt_sr_lx()
+        #region
+
+        private static IncomeTypeManager instance = new IncomeTypeManager();
+
+        public static IncomeTypeManager Instance
+        {
+            get
+            {
+                return IncomeTypeManager.instance;
+            }
+        }
+
+        #endregion
+
+        private readonly HomeAccountingSystem.DAL.jt_sr_lx dal=new HomeAccountingSystem.DAL.jt_sr_lx();
+		public IncomeTypeManager()
 		{}
 		#region  BasicMethod
 
@@ -140,18 +154,40 @@ namespace HomeAccountingSystem.BLL
 		{
 			return dal.GetListByPage( strWhere,  orderby,  startIndex,  endIndex);
 		}
-		/// <summary>
-		/// 分页获取数据列表
-		/// </summary>
-		//public DataSet GetList(int PageSize,int PageIndex,string strWhere)
-		//{
-			//return dal.GetList(PageSize,PageIndex,strWhere);
-		//}
+        /// <summary>
+        /// 分页获取数据列表
+        /// </summary>
+        //public DataSet GetList(int PageSize,int PageIndex,string strWhere)
+        //{
+        //return dal.GetList(PageSize,PageIndex,strWhere);
+        //}
 
-		#endregion  BasicMethod
-		#region  ExtensionMethod
+        #endregion  BasicMethod
+        #region  ExtensionMethod
 
-		#endregion  ExtensionMethod
-	}
+        public DataTable IncomeTypeDataList()
+        {
+            DataTable dataTable = null;
+            DataSet dataSet = this.GetAllList();
+            if (dataSet == null || dataSet.Tables.Count == 0)
+            {
+                return null;
+            }
+            dataTable = dataSet.Tables[0];
+            dataTable.Columns.Add("row", typeof(string));
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                int index = 0;
+                foreach (DataRow item in dataTable.Rows)
+                {
+                    index++;
+                    item["row"] = index;
+                }
+            }
+            return dataTable;
+        }
+
+        #endregion  ExtensionMethod
+    }
 }
 
