@@ -46,10 +46,15 @@
             this.buttonXModify = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.buttonXDelete = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.buttonXAdd = new TZXControlLibrary.ButtonEx.TzxButtonEx();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewProductList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridProductList)).BeginInit();
             this.panelEx1.SuspendLayout();
             this.panelEx_top.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // VStatus
@@ -262,16 +267,15 @@
             // gridProductList
             // 
             this.gridProductList.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridProductList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridProductList.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gridProductList.Font = new System.Drawing.Font("微软雅黑", 11.5F);
-            this.gridProductList.Location = new System.Drawing.Point(0, 0);
+            this.gridProductList.Location = new System.Drawing.Point(0, 193);
             this.gridProductList.LookAndFeel.SkinName = "Office 2010 Silver";
             this.gridProductList.LookAndFeel.UseDefaultLookAndFeel = false;
             this.gridProductList.MainView = this.gridViewProductList;
             this.gridProductList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gridProductList.Name = "gridProductList";
-            this.gridProductList.Size = new System.Drawing.Size(564, 350);
+            this.gridProductList.Size = new System.Drawing.Size(471, 157);
             this.gridProductList.TabIndex = 36;
             this.gridProductList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewProductList});
@@ -280,6 +284,7 @@
             // 
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx1.Controls.Add(this.gridControl1);
             this.panelEx1.Controls.Add(this.gridProductList);
             this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -400,6 +405,34 @@
             this.buttonXAdd.Size = new System.Drawing.Size(80, 40);
             this.buttonXAdd.TabIndex = 0;
             this.buttonXAdd.Text = "新增";
+            this.buttonXAdd.Click += new System.EventHandler(this.buttonXAdd_Click);
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridControl1.Location = new System.Drawing.Point(59, 6);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(400, 200);
+            this.gridControl1.TabIndex = 37;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Bottom;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "gridColumn1";
+            this.gridColumn1.FieldName = "a";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
             // 
             // IncomeTypeForm
             // 
@@ -412,10 +445,13 @@
             this.Name = "IncomeTypeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "收入类型";
+            this.Load += new System.EventHandler(this.IncomeTypeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewProductList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridProductList)).EndInit();
             this.panelEx1.ResumeLayout(false);
             this.panelEx_top.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -439,5 +475,8 @@
         private TZXControlLibrary.ButtonEx.TzxButtonEx buttonXModify;
         private TZXControlLibrary.ButtonEx.TzxButtonEx buttonXDelete;
         private TZXControlLibrary.ButtonEx.TzxButtonEx buttonXAdd;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
     }
 }

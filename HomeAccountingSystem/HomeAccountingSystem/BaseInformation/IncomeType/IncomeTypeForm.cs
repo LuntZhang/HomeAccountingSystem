@@ -15,5 +15,20 @@ namespace HomeAccountingSystem.BaseInformation.IncomeType
         {
             InitializeComponent();
         }
+
+        private void buttonXAdd_Click(object sender, EventArgs e)
+        {
+            this.gridView1.AddNewRow();
+
+            this.gridView1.SetRowCellValue(this.gridView1.FocusedRowHandle, "a", 0);//列初始值1
+
+            this.gridView1.FocusedRowHandle--;
+        
+        }
+
+        private void IncomeTypeForm_Load(object sender, EventArgs e)
+        {
+            this.gridControl1.Select();
+        }
     }
 }

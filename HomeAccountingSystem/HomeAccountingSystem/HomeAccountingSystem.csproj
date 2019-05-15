@@ -138,7 +138,7 @@
     <Compile Include="BLL\LoginAccountManager.cs" />
     <Compile Include="BLL\UserInfoManager.cs" />
     <Compile Include="BLL\jt_ys_zm.cs" />
-    <Compile Include="BLL\jt_zc_lx.cs" />
+    <Compile Include="BLL\ExpendTypeManager.cs" />
     <Compile Include="BLL\jt_zc_zm.cs" />
     <Compile Include="BLL\PaymentTypeManager.cs" />
     <Compile Include="CommandInfo.cs" />
