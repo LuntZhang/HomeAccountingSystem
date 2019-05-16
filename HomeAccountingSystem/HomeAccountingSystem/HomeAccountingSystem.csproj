@@ -56,18 +56,27 @@
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar2, Version=11.7.0.6, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DemoData.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DemoData.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Tutorials.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Printing" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -80,6 +89,7 @@
     <Reference Include="TZXControlLibrary">
       <HintPath>..\..\..\..\TZX_project\restaurant-management-system\restaurant-fast-manage-member\RestaurantFastManageMember\bin\x86\Debug\TZXControlLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutUserInfo\ChangePasswordForm.cs">
@@ -99,6 +109,18 @@
     </Compile>
     <Compile Include="AboutUserInfo\UserPhotoForm.Designer.cs">
       <DependentUpon>UserPhotoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountManagement\EditSpendingAccountsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountManagement\EditSpendingAccountsForm.Designer.cs">
+      <DependentUpon>EditSpendingAccountsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountManagement\SpendingAccountsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountManagement\SpendingAccountsForm.Designer.cs">
+      <DependentUpon>SpendingAccountsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BaseInformation\BaseInfoForm.cs">
       <SubType>Form</SubType>
@@ -139,7 +161,7 @@
     <Compile Include="BLL\UserInfoManager.cs" />
     <Compile Include="BLL\jt_ys_zm.cs" />
     <Compile Include="BLL\ExpendTypeManager.cs" />
-    <Compile Include="BLL\jt_zc_zm.cs" />
+    <Compile Include="BLL\ExpendAccountsManager.cs" />
     <Compile Include="BLL\PaymentTypeManager.cs" />
     <Compile Include="CommandInfo.cs" />
     <Compile Include="DAl\jt_jc_sz.cs" />
@@ -230,6 +252,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AboutUserInfo\UserPhotoForm.resx">
       <DependentUpon>UserPhotoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountManagement\EditSpendingAccountsForm.resx">
+      <DependentUpon>EditSpendingAccountsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountManagement\SpendingAccountsForm.resx">
+      <DependentUpon>SpendingAccountsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BaseInformation\BaseInfoForm.resx">
       <DependentUpon>BaseInfoForm.cs</DependentUpon>

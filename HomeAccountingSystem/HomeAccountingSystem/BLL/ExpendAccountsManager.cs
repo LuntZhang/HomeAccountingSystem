@@ -17,10 +17,23 @@ namespace HomeAccountingSystem.BLL
 	/// <summary>
 	/// 支出账目表
 	/// </summary>
-	public partial class jt_zc_zm
+	public partial class ExpendAccountsManager
 	{
-		private readonly HomeAccountingSystem.DAL.jt_zc_zm dal=new HomeAccountingSystem.DAL.jt_zc_zm();
-		public jt_zc_zm()
+        #region
+
+        private static ExpendAccountsManager instance = new ExpendAccountsManager();
+
+        public static ExpendAccountsManager Instance
+        {
+            get
+            {
+                return ExpendAccountsManager.instance;
+            }
+        }
+
+        #endregion
+        private readonly HomeAccountingSystem.DAL.jt_zc_zm dal=new HomeAccountingSystem.DAL.jt_zc_zm();
+		public ExpendAccountsManager()
 		{}
 		#region  BasicMethod
 

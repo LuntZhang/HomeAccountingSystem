@@ -54,9 +54,9 @@ namespace HomeAccountingSystem.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into jt_zc_zm(");
-			strSql.Append("pk,v_zczm_no,v_zczm_name,t_xf_time,f_zc_money,v_zclx_no,v_zclx_name,v_remark,v_jz_user_pk,v_jz_user_name,t_create_time,i_delete,v_zffs_no,v_zffs_name)");
+			strSql.Append("v_zczm_no,v_zczm_name,t_xf_time,f_zc_money,v_zclx_no,v_zclx_name,v_remark,v_jz_user_pk,v_jz_user_name,t_create_time,i_delete,v_zffs_no,v_zffs_name,v_who)");
 			strSql.Append(" values (");
-			strSql.Append("@pk,@v_zczm_no,@v_zczm_name,@t_xf_time,@f_zc_money,@v_zclx_no,@v_zclx_name,@v_remark,@v_jz_user_pk,@v_jz_user_name,@t_create_time,@i_delete,@v_zffs_no,@v_zffs_name)");
+			strSql.Append("@v_zczm_no,@v_zczm_name,@t_xf_time,@f_zc_money,@v_zclx_no,@v_zclx_name,@v_remark,@v_jz_user_pk,@v_jz_user_name,@t_create_time,@i_delete,@v_zffs_no,@v_zffs_name,@_v_who)");
 			SqlParameter[] parameters = {
 					new SqlParameter("@pk", SqlDbType.Int,4),
 					new SqlParameter("@v_zczm_no", SqlDbType.VarChar,256),
@@ -71,7 +71,8 @@ namespace HomeAccountingSystem.DAL
 					new SqlParameter("@t_create_time", SqlDbType.DateTime),
 					new SqlParameter("@i_delete", SqlDbType.Int,4),
 					new SqlParameter("@v_zffs_no", SqlDbType.VarChar,256),
-					new SqlParameter("@v_zffs_name", SqlDbType.VarChar,256)};
+					new SqlParameter("@v_zffs_name", SqlDbType.VarChar,256),
+                    new SqlParameter("@_v_who", SqlDbType.VarChar,256)};
 			parameters[0].Value = model.pk;
 			parameters[1].Value = model.v_zczm_no;
 			parameters[2].Value = model.v_zczm_name;
@@ -86,8 +87,9 @@ namespace HomeAccountingSystem.DAL
 			parameters[11].Value = model.i_delete;
 			parameters[12].Value = model.v_zffs_no;
 			parameters[13].Value = model.v_zffs_name;
+            parameters[14].Value = model.v_who;
 
-			int rows=SQLServerHelper.ExecuteSql(strSql.ToString(),parameters);
+            int rows =SQLServerHelper.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
 			{
 				return true;
@@ -116,8 +118,9 @@ namespace HomeAccountingSystem.DAL
 			strSql.Append("t_create_time=@t_create_time,");
 			strSql.Append("i_delete=@i_delete,");
 			strSql.Append("v_zffs_no=@v_zffs_no,");
-			strSql.Append("v_zffs_name=@v_zffs_name");
-			strSql.Append(" where pk=@pk ");
+			strSql.Append("v_zffs_name=@v_zffs_name,"); 
+            strSql.Append("v_who=@v_who");
+            strSql.Append(" where pk=@pk ");
 			SqlParameter[] parameters = {
 					new SqlParameter("@v_zczm_no", SqlDbType.VarChar,256),
 					new SqlParameter("@v_zczm_name", SqlDbType.VarChar,256),
@@ -132,8 +135,9 @@ namespace HomeAccountingSystem.DAL
 					new SqlParameter("@i_delete", SqlDbType.Int,4),
 					new SqlParameter("@v_zffs_no", SqlDbType.VarChar,256),
 					new SqlParameter("@v_zffs_name", SqlDbType.VarChar,256),
-					new SqlParameter("@pk", SqlDbType.Int,4)};
-			parameters[0].Value = model.v_zczm_no;
+                    new SqlParameter("@v_who", SqlDbType.VarChar,256),
+                    new SqlParameter("@pk", SqlDbType.Int,4)}; 
+            parameters[0].Value = model.v_zczm_no;
 			parameters[1].Value = model.v_zczm_name;
 			parameters[2].Value = model.t_xf_time;
 			parameters[3].Value = model.f_zc_money;
@@ -145,8 +149,9 @@ namespace HomeAccountingSystem.DAL
 			parameters[9].Value = model.t_create_time;
 			parameters[10].Value = model.i_delete;
 			parameters[11].Value = model.v_zffs_no;
-			parameters[12].Value = model.v_zffs_name;
-			parameters[13].Value = model.pk;
+			parameters[12].Value = model.v_zffs_name; 
+            parameters[13].Value = model.v_who;
+            parameters[14].Value = model.pk;
 
 			int rows=SQLServerHelper.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
@@ -209,7 +214,7 @@ namespace HomeAccountingSystem.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 pk,v_zczm_no,v_zczm_name,t_xf_time,f_zc_money,v_zclx_no,v_zclx_name,v_remark,v_jz_user_pk,v_jz_user_name,t_create_time,i_delete,v_zffs_no,v_zffs_name from jt_zc_zm ");
+			strSql.Append("select  top 1 pk,v_zczm_no,v_zczm_name,t_xf_time,f_zc_money,v_zclx_no,v_zclx_name,v_remark,v_jz_user_pk,v_jz_user_name,t_create_time,i_delete,v_zffs_no,v_zffs_name,v_who from jt_zc_zm ");
 			strSql.Append(" where pk=@pk ");
 			SqlParameter[] parameters = {
 					new SqlParameter("@pk", SqlDbType.Int,4)			};
@@ -291,8 +296,13 @@ namespace HomeAccountingSystem.DAL
 				if(row["v_zffs_name"]!=null)
 				{
 					model.v_zffs_name=row["v_zffs_name"].ToString();
-				}
-			}
+                }
+                if (row["v_who"] != null)
+                {
+                    model.v_who = row["v_who"].ToString();
+                }
+                
+            }
 			return model;
 		}
 
@@ -302,7 +312,7 @@ namespace HomeAccountingSystem.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select pk,v_zczm_no,v_zczm_name,t_xf_time,f_zc_money,v_zclx_no,v_zclx_name,v_remark,v_jz_user_pk,v_jz_user_name,t_create_time,i_delete,v_zffs_no,v_zffs_name ");
+			strSql.Append("select pk,v_zczm_no,v_zczm_name,t_xf_time,f_zc_money,v_zclx_no,v_zclx_name,v_remark,v_jz_user_pk,v_jz_user_name,t_create_time,i_delete,v_zffs_no,v_zffs_name,v_who ");
 			strSql.Append(" FROM jt_zc_zm ");
 			if(strWhere.Trim()!="")
 			{
@@ -322,7 +332,7 @@ namespace HomeAccountingSystem.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" pk,v_zczm_no,v_zczm_name,t_xf_time,f_zc_money,v_zclx_no,v_zclx_name,v_remark,v_jz_user_pk,v_jz_user_name,t_create_time,i_delete,v_zffs_no,v_zffs_name ");
+			strSql.Append(" pk,v_zczm_no,v_zczm_name,t_xf_time,f_zc_money,v_zclx_no,v_zclx_name,v_remark,v_jz_user_pk,v_jz_user_name,t_create_time,i_delete,v_zffs_no,v_zffs_name,v_who ");
 			strSql.Append(" FROM jt_zc_zm ");
 			if(strWhere.Trim()!="")
 			{

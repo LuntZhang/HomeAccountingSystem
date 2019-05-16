@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HomeAccountingSystem.AccountManagement;
 using HomeAccountingSystem.BaseInformation;
 using HomeAccountingSystem.MainUserControl;
 
@@ -96,6 +97,13 @@ namespace HomeAccountingSystem
         {
             BaseInfoForm formBaseInfo = new BaseInfoForm();
             formBaseInfo.ShowDialog();
+        }
+        
+        // 支出
+        private void btnExpenditure_Click(object sender, EventArgs e)
+        {
+            SpendingAccountsForm form = new SpendingAccountsForm();
+            form.ShowDialog();
         }
     }
 }
