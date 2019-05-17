@@ -110,6 +110,12 @@
     <Compile Include="AboutUserInfo\UserPhotoForm.Designer.cs">
       <DependentUpon>UserPhotoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AccountManagement\CalculatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountManagement\CalculatorForm.Designer.cs">
+      <DependentUpon>CalculatorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AccountManagement\EditSpendingAccountsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AboutUserInfo\UserPhotoForm.resx">
       <DependentUpon>UserPhotoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountManagement\CalculatorForm.resx">
+      <DependentUpon>CalculatorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AccountManagement\EditSpendingAccountsForm.resx">
       <DependentUpon>EditSpendingAccountsForm.cs</DependentUpon>

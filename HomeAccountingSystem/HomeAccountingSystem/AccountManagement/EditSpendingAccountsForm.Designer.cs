@@ -47,6 +47,7 @@
             this.textBoxWho = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX16 = new DevComponents.DotNetBar.LabelX();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnCalculator = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.label5 = new System.Windows.Forms.Label();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.comboBoxType = new DevComponents.DotNetBar.Controls.ComboBoxEx();
@@ -61,7 +62,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxNo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
-            this.btnChangePassword = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.panelEx1.SuspendLayout();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeTallyDate)).BeginInit();
@@ -426,7 +426,7 @@
             this.groupPanel3.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel3.CanvasColor = System.Drawing.Color.Transparent;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel3.Controls.Add(this.btnChangePassword);
+            this.groupPanel3.Controls.Add(this.btnCalculator);
             this.groupPanel3.Controls.Add(this.label5);
             this.groupPanel3.Controls.Add(this.labelX5);
             this.groupPanel3.Controls.Add(this.comboBoxType);
@@ -475,6 +475,28 @@
             this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel3.TabIndex = 99;
             this.groupPanel3.Text = "支出账目基本信息";
+            // 
+            // btnCalculator
+            // 
+            this.btnCalculator.AccessibleName = "2-1100";
+            this.btnCalculator.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnCalculator.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(152)))), ((int)(((byte)(96)))));
+            this.btnCalculator.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(152)))), ((int)(((byte)(96)))));
+            this.btnCalculator.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(34)))));
+            this.btnCalculator.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(34)))));
+            this.btnCalculator.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnCalculator.ForeColor = System.Drawing.Color.White;
+            this.btnCalculator.HasArrow = false;
+            this.btnCalculator.ImageTextSpace = 5;
+            this.btnCalculator.Location = new System.Drawing.Point(560, 15);
+            this.btnCalculator.Name = "btnCalculator";
+            this.btnCalculator.Radius = 5;
+            this.btnCalculator.Size = new System.Drawing.Size(46, 26);
+            this.btnCalculator.TabIndex = 121;
+            this.btnCalculator.Text = "计算器";
+            this.btnCalculator.Tip = "";
+            this.btnCalculator.TipColor = System.Drawing.Color.Red;
+            this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
             // 
             // label5
             // 
@@ -705,27 +727,6 @@
             this.labelX6.TabIndex = 103;
             this.labelX6.Text = "账目编号：";
             // 
-            // btnChangePassword
-            // 
-            this.btnChangePassword.AccessibleName = "2-1100";
-            this.btnChangePassword.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnChangePassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(152)))), ((int)(((byte)(96)))));
-            this.btnChangePassword.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(152)))), ((int)(((byte)(96)))));
-            this.btnChangePassword.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(34)))));
-            this.btnChangePassword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(34)))));
-            this.btnChangePassword.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.btnChangePassword.ForeColor = System.Drawing.Color.White;
-            this.btnChangePassword.HasArrow = false;
-            this.btnChangePassword.ImageTextSpace = 5;
-            this.btnChangePassword.Location = new System.Drawing.Point(560, 15);
-            this.btnChangePassword.Name = "btnChangePassword";
-            this.btnChangePassword.Radius = 5;
-            this.btnChangePassword.Size = new System.Drawing.Size(46, 26);
-            this.btnChangePassword.TabIndex = 121;
-            this.btnChangePassword.Text = "计算器";
-            this.btnChangePassword.Tip = "";
-            this.btnChangePassword.TipColor = System.Drawing.Color.Red;
-            // 
             // EditSpendingAccountsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -782,6 +783,6 @@
         private TZXControlLibrary.ButtonEx.TzxRoundedButton btnCancel;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton btnOK;
         private System.Windows.Forms.Label label7;
-        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnChangePassword;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnCalculator;
     }
 }

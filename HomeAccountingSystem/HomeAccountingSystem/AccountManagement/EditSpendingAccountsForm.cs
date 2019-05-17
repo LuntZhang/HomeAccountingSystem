@@ -204,5 +204,11 @@ namespace HomeAccountingSystem.AccountManagement
         {
             base.Close();
         }
+
+        private void btnCalculator_Click(object sender, EventArgs e)
+        {
+            CalculatorForm form = new CalculatorForm();
+            form.ShowDialog();
+        }
     }
 }
