@@ -131,6 +131,7 @@
             this.buttonXExit.Size = new System.Drawing.Size(80, 40);
             this.buttonXExit.TabIndex = 8;
             this.buttonXExit.Text = "退出";
+            this.buttonXExit.Click += new System.EventHandler(this.buttonXExit_Click);
             // 
             // buttonXRefresh
             // 
@@ -147,6 +148,7 @@
             this.buttonXRefresh.Size = new System.Drawing.Size(80, 40);
             this.buttonXRefresh.TabIndex = 6;
             this.buttonXRefresh.Text = "刷新";
+            this.buttonXRefresh.Click += new System.EventHandler(this.buttonXRefresh_Click);
             // 
             // buttonXModify
             // 
@@ -163,6 +165,7 @@
             this.buttonXModify.Size = new System.Drawing.Size(80, 40);
             this.buttonXModify.TabIndex = 4;
             this.buttonXModify.Text = "修改";
+            this.buttonXModify.Click += new System.EventHandler(this.buttonXModify_Click);
             // 
             // buttonXDelete
             // 
@@ -179,6 +182,7 @@
             this.buttonXDelete.Size = new System.Drawing.Size(80, 40);
             this.buttonXDelete.TabIndex = 3;
             this.buttonXDelete.Text = "删除";
+            this.buttonXDelete.Click += new System.EventHandler(this.buttonXDelete_Click);
             // 
             // buttonXAdd
             // 
@@ -536,6 +540,7 @@
             this.buttonXSearch.TabIndex = 69;
             this.buttonXSearch.Text = "检索";
             this.buttonXSearch.UseVisualStyleBackColor = false;
+            this.buttonXSearch.Click += new System.EventHandler(this.buttonXSearch_Click);
             // 
             // gridControlDataList
             // 

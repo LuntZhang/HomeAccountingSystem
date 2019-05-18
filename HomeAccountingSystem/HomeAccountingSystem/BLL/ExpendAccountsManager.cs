@@ -175,7 +175,7 @@ namespace HomeAccountingSystem.BLL
             }
 
             string expendType = "";
-            if (!string.IsNullOrEmpty(expendType))
+            if (!string.IsNullOrEmpty(expendTypePk) && expendTypePk != "-1")
             {
                 strName += string.Format(" and v_zclx_no = '{0}'", expendTypePk);
             }

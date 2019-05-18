@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using HomeAccountingSystem.BLL;
+using HomeAccountingSystem.Model;
 using HomeAccountingSystem.Utility;
 
 namespace HomeAccountingSystem.AccountManagement
@@ -18,11 +19,14 @@ namespace HomeAccountingSystem.AccountManagement
             InitializeComponent();
         }
 
+        // 选中行
+        private int m_selectRow = 0;
+
         private void SpendingAccountsForm_Load(object sender, EventArgs e)
         {
             this.comboBoxExTIME.SelectedIndex = 0;
             loadCombox();
-            loadData();
+            loadDataList();
         }
 
         private void loadCombox()
@@ -55,15 +59,26 @@ namespace HomeAccountingSystem.AccountManagement
             this.comboBoxExType.SelectedValue = -1;
         }
 
-        private void loadData()
+        private void loadDataList()
         {
-            this.gridControlDataList.DataSource = ExpendAccountsManager.Instance.getExpendAccountsData(this.dateTimeInputStartDate.Value,this.dateTimeInputEndDate.Value);
+            string ssss = this.comboBoxExType.SelectedValue.ToString();
+            this.gridControlDataList.DataSource = ExpendAccountsManager.Instance.getExpendAccountsData(this.dateTimeInputStartDate.Value,this.dateTimeInputEndDate.Value,this.textBoxName.Text.Trim(),this.comboBoxExType.SelectedValue.ToString());
+            this.selectRow();
         }
 
-        private void buttonXAdd_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 选中行
+        /// </summary>
+        public void selectRow()
         {
-            EditSpendingAccountsForm form = new EditSpendingAccountsForm();
-            form.ShowDialog();
+            if (this.gridViewDataList.RowCount == 0)
+            {
+                return;
+            }
+            if(m_selectRow< this.gridViewDataList.RowCount)
+            {
+                this.gridViewDataList.FocusedRowHandle = m_selectRow;
+            } 
         }
 
         private void comboBoxExTIME_SelectedIndexChanged(object sender, EventArgs e)
@@ -108,6 +123,72 @@ namespace HomeAccountingSystem.AccountManagement
             }
         }
 
-        
+        private void buttonXAdd_Click(object sender, EventArgs e)
+        {
+            EditSpendingAccountsForm form = new EditSpendingAccountsForm();
+            form.ShowDialog();
+        }
+
+        private void buttonXModify_Click(object sender, EventArgs e)
+        {
+            if (this.gridViewDataList.SelectedRowsCount == 0)
+            {
+                MessageBox.Show("请选择一条数据！", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            m_selectRow = this.gridViewDataList.FocusedRowHandle;
+            // 取出pk
+            int selectRow = this.gridViewDataList.GetSelectedRows()[0];
+            int pk = Convert.ToInt32(this.gridViewDataList.GetRowCellValue(selectRow, "pk").ToString());
+            jt_zc_zm zczmModel = ExpendAccountsManager.Instance.GetModel(pk);
+            EditSpendingAccountsForm form = new EditSpendingAccountsForm();
+            form.m_zczmModel = zczmModel;
+            form.m_spendingAccountsForm = this;
+            form.ShowDialog();
+
+            this.loadDataList();
+        }
+
+        private void buttonXDelete_Click(object sender, EventArgs e)
+        {
+            if (this.gridViewDataList.SelectedRowsCount == 0)
+            {
+                MessageBox.Show("请选择一条数据！", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!MessageBoxFunction.showQuestionMessageBox("确定要删除这条数据？"))
+            {
+                return;
+            }
+
+            // 取出pk
+            int selectRow = this.gridViewDataList.GetSelectedRows()[0];
+            int pk = Convert.ToInt32(this.gridViewDataList.GetRowCellValue(selectRow, "pk").ToString());
+            bool isSuccess = ExpendAccountsManager.Instance.Delete(pk);
+            if (isSuccess)
+            {
+                MessageBox.Show("删除成功！", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.loadDataList();
+            }
+            else
+            {
+                MessageBox.Show("删除失败！", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void buttonXRefresh_Click(object sender, EventArgs e)
+        {
+            loadDataList();
+        }
+
+        private void buttonXExit_Click(object sender, EventArgs e)
+        {
+            base.Close();
+        }
+
+        private void buttonXSearch_Click(object sender, EventArgs e)
+        {
+            loadDataList();
+        }
     }
 }
