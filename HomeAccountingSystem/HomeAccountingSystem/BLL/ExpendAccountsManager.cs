@@ -134,9 +134,9 @@ namespace HomeAccountingSystem.BLL
 		/// <summary>
 		/// 获得数据列表
 		/// </summary>
-		public DataSet GetAllList()
+		public DataSet GetAllList(string where)
 		{
-			return GetList("");
+			return GetList(where);
 		}
 
 		/// <summary>
@@ -153,16 +153,54 @@ namespace HomeAccountingSystem.BLL
 		{
 			return dal.GetListByPage( strWhere,  orderby,  startIndex,  endIndex);
 		}
-		/// <summary>
-		/// 分页获取数据列表
-		/// </summary>
-		//public DataSet GetList(int PageSize,int PageIndex,string strWhere)
-		//{
-			//return dal.GetList(PageSize,PageIndex,strWhere);
-		//}
+        /// <summary>
+        /// 分页获取数据列表
+        /// </summary>
+        //public DataSet GetList(int PageSize,int PageIndex,string strWhere)
+        //{
+        //return dal.GetList(PageSize,PageIndex,strWhere);
+        //}
 
-		#endregion  BasicMethod
-		#region  ExtensionMethod
+        #endregion  BasicMethod
+        #region  ExtensionMethod
+
+
+        public DataTable getExpendAccountsData(DateTime startTime, DateTime endTime,string name=null,string expendTypePk=null)
+        {
+            string strTime = string.Format("t_xf_time>='{0}' and t_xf_time<='{1}'",startTime,endTime);
+            string strName = "";
+            if (!string.IsNullOrEmpty(name))
+            {
+                strName += string.Format(" and v_who = '{0}'", name);
+            }
+
+            string expendType = "";
+            if (!string.IsNullOrEmpty(expendType))
+            {
+                strName += string.Format(" and v_zclx_no = '{0}'", expendTypePk);
+            }
+
+            string sort = " order by t_create_time desc";
+            string strSql = strTime+ strName+ expendType+ sort;
+
+            DataTable dataTable = null;
+            DataSet dataSet = this.GetAllList(strSql);
+            if(dataSet!=null && dataSet.Tables.Count > 0)
+            {
+                dataTable = dataSet.Tables[0];
+            }
+            dataTable.Columns.Add("row", typeof(string));
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                int index = 0;
+                foreach (DataRow item in dataTable.Rows)
+                {
+                    index++;
+                    item["row"] = index;
+                }
+            }
+            return dataTable;
+        }
 
 		#endregion  ExtensionMethod
 	}

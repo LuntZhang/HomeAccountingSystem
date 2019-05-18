@@ -30,7 +30,10 @@
         {
             this.panelEx_body_fill = new DevComponents.DotNetBar.PanelEx();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.labelNumber = new System.Windows.Forms.Label();
             this.btnEqual = new TZXControlLibrary.ButtonEx.TzxButtonEx();
+            this.richTextBoxInputOperation = new System.Windows.Forms.RichTextBox();
             this.btnYes = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.btnESC = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.btnDiv = new TZXControlLibrary.ButtonEx.TzxButtonEx();
@@ -38,7 +41,7 @@
             this.btnSub = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.btnAdd = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.btnBS = new TZXControlLibrary.ButtonEx.TzxButtonEx();
-            this.btnPerCent = new TZXControlLibrary.ButtonEx.TzxButtonEx();
+            this.btnClearError = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.btnSeven = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.buttonXClear = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.btnTwo = new TZXControlLibrary.ButtonEx.TzxButtonEx();
@@ -52,9 +55,6 @@
             this.btnEight = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.btnSix = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.btnNine = new TZXControlLibrary.ButtonEx.TzxButtonEx();
-            this.richTextBoxInputOperation = new System.Windows.Forms.RichTextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.labelNumber = new System.Windows.Forms.Label();
             this.panelEx_body_fill.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -93,7 +93,7 @@
             this.panel1.Controls.Add(this.btnSub);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.btnBS);
-            this.panel1.Controls.Add(this.btnPerCent);
+            this.panel1.Controls.Add(this.btnClearError);
             this.panel1.Controls.Add(this.btnSeven);
             this.panel1.Controls.Add(this.buttonXClear);
             this.panel1.Controls.Add(this.btnTwo);
@@ -113,6 +113,25 @@
             this.panel1.Size = new System.Drawing.Size(319, 442);
             this.panel1.TabIndex = 84;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.labelNumber);
+            this.panel2.Location = new System.Drawing.Point(9, 109);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(298, 30);
+            this.panel2.TabIndex = 93;
+            // 
+            // labelNumber
+            // 
+            this.labelNumber.AutoSize = true;
+            this.labelNumber.Dock = System.Windows.Forms.DockStyle.Right;
+            this.labelNumber.Font = new System.Drawing.Font("微软雅黑", 16F);
+            this.labelNumber.Location = new System.Drawing.Point(246, 0);
+            this.labelNumber.Name = "labelNumber";
+            this.labelNumber.Size = new System.Drawing.Size(52, 30);
+            this.labelNumber.TabIndex = 0;
+            this.labelNumber.Text = "100";
+            // 
             // btnEqual
             // 
             this.btnEqual.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -127,11 +146,22 @@
             this.btnEqual.Size = new System.Drawing.Size(70, 40);
             this.btnEqual.TabIndex = 92;
             this.btnEqual.Text = "＝";
+            this.btnEqual.Click += new System.EventHandler(this.btnAll_Click);
+            // 
+            // richTextBoxInputOperation
+            // 
+            this.richTextBoxInputOperation.Location = new System.Drawing.Point(9, 32);
+            this.richTextBoxInputOperation.Name = "richTextBoxInputOperation";
+            this.richTextBoxInputOperation.ReadOnly = true;
+            this.richTextBoxInputOperation.Size = new System.Drawing.Size(298, 61);
+            this.richTextBoxInputOperation.TabIndex = 69;
+            this.richTextBoxInputOperation.Text = "";
             // 
             // btnYes
             // 
             this.btnYes.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnYes.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(152)))), ((int)(((byte)(96)))));
+            this.btnYes.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnYes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(34)))));
             this.btnYes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(34)))));
             this.btnYes.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
@@ -142,6 +172,7 @@
             this.btnYes.Size = new System.Drawing.Size(146, 40);
             this.btnYes.TabIndex = 91;
             this.btnYes.Text = "确定";
+            this.btnYes.Click += new System.EventHandler(this.btnYes_Click);
             // 
             // btnESC
             // 
@@ -168,11 +199,12 @@
             this.btnDiv.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.btnDiv.ForeColor = System.Drawing.Color.Black;
             this.btnDiv.ImageTextSpace = 5;
-            this.btnDiv.Location = new System.Drawing.Point(237, 299);
+            this.btnDiv.Location = new System.Drawing.Point(237, 160);
             this.btnDiv.Name = "btnDiv";
             this.btnDiv.Size = new System.Drawing.Size(70, 40);
             this.btnDiv.TabIndex = 89;
             this.btnDiv.Text = "÷";
+            this.btnDiv.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnMul
             // 
@@ -183,11 +215,12 @@
             this.btnMul.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.btnMul.ForeColor = System.Drawing.Color.Black;
             this.btnMul.ImageTextSpace = 5;
-            this.btnMul.Location = new System.Drawing.Point(237, 252);
+            this.btnMul.Location = new System.Drawing.Point(237, 206);
             this.btnMul.Name = "btnMul";
             this.btnMul.Size = new System.Drawing.Size(70, 40);
             this.btnMul.TabIndex = 88;
             this.btnMul.Text = "×";
+            this.btnMul.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnSub
             // 
@@ -198,11 +231,12 @@
             this.btnSub.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.btnSub.ForeColor = System.Drawing.Color.Black;
             this.btnSub.ImageTextSpace = 5;
-            this.btnSub.Location = new System.Drawing.Point(237, 206);
+            this.btnSub.Location = new System.Drawing.Point(237, 252);
             this.btnSub.Name = "btnSub";
             this.btnSub.Size = new System.Drawing.Size(70, 40);
             this.btnSub.TabIndex = 87;
             this.btnSub.Text = "－";
+            this.btnSub.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnAdd
             // 
@@ -213,11 +247,12 @@
             this.btnAdd.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
             this.btnAdd.ImageTextSpace = 5;
-            this.btnAdd.Location = new System.Drawing.Point(237, 160);
+            this.btnAdd.Location = new System.Drawing.Point(237, 298);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(70, 40);
             this.btnAdd.TabIndex = 86;
             this.btnAdd.Text = "＋";
+            this.btnAdd.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnBS
             // 
@@ -233,21 +268,23 @@
             this.btnBS.Size = new System.Drawing.Size(70, 40);
             this.btnBS.TabIndex = 85;
             this.btnBS.Text = "<-";
+            this.btnBS.Click += new System.EventHandler(this.btnBS_Click);
             // 
-            // btnPerCent
+            // btnClearError
             // 
-            this.btnPerCent.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnPerCent.BaseColor = System.Drawing.Color.White;
-            this.btnPerCent.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(34)))));
-            this.btnPerCent.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(34)))));
-            this.btnPerCent.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.btnPerCent.ForeColor = System.Drawing.Color.Black;
-            this.btnPerCent.ImageTextSpace = 5;
-            this.btnPerCent.Location = new System.Drawing.Point(85, 160);
-            this.btnPerCent.Name = "btnPerCent";
-            this.btnPerCent.Size = new System.Drawing.Size(70, 40);
-            this.btnPerCent.TabIndex = 84;
-            this.btnPerCent.Text = "%";
+            this.btnClearError.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnClearError.BaseColor = System.Drawing.Color.White;
+            this.btnClearError.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(34)))));
+            this.btnClearError.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(34)))));
+            this.btnClearError.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.btnClearError.ForeColor = System.Drawing.Color.Black;
+            this.btnClearError.ImageTextSpace = 5;
+            this.btnClearError.Location = new System.Drawing.Point(9, 160);
+            this.btnClearError.Name = "btnClearError";
+            this.btnClearError.Size = new System.Drawing.Size(70, 40);
+            this.btnClearError.TabIndex = 84;
+            this.btnClearError.Text = "CE";
+            this.btnClearError.Click += new System.EventHandler(this.btnClearError_Click);
             // 
             // btnSeven
             // 
@@ -263,6 +300,7 @@
             this.btnSeven.Size = new System.Drawing.Size(70, 40);
             this.btnSeven.TabIndex = 71;
             this.btnSeven.Text = "7";
+            this.btnSeven.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // buttonXClear
             // 
@@ -273,11 +311,12 @@
             this.buttonXClear.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.buttonXClear.ForeColor = System.Drawing.Color.Black;
             this.buttonXClear.ImageTextSpace = 5;
-            this.buttonXClear.Location = new System.Drawing.Point(9, 160);
+            this.buttonXClear.Location = new System.Drawing.Point(85, 160);
             this.buttonXClear.Name = "buttonXClear";
             this.buttonXClear.Size = new System.Drawing.Size(70, 40);
             this.buttonXClear.TabIndex = 83;
             this.buttonXClear.Text = "C";
+            this.buttonXClear.Click += new System.EventHandler(this.buttonXClear_Click);
             // 
             // btnTwo
             // 
@@ -293,6 +332,7 @@
             this.btnTwo.Size = new System.Drawing.Size(70, 40);
             this.btnTwo.TabIndex = 72;
             this.btnTwo.Text = "2";
+            this.btnTwo.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnPoint
             // 
@@ -323,6 +363,7 @@
             this.btnFive.Size = new System.Drawing.Size(70, 40);
             this.btnFive.TabIndex = 73;
             this.btnFive.Text = "5";
+            this.btnFive.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnZero
             // 
@@ -338,6 +379,7 @@
             this.btnZero.Size = new System.Drawing.Size(70, 40);
             this.btnZero.TabIndex = 81;
             this.btnZero.Text = "0";
+            this.btnZero.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnOne
             // 
@@ -353,6 +395,7 @@
             this.btnOne.Size = new System.Drawing.Size(70, 40);
             this.btnOne.TabIndex = 74;
             this.btnOne.Text = "1";
+            this.btnOne.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnMinus
             // 
@@ -383,6 +426,7 @@
             this.btnFour.Size = new System.Drawing.Size(70, 40);
             this.btnFour.TabIndex = 75;
             this.btnFour.Text = "4";
+            this.btnFour.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnThree
             // 
@@ -398,6 +442,7 @@
             this.btnThree.Size = new System.Drawing.Size(70, 40);
             this.btnThree.TabIndex = 79;
             this.btnThree.Text = "3";
+            this.btnThree.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnEight
             // 
@@ -413,6 +458,7 @@
             this.btnEight.Size = new System.Drawing.Size(70, 40);
             this.btnEight.TabIndex = 76;
             this.btnEight.Text = "8";
+            this.btnEight.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnSix
             // 
@@ -428,6 +474,7 @@
             this.btnSix.Size = new System.Drawing.Size(70, 40);
             this.btnSix.TabIndex = 78;
             this.btnSix.Text = "6";
+            this.btnSix.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnNine
             // 
@@ -443,34 +490,7 @@
             this.btnNine.Size = new System.Drawing.Size(70, 40);
             this.btnNine.TabIndex = 77;
             this.btnNine.Text = "9";
-            // 
-            // richTextBoxInputOperation
-            // 
-            this.richTextBoxInputOperation.Location = new System.Drawing.Point(9, 32);
-            this.richTextBoxInputOperation.Name = "richTextBoxInputOperation";
-            this.richTextBoxInputOperation.ReadOnly = true;
-            this.richTextBoxInputOperation.Size = new System.Drawing.Size(298, 61);
-            this.richTextBoxInputOperation.TabIndex = 69;
-            this.richTextBoxInputOperation.Text = "";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.labelNumber);
-            this.panel2.Location = new System.Drawing.Point(9, 109);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(298, 30);
-            this.panel2.TabIndex = 93;
-            // 
-            // labelNumber
-            // 
-            this.labelNumber.AutoSize = true;
-            this.labelNumber.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labelNumber.Font = new System.Drawing.Font("微软雅黑", 16F);
-            this.labelNumber.Location = new System.Drawing.Point(246, 0);
-            this.labelNumber.Name = "labelNumber";
-            this.labelNumber.Size = new System.Drawing.Size(52, 30);
-            this.labelNumber.TabIndex = 0;
-            this.labelNumber.Text = "100";
+            this.btnNine.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // CalculatorForm
             // 
@@ -478,10 +498,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(319, 442);
             this.Controls.Add(this.panelEx_body_fill);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CalculatorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CalculatorForm";
+            this.Text = "计算器";
+            this.Load += new System.EventHandler(this.CalculatorForm_Load);
             this.panelEx_body_fill.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -512,7 +535,7 @@
         private TZXControlLibrary.ButtonEx.TzxButtonEx btnSub;
         private TZXControlLibrary.ButtonEx.TzxButtonEx btnAdd;
         private TZXControlLibrary.ButtonEx.TzxButtonEx btnBS;
-        private TZXControlLibrary.ButtonEx.TzxButtonEx btnPerCent;
+        private TZXControlLibrary.ButtonEx.TzxButtonEx btnClearError;
         private TZXControlLibrary.ButtonEx.TzxButtonEx buttonXClear;
         private TZXControlLibrary.ButtonEx.TzxButtonEx btnEqual;
         private TZXControlLibrary.ButtonEx.TzxButtonEx btnYes;

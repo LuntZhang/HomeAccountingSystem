@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HomeAccountingSystem.AccountManagement;
 
 namespace HomeAccountingSystem
 {
@@ -23,6 +24,7 @@ namespace HomeAccountingSystem
             m_LoginForm = new LoginForm();
             m_MainForm = new MainForm();
             Application.Run(m_LoginForm);
+            //Application.Run(new SpendingAccountsForm());
         }
     }
 }

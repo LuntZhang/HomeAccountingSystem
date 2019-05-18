@@ -31,6 +31,7 @@ namespace HomeAccountingSystem.AccountManagement
             {
                 return;
             }
+
             this.loadPage();
         }
 
@@ -108,7 +109,7 @@ namespace HomeAccountingSystem.AccountManagement
                 // 账目支出基本信息
                 this.textBoxNo.Text = m_zczmModel.v_zczm_no;
                 this.decimalTextBoxMoney.EditValue = m_zczmModel.f_zc_money;
-                this.comboBoxType.SelectedItem = m_zczmModel.v_zclx_name;
+                this.comboBoxType.SelectedText = m_zczmModel.v_zclx_name;
                 this.dateTimeDate.Value = m_zczmModel.t_xf_time;
                 this.textBoxDescription.Text = m_zczmModel.v_zczm_name;
                 // 账目支出记账信息
@@ -130,13 +131,13 @@ namespace HomeAccountingSystem.AccountManagement
             model.v_zczm_no = this.textBoxNo.Text.Trim();
             model.f_zc_money = this.decimalTextBoxMoney.EditValue;
             model.v_zclx_no = this.comboBoxType.SelectedValue.ToString();
-            model.v_zclx_name = this.comboBoxType.SelectedItem.ToString();
+            model.v_zclx_name = this.comboBoxType.Text.ToString();
             model.t_xf_time = this.dateTimeDate.Value;
             model.v_zczm_name = this.textBoxDescription.Text.Trim();
 
             model.v_who = this.textBoxWho.Text.Trim();
-            model.v_zffs_name = this.comboBoxPayType.SelectedItem.ToString();
-            model.v_zczm_no = this.comboBoxPayType.SelectedValue.ToString();
+            model.v_zffs_name = this.comboBoxPayType.Text.ToString();
+            model.v_zffs_no = this.comboBoxPayType.SelectedValue.ToString();
             model.v_remark = this.richTextBoxRemark.Text.Trim();
             if (m_zczmModel == null)
             {
@@ -209,6 +210,11 @@ namespace HomeAccountingSystem.AccountManagement
         {
             CalculatorForm form = new CalculatorForm();
             form.ShowDialog();
+
+            if (form.DialogResult == DialogResult.OK)
+            {
+                this.decimalTextBoxMoney.EditValue = form.m_currentNumber;
+            }
         }
     }
 }
