@@ -12,17 +12,16 @@ using HomeAccountingSystem.Utility;
 
 namespace HomeAccountingSystem.AccountManagement
 {
-    public partial class SpendingAccountsForm : Form
+    public partial class IncomeAccountsForm : Form
     {
-        public SpendingAccountsForm()
+        public IncomeAccountsForm()
         {
             InitializeComponent();
-        }
-
+            }
         // 选中行
         private int m_selectRow = 0;
 
-        private void SpendingAccountsForm_Load(object sender, EventArgs e)
+        private void IncomeAccountsForm_Load(object sender, EventArgs e)
         {
             this.comboBoxExTIME.SelectedIndex = 0;
             loadCombox();
@@ -32,28 +31,28 @@ namespace HomeAccountingSystem.AccountManagement
         private void loadCombox()
         {
             // 消费用途下拉
-            DataSet dataSet = ExpendTypeManager.Instance.GetList("");
+            DataSet dataSet = IncomeTypeManager.Instance.GetList("");
             if (dataSet == null || dataSet.Tables.Count == 0)
             {
-                MessageBoxFunction.showWarningMessageBox("没有支出类型，请先去创建支出类型！");
+                MessageBoxFunction.showWarningMessageBox("没有收入类型，请先去创建收入类型！");
                 base.Close();
                 return;
             }
             DataTable dataTable = dataSet.Tables[0];
             if (dataTable == null && dataTable.Rows.Count == 0)
             {
-                
-                MessageBoxFunction.showWarningMessageBox("没有支出类型，请先去创建支出类型！");
+
+                MessageBoxFunction.showWarningMessageBox("没有收入类型，请先去创建收入类型！");
                 base.Close();
                 return;
             }
             DataRow dr = dataTable.NewRow();
-            dr["v_zclx_name"] = "全部";
+            dr["v_srlx_name"] = "全部";
             dr["pk"] = -1;
             dataTable.Rows.Add(dr);
             this.comboBoxExType.Items.Clear();
             this.comboBoxExType.DataSource = dataTable;
-            this.comboBoxExType.DisplayMember = "v_zclx_name";
+            this.comboBoxExType.DisplayMember = "v_srlx_name";
             this.comboBoxExType.ValueMember = "pk";
 
             this.comboBoxExType.SelectedValue = -1;
@@ -61,7 +60,7 @@ namespace HomeAccountingSystem.AccountManagement
 
         private void loadDataList()
         {
-            this.gridControlDataList.DataSource = ExpendAccountsManager.Instance.getExpendAccountsData(this.dateTimeInputStartDate.Value,this.dateTimeInputEndDate.Value,this.textBoxName.Text.Trim(),this.comboBoxExType.SelectedValue.ToString());
+            this.gridControlDataList.DataSource = IncomeAccountsManager.Instance.getIncomeAccountsData(this.dateTimeInputStartDate.Value, this.dateTimeInputEndDate.Value, this.textBoxName.Text.Trim(), this.comboBoxExType.SelectedValue.ToString());
             this.selectRow();
         }
 
@@ -74,11 +73,11 @@ namespace HomeAccountingSystem.AccountManagement
             {
                 return;
             }
-            if(m_selectRow< this.gridViewDataList.RowCount)
+            if (m_selectRow < this.gridViewDataList.RowCount)
             {
                 this.gridViewDataList.SelectAll();
                 this.gridViewDataList.FocusedRowHandle = m_selectRow;
-            } 
+            }
         }
 
         private void comboBoxExTIME_SelectedIndexChanged(object sender, EventArgs e)
@@ -125,7 +124,7 @@ namespace HomeAccountingSystem.AccountManagement
 
         private void buttonXAdd_Click(object sender, EventArgs e)
         {
-            EditSpendingAccountsForm form = new EditSpendingAccountsForm();
+            EditIncomeAccountsForm form = new EditIncomeAccountsForm();
             form.ShowDialog();
             if (form.DialogResult == DialogResult.OK)
             {
@@ -144,10 +143,9 @@ namespace HomeAccountingSystem.AccountManagement
             // 取出pk
             int selectRow = this.gridViewDataList.GetSelectedRows()[0];
             int pk = Convert.ToInt32(this.gridViewDataList.GetRowCellValue(selectRow, "pk").ToString());
-            jt_zc_zm zczmModel = ExpendAccountsManager.Instance.GetModel(pk);
-            EditSpendingAccountsForm form = new EditSpendingAccountsForm();
-            form.m_zczmModel = zczmModel;
-            form.m_spendingAccountsForm = this;
+            jt_sr_zm srzmModel = IncomeAccountsManager.Instance.GetModel(pk);
+            EditIncomeAccountsForm form = new EditIncomeAccountsForm();
+            form.m_srzmModel = srzmModel;
             form.ShowDialog();
 
             if (form.DialogResult == DialogResult.OK)
@@ -171,7 +169,7 @@ namespace HomeAccountingSystem.AccountManagement
             // 取出pk
             int selectRow = this.gridViewDataList.GetSelectedRows()[0];
             int pk = Convert.ToInt32(this.gridViewDataList.GetRowCellValue(selectRow, "pk").ToString());
-            bool isSuccess = ExpendAccountsManager.Instance.Delete(pk);
+            bool isSuccess = IncomeAccountsManager.Instance.Delete(pk);
             if (isSuccess)
             {
                 MessageBox.Show("删除成功！", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -204,3 +202,4 @@ namespace HomeAccountingSystem.AccountManagement
         }
     }
 }
+

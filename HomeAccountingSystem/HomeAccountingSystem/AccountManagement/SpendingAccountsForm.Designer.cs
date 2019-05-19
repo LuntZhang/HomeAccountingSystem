@@ -560,6 +560,7 @@
             this.gridControlDataList.TabIndex = 33;
             this.gridControlDataList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewDataList});
+            this.gridControlDataList.DoubleClick += new System.EventHandler(this.gridControlDataList_DoubleClick);
             // 
             // gridViewDataList
             // 
@@ -633,6 +634,7 @@
             this.gridViewDataList.OptionsView.ColumnAutoWidth = false;
             this.gridViewDataList.OptionsView.EnableAppearanceEvenRow = true;
             this.gridViewDataList.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
+            this.gridViewDataList.OptionsView.ShowFooter = true;
             this.gridViewDataList.OptionsView.ShowGroupPanel = false;
             this.gridViewDataList.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.True;
             this.gridViewDataList.OptionsView.ShowIndicator = false;
@@ -659,7 +661,7 @@
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom, "row", "合计：")});
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 50;
+            this.gridColumn1.Width = 60;
             // 
             // DDno
             // 
@@ -1024,7 +1026,7 @@
             this.Controls.Add(this.panelEx_top);
             this.Name = "SpendingAccountsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "支出账目表";
+            this.Text = "支出账目";
             this.Load += new System.EventHandler(this.SpendingAccountsForm_Load);
             this.panelEx_top.ResumeLayout(false);
             this.panelEx_body_top.ResumeLayout(false);

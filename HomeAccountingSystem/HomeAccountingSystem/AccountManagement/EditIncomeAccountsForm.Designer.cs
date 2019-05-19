@@ -1,6 +1,6 @@
 ﻿namespace HomeAccountingSystem.AccountManagement
 {
-    partial class EditSpendingAccountsForm
+    partial class EditIncomeAccountsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.btnCancel = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.btnOK = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
@@ -62,34 +61,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxNo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
-            this.panelEx1.SuspendLayout();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeTallyDate)).BeginInit();
             this.groupPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeDate)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panelEx1
-            // 
-            this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx1.Controls.Add(this.btnCancel);
-            this.panelEx1.Controls.Add(this.btnOK);
-            this.panelEx1.Controls.Add(this.groupPanel1);
-            this.panelEx1.Controls.Add(this.groupPanel3);
-            this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEx1.Location = new System.Drawing.Point(0, 0);
-            this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(688, 463);
-            this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelEx1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.panelEx1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.panelEx1.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.panelEx1.Style.GradientAngle = 90;
-            this.panelEx1.TabIndex = 1;
             // 
             // btnCancel
             // 
@@ -103,11 +79,11 @@
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.HasArrow = false;
             this.btnCancel.ImageTextSpace = 5;
-            this.btnCancel.Location = new System.Drawing.Point(590, 411);
+            this.btnCancel.Location = new System.Drawing.Point(593, 411);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Radius = 5;
             this.btnCancel.Size = new System.Drawing.Size(80, 40);
-            this.btnCancel.TabIndex = 133;
+            this.btnCancel.TabIndex = 137;
             this.btnCancel.Text = "取消";
             this.btnCancel.Tip = "";
             this.btnCancel.TipColor = System.Drawing.Color.Red;
@@ -125,11 +101,11 @@
             this.btnOK.ForeColor = System.Drawing.Color.White;
             this.btnOK.HasArrow = false;
             this.btnOK.ImageTextSpace = 5;
-            this.btnOK.Location = new System.Drawing.Point(504, 411);
+            this.btnOK.Location = new System.Drawing.Point(507, 411);
             this.btnOK.Name = "btnOK";
             this.btnOK.Radius = 5;
             this.btnOK.Size = new System.Drawing.Size(80, 40);
-            this.btnOK.TabIndex = 132;
+            this.btnOK.TabIndex = 136;
             this.btnOK.Text = "保存";
             this.btnOK.Tip = "";
             this.btnOK.TipColor = System.Drawing.Color.Red;
@@ -156,7 +132,7 @@
             this.groupPanel1.Controls.Add(this.labelX16);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupPanel1.Location = new System.Drawing.Point(12, 187);
+            this.groupPanel1.Location = new System.Drawing.Point(15, 187);
             this.groupPanel1.Name = "groupPanel1";
             this.groupPanel1.Size = new System.Drawing.Size(657, 208);
             // 
@@ -186,7 +162,7 @@
             // 
             // 
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel1.TabIndex = 131;
+            this.groupPanel1.TabIndex = 135;
             this.groupPanel1.Text = "支出账目记账信息";
             // 
             // label7
@@ -308,7 +284,7 @@
             this.labelX11.Name = "labelX11";
             this.labelX11.Size = new System.Drawing.Size(123, 26);
             this.labelX11.TabIndex = 126;
-            this.labelX11.Text = "支出账目备注：";
+            this.labelX11.Text = "收入账目备注：";
             // 
             // labelX12
             // 
@@ -351,7 +327,7 @@
             this.labelX13.Name = "labelX13";
             this.labelX13.Size = new System.Drawing.Size(90, 26);
             this.labelX13.TabIndex = 123;
-            this.labelX13.Text = "付款方式：";
+            this.labelX13.Text = "支付方式：";
             // 
             // label9
             // 
@@ -419,7 +395,7 @@
             this.labelX16.Name = "labelX16";
             this.labelX16.Size = new System.Drawing.Size(90, 26);
             this.labelX16.TabIndex = 115;
-            this.labelX16.Text = "谁消费的：";
+            this.labelX16.Text = "谁的收入：";
             // 
             // groupPanel3
             // 
@@ -443,7 +419,7 @@
             this.groupPanel3.Controls.Add(this.labelX6);
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel3.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupPanel3.Location = new System.Drawing.Point(12, 12);
+            this.groupPanel3.Location = new System.Drawing.Point(15, 12);
             this.groupPanel3.Name = "groupPanel3";
             this.groupPanel3.Size = new System.Drawing.Size(657, 169);
             // 
@@ -473,7 +449,7 @@
             // 
             // 
             this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel3.TabIndex = 99;
+            this.groupPanel3.TabIndex = 134;
             this.groupPanel3.Text = "支出账目基本信息";
             // 
             // btnCalculator
@@ -523,7 +499,7 @@
             this.labelX5.Name = "labelX5";
             this.labelX5.Size = new System.Drawing.Size(90, 26);
             this.labelX5.TabIndex = 119;
-            this.labelX5.Text = "消费用途：";
+            this.labelX5.Text = "收入来源：";
             // 
             // comboBoxType
             // 
@@ -613,7 +589,7 @@
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(90, 26);
             this.labelX4.TabIndex = 112;
-            this.labelX4.Text = "消费日期：";
+            this.labelX4.Text = "收入日期：";
             // 
             // decimalTextBoxMoney
             // 
@@ -654,7 +630,7 @@
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(90, 26);
             this.labelX3.TabIndex = 109;
-            this.labelX3.Text = "消费金额：";
+            this.labelX3.Text = "收入金额：";
             // 
             // textBoxDescription
             // 
@@ -684,7 +660,7 @@
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(123, 26);
             this.labelX1.TabIndex = 106;
-            this.labelX1.Text = "支出用途描述：";
+            this.labelX1.Text = "收入来源描述：";
             // 
             // label2
             // 
@@ -728,17 +704,19 @@
             this.labelX6.TabIndex = 103;
             this.labelX6.Text = "账目编号：";
             // 
-            // EditSpendingAccountsForm
+            // EditIncomeAccountsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(688, 463);
-            this.Controls.Add(this.panelEx1);
-            this.Name = "EditSpendingAccountsForm";
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.groupPanel1);
+            this.Controls.Add(this.groupPanel3);
+            this.Name = "EditIncomeAccountsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "支出账目";
-            this.Load += new System.EventHandler(this.EditSpendingAccountsForm_Load);
-            this.panelEx1.ResumeLayout(false);
+            this.Text = "收入账目";
+            this.Load += new System.EventHandler(this.EditIncomeAccountsForm_Load);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeTallyDate)).EndInit();
@@ -751,23 +729,10 @@
 
         #endregion
 
-        private DevComponents.DotNetBar.PanelEx panelEx1;
-        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxDescription;
-        private DevComponents.DotNetBar.LabelX labelX1;
-        private System.Windows.Forms.Label label2;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxNo;
-        private DevComponents.DotNetBar.LabelX labelX6;
-        private TZXControlLibrary.TextBoxEx.TzxDecimalTextBox decimalTextBoxMoney;
-        private System.Windows.Forms.Label label3;
-        private DevComponents.DotNetBar.LabelX labelX3;
-        private DevComponents.Editors.DateTimeAdv.DateTimeInput dateTimeDate;
-        private System.Windows.Forms.Label label5;
-        private DevComponents.DotNetBar.LabelX labelX5;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxType;
-        private System.Windows.Forms.Label label6;
-        private DevComponents.DotNetBar.LabelX labelX4;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnCancel;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnOK;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
+        private System.Windows.Forms.Label label7;
         private DevComponents.DotNetBar.Controls.RichTextBoxEx richTextBoxRemark;
         private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxPayType;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput dateTimeTallyDate;
@@ -781,9 +746,21 @@
         private System.Windows.Forms.Label label11;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxWho;
         private DevComponents.DotNetBar.LabelX labelX16;
-        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnCancel;
-        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnOK;
-        private System.Windows.Forms.Label label7;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton btnCalculator;
+        private System.Windows.Forms.Label label5;
+        private DevComponents.DotNetBar.LabelX labelX5;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxType;
+        private DevComponents.Editors.DateTimeAdv.DateTimeInput dateTimeDate;
+        private System.Windows.Forms.Label label6;
+        private DevComponents.DotNetBar.LabelX labelX4;
+        private TZXControlLibrary.TextBoxEx.TzxDecimalTextBox decimalTextBoxMoney;
+        private System.Windows.Forms.Label label3;
+        private DevComponents.DotNetBar.LabelX labelX3;
+        private DevComponents.DotNetBar.Controls.TextBoxX textBoxDescription;
+        private DevComponents.DotNetBar.LabelX labelX1;
+        private System.Windows.Forms.Label label2;
+        private DevComponents.DotNetBar.Controls.TextBoxX textBoxNo;
+        private DevComponents.DotNetBar.LabelX labelX6;
     }
 }

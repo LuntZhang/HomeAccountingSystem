@@ -17,10 +17,24 @@ namespace HomeAccountingSystem.BLL
 	/// <summary>
 	/// 收入账目表
 	/// </summary>
-	public partial class jt_sr_zm
+	public partial class IncomeAccountsManager
 	{
-		private readonly HomeAccountingSystem.DAL.jt_sr_zm dal=new HomeAccountingSystem.DAL.jt_sr_zm();
-		public jt_sr_zm()
+        #region
+
+        private static IncomeAccountsManager instance = new IncomeAccountsManager();
+
+        public static IncomeAccountsManager Instance
+        {
+            get
+            {
+                return IncomeAccountsManager.instance;
+            }
+        }
+
+        #endregion
+
+        private readonly HomeAccountingSystem.DAL.jt_sr_zm dal=new HomeAccountingSystem.DAL.jt_sr_zm();
+		public IncomeAccountsManager()
 		{}
 		#region  BasicMethod
 
@@ -121,9 +135,9 @@ namespace HomeAccountingSystem.BLL
 		/// <summary>
 		/// 获得数据列表
 		/// </summary>
-		public DataSet GetAllList()
+		public DataSet GetAllList(string strWhere)
 		{
-			return GetList("");
+			return GetList(strWhere);
 		}
 
 		/// <summary>
@@ -140,18 +154,53 @@ namespace HomeAccountingSystem.BLL
 		{
 			return dal.GetListByPage( strWhere,  orderby,  startIndex,  endIndex);
 		}
-		/// <summary>
-		/// 分页获取数据列表
-		/// </summary>
-		//public DataSet GetList(int PageSize,int PageIndex,string strWhere)
-		//{
-			//return dal.GetList(PageSize,PageIndex,strWhere);
-		//}
+        /// <summary>
+        /// 分页获取数据列表
+        /// </summary>
+        //public DataSet GetList(int PageSize,int PageIndex,string strWhere)
+        //{
+        //return dal.GetList(PageSize,PageIndex,strWhere);
+        //}
 
-		#endregion  BasicMethod
-		#region  ExtensionMethod
+        #endregion  BasicMethod
+        #region  ExtensionMethod
+        public DataTable getIncomeAccountsData(DateTime startTime, DateTime endTime, string name = null, string IncomeTypePk = null)
+        {
+            string strTime = string.Format("t_xf_time>='{0}' and t_xf_time<='{1}'", startTime, endTime);
+            string strName = "";
+            if (!string.IsNullOrEmpty(name))
+            {
+                strName += string.Format(" and v_who = '{0}'", name);
+            }
 
-		#endregion  ExtensionMethod
-	}
+            string expendType = "";
+            if (!string.IsNullOrEmpty(IncomeTypePk) && IncomeTypePk != "-1")
+            {
+                strName += string.Format(" and v_srlx_no = '{0}'", IncomeTypePk);
+            }
+
+            string sort = " order by t_create_time desc";
+            string strSql = strTime + strName + expendType + sort;
+
+            DataTable dataTable = null;
+            DataSet dataSet = this.GetAllList(strSql);
+            if (dataSet != null && dataSet.Tables.Count > 0)
+            {
+                dataTable = dataSet.Tables[0];
+            }
+            dataTable.Columns.Add("row", typeof(string));
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                int index = 0;
+                foreach (DataRow item in dataTable.Rows)
+                {
+                    index++;
+                    item["row"] = index;
+                }
+            }
+            return dataTable;
+        }
+        #endregion  ExtensionMethod
+    }
 }
 

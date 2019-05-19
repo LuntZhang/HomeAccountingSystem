@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using HomeAccountingSystem.AccountManagement;
 using HomeAccountingSystem.BaseInformation;
 using HomeAccountingSystem.MainUserControl;
+using TZXControlLibrary.ButtonEx;
 
 namespace HomeAccountingSystem
 {
@@ -104,6 +105,26 @@ namespace HomeAccountingSystem
         {
             SpendingAccountsForm form = new SpendingAccountsForm();
             form.ShowDialog();
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            // 获取按钮
+            TzxRoundedButton btn = sender as TzxRoundedButton;
+            if (btn == null)
+            {
+                return;
+            }
+            string btnName = btn.Name;
+            switch (btnName)
+            {
+                case "btnIncome":
+                    IncomeAccountsForm form = new IncomeAccountsForm();
+                    form.ShowDialog();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
