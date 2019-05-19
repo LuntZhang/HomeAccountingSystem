@@ -227,7 +227,7 @@
             // 
             // incomeAndExpensesUserControl1
             // 
-            this.incomeAndExpensesUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.incomeAndExpensesUserControl1.BackColor = System.Drawing.Color.White;
             this.incomeAndExpensesUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.incomeAndExpensesUserControl1.Location = new System.Drawing.Point(0, 0);
             this.incomeAndExpensesUserControl1.Name = "incomeAndExpensesUserControl1";
