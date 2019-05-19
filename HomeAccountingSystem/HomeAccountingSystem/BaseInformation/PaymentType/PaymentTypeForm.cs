@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using HomeAccountingSystem.BLL;
 using HomeAccountingSystem.Model;
+using HomeAccountingSystem.Utility;
 
 namespace HomeAccountingSystem.BaseInformation.PaymentType
 {
@@ -90,6 +91,10 @@ namespace HomeAccountingSystem.BaseInformation.PaymentType
             if (this.gridViewDataList.SelectedRowsCount == 0)
             {
                 MessageBox.Show("请选择一条数据！", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!MessageBoxFunction.showQuestionMessageBox("确定要删除这条数据？"))
+            {
                 return;
             }
             // 取出pk

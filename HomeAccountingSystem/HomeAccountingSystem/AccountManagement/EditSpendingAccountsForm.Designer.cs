@@ -130,7 +130,7 @@
             this.btnOK.Radius = 5;
             this.btnOK.Size = new System.Drawing.Size(80, 40);
             this.btnOK.TabIndex = 132;
-            this.btnOK.Text = "确定";
+            this.btnOK.Text = "保存";
             this.btnOK.Tip = "";
             this.btnOK.TipColor = System.Drawing.Color.Red;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);

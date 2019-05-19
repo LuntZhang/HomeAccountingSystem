@@ -563,7 +563,7 @@
             // 
             // gridViewDataList
             // 
-            this.gridViewDataList.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(140)))), ((int)(((byte)(151)))));
+            this.gridViewDataList.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(152)))), ((int)(((byte)(96)))));
             this.gridViewDataList.Appearance.FocusedRow.Font = new System.Drawing.Font("微软雅黑", 10.5F);
             this.gridViewDataList.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
             this.gridViewDataList.Appearance.FocusedRow.Options.UseBackColor = true;

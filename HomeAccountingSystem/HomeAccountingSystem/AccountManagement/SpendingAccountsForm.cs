@@ -61,7 +61,6 @@ namespace HomeAccountingSystem.AccountManagement
 
         private void loadDataList()
         {
-            string ssss = this.comboBoxExType.SelectedValue.ToString();
             this.gridControlDataList.DataSource = ExpendAccountsManager.Instance.getExpendAccountsData(this.dateTimeInputStartDate.Value,this.dateTimeInputEndDate.Value,this.textBoxName.Text.Trim(),this.comboBoxExType.SelectedValue.ToString());
             this.selectRow();
         }
@@ -77,6 +76,7 @@ namespace HomeAccountingSystem.AccountManagement
             }
             if(m_selectRow< this.gridViewDataList.RowCount)
             {
+                this.gridViewDataList.SelectAll();
                 this.gridViewDataList.FocusedRowHandle = m_selectRow;
             } 
         }
@@ -127,6 +127,10 @@ namespace HomeAccountingSystem.AccountManagement
         {
             EditSpendingAccountsForm form = new EditSpendingAccountsForm();
             form.ShowDialog();
+            if (form.DialogResult == DialogResult.OK)
+            {
+                this.loadDataList();
+            }
         }
 
         private void buttonXModify_Click(object sender, EventArgs e)
@@ -146,7 +150,10 @@ namespace HomeAccountingSystem.AccountManagement
             form.m_spendingAccountsForm = this;
             form.ShowDialog();
 
-            this.loadDataList();
+            if (form.DialogResult == DialogResult.OK)
+            {
+                this.loadDataList();
+            }
         }
 
         private void buttonXDelete_Click(object sender, EventArgs e)

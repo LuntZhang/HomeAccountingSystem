@@ -109,12 +109,12 @@ namespace HomeAccountingSystem.AccountManagement
                 // 账目支出基本信息
                 this.textBoxNo.Text = m_zczmModel.v_zczm_no;
                 this.decimalTextBoxMoney.EditValue = m_zczmModel.f_zc_money;
-                this.comboBoxType.SelectedText = m_zczmModel.v_zclx_name;
+                this.comboBoxType.Text = m_zczmModel.v_zclx_name;
                 this.dateTimeDate.Value = m_zczmModel.t_xf_time;
                 this.textBoxDescription.Text = m_zczmModel.v_zczm_name;
                 // 账目支出记账信息
                 this.textBoxWho.Text = m_zczmModel.v_who;
-                this.comboBoxPayType.SelectedItem = m_zczmModel.v_zffs_name;
+                this.comboBoxPayType.Text = m_zczmModel.v_zffs_name;
                 this.textBoxUserName.Text = m_zczmModel.v_jz_user_name;
                 this.dateTimeTallyDate.Value = m_zczmModel.t_create_time;
                 this.richTextBoxRemark.Text = m_zczmModel.v_remark;
@@ -187,6 +187,7 @@ namespace HomeAccountingSystem.AccountManagement
                 if(isSuccess)
                 {
                     MessageBoxFunction.showSaveSuccessMessageBox();
+                    this.DialogResult = DialogResult.OK;
                 }
             }
             else
@@ -196,8 +197,10 @@ namespace HomeAccountingSystem.AccountManagement
                 if (isSuccess)
                 {
                     MessageBoxFunction.showSaveSuccessMessageBox();
+                    this.DialogResult = DialogResult.OK;
                 }
             }
+            base.Close();
         }
 
         // 取消
