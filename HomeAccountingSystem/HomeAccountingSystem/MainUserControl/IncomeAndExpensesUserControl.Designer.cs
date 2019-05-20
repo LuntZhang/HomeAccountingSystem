@@ -30,35 +30,34 @@
         {
             this.panelAll = new System.Windows.Forms.Panel();
             this.panelTime = new System.Windows.Forms.Panel();
-            this.panelExpend = new System.Windows.Forms.Panel();
-            this.panelIncome = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.labelToday = new System.Windows.Forms.Label();
+            this.labelYesterday = new System.Windows.Forms.Label();
+            this.labelBeforeOneDay = new System.Windows.Forms.Label();
+            this.panelIncome = new System.Windows.Forms.Panel();
+            this.pictureBoxExpend = new System.Windows.Forms.PictureBox();
+            this.labelExpendWriteABill = new System.Windows.Forms.Label();
+            this.labelExpendInfo = new System.Windows.Forms.Label();
+            this.linkLabelExpendMoney = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelExpend = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBoxIncome = new System.Windows.Forms.PictureBox();
+            this.labelIncomeWriteABill = new System.Windows.Forms.Label();
+            this.labelIncomeInfo = new System.Windows.Forms.Label();
+            this.linkLabelIncomeMoney = new System.Windows.Forms.LinkLabel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelAll.SuspendLayout();
             this.panelTime.SuspendLayout();
-            this.panelExpend.SuspendLayout();
-            this.panelIncome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panelIncome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExpend)).BeginInit();
+            this.panelExpend.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIncome)).BeginInit();
             this.SuspendLayout();
             // 
             // panelAll
             // 
-            this.panelAll.Controls.Add(this.groupBox1);
             this.panelAll.Controls.Add(this.panelTime);
             this.panelAll.Controls.Add(this.panelIncome);
             this.panelAll.Controls.Add(this.panelExpend);
@@ -71,203 +70,209 @@
             // 
             // panelTime
             // 
-            this.panelTime.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panelTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
             this.panelTime.Controls.Add(this.pictureBox3);
-            this.panelTime.Controls.Add(this.label9);
-            this.panelTime.Controls.Add(this.label8);
-            this.panelTime.Controls.Add(this.label7);
+            this.panelTime.Controls.Add(this.labelToday);
+            this.panelTime.Controls.Add(this.labelYesterday);
+            this.panelTime.Controls.Add(this.labelBeforeOneDay);
             this.panelTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTime.Location = new System.Drawing.Point(10, 10);
             this.panelTime.Name = "panelTime";
-            this.panelTime.Size = new System.Drawing.Size(540, 50);
+            this.panelTime.Size = new System.Drawing.Size(540, 34);
             this.panelTime.TabIndex = 1;
-            // 
-            // panelExpend
-            // 
-            this.panelExpend.BackColor = System.Drawing.Color.LightBlue;
-            this.panelExpend.Controls.Add(this.pictureBox2);
-            this.panelExpend.Controls.Add(this.label6);
-            this.panelExpend.Controls.Add(this.label4);
-            this.panelExpend.Controls.Add(this.linkLabel2);
-            this.panelExpend.Controls.Add(this.label2);
-            this.panelExpend.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelExpend.Location = new System.Drawing.Point(10, 150);
-            this.panelExpend.Name = "panelExpend";
-            this.panelExpend.Size = new System.Drawing.Size(540, 90);
-            this.panelExpend.TabIndex = 1;
-            // 
-            // panelIncome
-            // 
-            this.panelIncome.BackColor = System.Drawing.Color.LightBlue;
-            this.panelIncome.Controls.Add(this.pictureBox1);
-            this.panelIncome.Controls.Add(this.label5);
-            this.panelIncome.Controls.Add(this.label3);
-            this.panelIncome.Controls.Add(this.linkLabel1);
-            this.panelIncome.Controls.Add(this.label1);
-            this.panelIncome.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelIncome.Location = new System.Drawing.Point(10, 60);
-            this.panelIncome.Name = "panelIncome";
-            this.panelIncome.Size = new System.Drawing.Size(540, 90);
-            this.panelIncome.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 35F);
-            this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(23, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 47);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "支";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 35F);
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(23, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 47);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "收";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Green;
-            this.linkLabel1.Location = new System.Drawing.Point(122, 21);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(49, 19);
-            this.linkLabel1.TabIndex = 0;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "0.00";
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel2.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel2.Location = new System.Drawing.Point(122, 26);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(49, 19);
-            this.linkLabel2.TabIndex = 1;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "0.00";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(123, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "今天还没记账！";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(123, 57);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 16);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "今天还没记账！";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("楷体", 16F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label5.Location = new System.Drawing.Point(411, 43);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 22);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "记一笔";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("楷体", 16F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(411, 48);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 22);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "记一笔";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("楷体", 16F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(122, 14);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 22);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "前天";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("楷体", 16F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(270, 14);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 22);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "昨天";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("楷体", 16F, System.Drawing.FontStyle.Bold);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(411, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(56, 22);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "今天";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(496, 36);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(496, 41);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Location = new System.Drawing.Point(11, 9);
+            this.pictureBox3.Location = new System.Drawing.Point(3, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.Size = new System.Drawing.Size(24, 22);
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
+            // 
+            // labelToday
+            // 
+            this.labelToday.AutoSize = true;
+            this.labelToday.Font = new System.Drawing.Font("宋体", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelToday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(119)))), ((int)(((byte)(66)))));
+            this.labelToday.Location = new System.Drawing.Point(411, 5);
+            this.labelToday.Name = "labelToday";
+            this.labelToday.Size = new System.Drawing.Size(54, 21);
+            this.labelToday.TabIndex = 5;
+            this.labelToday.Text = "今天";
+            this.labelToday.Click += new System.EventHandler(this.labelDay_Click);
+            // 
+            // labelYesterday
+            // 
+            this.labelYesterday.AutoSize = true;
+            this.labelYesterday.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelYesterday.ForeColor = System.Drawing.Color.White;
+            this.labelYesterday.Location = new System.Drawing.Point(270, 5);
+            this.labelYesterday.Name = "labelYesterday";
+            this.labelYesterday.Size = new System.Drawing.Size(54, 21);
+            this.labelYesterday.TabIndex = 4;
+            this.labelYesterday.Text = "昨天";
+            this.labelYesterday.Click += new System.EventHandler(this.labelDay_Click);
+            // 
+            // labelBeforeOneDay
+            // 
+            this.labelBeforeOneDay.AutoSize = true;
+            this.labelBeforeOneDay.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelBeforeOneDay.ForeColor = System.Drawing.Color.White;
+            this.labelBeforeOneDay.Location = new System.Drawing.Point(122, 5);
+            this.labelBeforeOneDay.Name = "labelBeforeOneDay";
+            this.labelBeforeOneDay.Size = new System.Drawing.Size(54, 21);
+            this.labelBeforeOneDay.TabIndex = 3;
+            this.labelBeforeOneDay.Text = "前天";
+            this.labelBeforeOneDay.Click += new System.EventHandler(this.labelDay_Click);
+            // 
+            // panelIncome
+            // 
+            this.panelIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
+            this.panelIncome.Controls.Add(this.pictureBoxExpend);
+            this.panelIncome.Controls.Add(this.labelExpendWriteABill);
+            this.panelIncome.Controls.Add(this.labelExpendInfo);
+            this.panelIncome.Controls.Add(this.linkLabelExpendMoney);
+            this.panelIncome.Controls.Add(this.label1);
+            this.panelIncome.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelIncome.Location = new System.Drawing.Point(10, 44);
+            this.panelIncome.Name = "panelIncome";
+            this.panelIncome.Size = new System.Drawing.Size(540, 98);
+            this.panelIncome.TabIndex = 1;
+            // 
+            // pictureBoxExpend
+            // 
+            this.pictureBoxExpend.Location = new System.Drawing.Point(486, 20);
+            this.pictureBoxExpend.Name = "pictureBoxExpend";
+            this.pictureBoxExpend.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxExpend.TabIndex = 3;
+            this.pictureBoxExpend.TabStop = false;
+            // 
+            // labelExpendWriteABill
+            // 
+            this.labelExpendWriteABill.AutoSize = true;
+            this.labelExpendWriteABill.Font = new System.Drawing.Font("楷体", 14F);
+            this.labelExpendWriteABill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.labelExpendWriteABill.Location = new System.Drawing.Point(411, 21);
+            this.labelExpendWriteABill.Name = "labelExpendWriteABill";
+            this.labelExpendWriteABill.Size = new System.Drawing.Size(69, 19);
+            this.labelExpendWriteABill.TabIndex = 2;
+            this.labelExpendWriteABill.Text = "记一笔";
+            this.labelExpendWriteABill.Click += new System.EventHandler(this.labelExpendWriteABill_Click);
+            // 
+            // labelExpendInfo
+            // 
+            this.labelExpendInfo.AutoSize = true;
+            this.labelExpendInfo.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelExpendInfo.ForeColor = System.Drawing.Color.DimGray;
+            this.labelExpendInfo.Location = new System.Drawing.Point(123, 54);
+            this.labelExpendInfo.Name = "labelExpendInfo";
+            this.labelExpendInfo.Size = new System.Drawing.Size(120, 16);
+            this.labelExpendInfo.TabIndex = 1;
+            this.labelExpendInfo.Text = "今天还没记账！";
+            // 
+            // linkLabelExpendMoney
+            // 
+            this.linkLabelExpendMoney.ActiveLinkColor = System.Drawing.Color.Blue;
+            this.linkLabelExpendMoney.AutoSize = true;
+            this.linkLabelExpendMoney.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabelExpendMoney.LinkColor = System.Drawing.Color.Green;
+            this.linkLabelExpendMoney.Location = new System.Drawing.Point(122, 21);
+            this.linkLabelExpendMoney.Name = "linkLabelExpendMoney";
+            this.linkLabelExpendMoney.Size = new System.Drawing.Size(49, 19);
+            this.linkLabelExpendMoney.TabIndex = 0;
+            this.linkLabelExpendMoney.TabStop = true;
+            this.linkLabelExpendMoney.Text = "0.00";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 30F);
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(32, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 40);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "支";
+            // 
+            // panelExpend
+            // 
+            this.panelExpend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
+            this.panelExpend.Controls.Add(this.groupBox1);
+            this.panelExpend.Controls.Add(this.pictureBoxIncome);
+            this.panelExpend.Controls.Add(this.labelIncomeWriteABill);
+            this.panelExpend.Controls.Add(this.labelIncomeInfo);
+            this.panelExpend.Controls.Add(this.linkLabelIncomeMoney);
+            this.panelExpend.Controls.Add(this.label2);
+            this.panelExpend.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelExpend.Location = new System.Drawing.Point(10, 142);
+            this.panelExpend.Name = "panelExpend";
+            this.panelExpend.Size = new System.Drawing.Size(540, 98);
+            this.panelExpend.TabIndex = 1;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(24, 151);
+            this.groupBox1.Location = new System.Drawing.Point(14, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(500, 1);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
+            // 
+            // pictureBoxIncome
+            // 
+            this.pictureBoxIncome.Location = new System.Drawing.Point(486, 26);
+            this.pictureBoxIncome.Name = "pictureBoxIncome";
+            this.pictureBoxIncome.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxIncome.TabIndex = 4;
+            this.pictureBoxIncome.TabStop = false;
+            // 
+            // labelIncomeWriteABill
+            // 
+            this.labelIncomeWriteABill.AutoSize = true;
+            this.labelIncomeWriteABill.Font = new System.Drawing.Font("楷体", 14F);
+            this.labelIncomeWriteABill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.labelIncomeWriteABill.Location = new System.Drawing.Point(411, 26);
+            this.labelIncomeWriteABill.Name = "labelIncomeWriteABill";
+            this.labelIncomeWriteABill.Size = new System.Drawing.Size(69, 19);
+            this.labelIncomeWriteABill.TabIndex = 3;
+            this.labelIncomeWriteABill.Text = "记一笔";
+            this.labelIncomeWriteABill.Click += new System.EventHandler(this.labelIncomeWriteABill_Click);
+            // 
+            // labelIncomeInfo
+            // 
+            this.labelIncomeInfo.AutoSize = true;
+            this.labelIncomeInfo.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelIncomeInfo.ForeColor = System.Drawing.Color.DimGray;
+            this.labelIncomeInfo.Location = new System.Drawing.Point(123, 59);
+            this.labelIncomeInfo.Name = "labelIncomeInfo";
+            this.labelIncomeInfo.Size = new System.Drawing.Size(120, 16);
+            this.labelIncomeInfo.TabIndex = 2;
+            this.labelIncomeInfo.Text = "今天还没记账！";
+            // 
+            // linkLabelIncomeMoney
+            // 
+            this.linkLabelIncomeMoney.ActiveLinkColor = System.Drawing.Color.Blue;
+            this.linkLabelIncomeMoney.AutoSize = true;
+            this.linkLabelIncomeMoney.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabelIncomeMoney.LinkColor = System.Drawing.Color.Red;
+            this.linkLabelIncomeMoney.Location = new System.Drawing.Point(122, 26);
+            this.linkLabelIncomeMoney.Name = "linkLabelIncomeMoney";
+            this.linkLabelIncomeMoney.Size = new System.Drawing.Size(49, 19);
+            this.linkLabelIncomeMoney.TabIndex = 1;
+            this.linkLabelIncomeMoney.TabStop = true;
+            this.linkLabelIncomeMoney.Text = "0.00";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("宋体", 30F);
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(32, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 40);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "收";
             // 
             // IncomeAndExpensesUserControl
             // 
@@ -277,16 +282,17 @@
             this.Controls.Add(this.panelAll);
             this.Name = "IncomeAndExpensesUserControl";
             this.Size = new System.Drawing.Size(560, 250);
+            this.Load += new System.EventHandler(this.IncomeAndExpensesUserControl_Load);
             this.panelAll.ResumeLayout(false);
             this.panelTime.ResumeLayout(false);
             this.panelTime.PerformLayout();
-            this.panelExpend.ResumeLayout(false);
-            this.panelExpend.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panelIncome.ResumeLayout(false);
             this.panelIncome.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExpend)).EndInit();
+            this.panelExpend.ResumeLayout(false);
+            this.panelExpend.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIncome)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -299,18 +305,18 @@
         private System.Windows.Forms.Panel panelExpend;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.LinkLabel linkLabelExpendMoney;
+        private System.Windows.Forms.LinkLabel linkLabelIncomeMoney;
+        private System.Windows.Forms.Label labelExpendWriteABill;
+        private System.Windows.Forms.Label labelExpendInfo;
+        private System.Windows.Forms.Label labelIncomeWriteABill;
+        private System.Windows.Forms.Label labelIncomeInfo;
+        private System.Windows.Forms.Label labelToday;
+        private System.Windows.Forms.Label labelYesterday;
+        private System.Windows.Forms.Label labelBeforeOneDay;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxExpend;
+        private System.Windows.Forms.PictureBox pictureBoxIncome;
         private System.Windows.Forms.GroupBox groupBox1;
     }
 }
