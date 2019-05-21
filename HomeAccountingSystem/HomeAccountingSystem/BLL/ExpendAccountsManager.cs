@@ -202,7 +202,23 @@ namespace HomeAccountingSystem.BLL
             return dataTable;
         }
 
-		#endregion  ExtensionMethod
-	}
+        public DataTable getConsumerUseData(DateTime startTime, DateTime endTime)
+        {
+            string strTime = string.Format(" where t_xf_time>='{0}' and t_xf_time<='{1}'", startTime, endTime);
+            string strSql = string.Format(
+                 " select zclx.pk, zclx.v_zclx_name, SUM(zczm.f_zc_money) as f_zc_money"+
+                 " from jt_zc_lx as zclx left join jt_zc_zm as zczm on zczm.v_zclx_no = zclx.pk" +
+                 strTime+
+                 " group by zclx.pk,zclx.v_zclx_name"
+                );
+            DataTable dataTable = SQLServerHelper.GetTable(strSql);
+            return dataTable;
+        }
+
+
+
+
+        #endregion  ExtensionMethod
+    }
 }
 

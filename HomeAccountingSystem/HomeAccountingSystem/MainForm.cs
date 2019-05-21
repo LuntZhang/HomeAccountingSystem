@@ -27,7 +27,7 @@ namespace HomeAccountingSystem
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            this.topUserInfoUserControl1.delegateCloseMainPage = delegateCloseMainPage;
+            //this.topUserInfoUserControl1.delegateCloseMainPage = delegateCloseMainPage;
         }
 
         private void delegateCloseMainPage(bool isTuichu)

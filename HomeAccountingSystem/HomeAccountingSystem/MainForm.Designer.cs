@@ -58,7 +58,7 @@
             this.tzxPanelBottom = new TZXControlLibrary.PanelEx.TzxPanel();
             this.bottomUserControl1 = new HomeAccountingSystem.MainUserControl.BottomUserControl();
             this.tzxPanelTop = new TZXControlLibrary.PanelEx.TzxPanel();
-            this.topUserInfoUserControl1 = new HomeAccountingSystem.MainUserControl.TopUserInfoUserControl();
+            //this.topUserInfoUserControl1 = new HomeAccountingSystem.MainUserControl.TopUserInfoUserControl();
             this.tzxPanelAll.SuspendLayout();
             this.tzxPanelMain.SuspendLayout();
             this.tzxPanelMainBottom.SuspendLayout();
@@ -594,7 +594,7 @@
             this.tzxPanelTop.BackColor = System.Drawing.Color.White;
             this.tzxPanelTop.BorderColor = System.Drawing.Color.Silver;
             this.tzxPanelTop.BorderSize = 1;
-            this.tzxPanelTop.Controls.Add(this.topUserInfoUserControl1);
+            //this.tzxPanelTop.Controls.Add(this.topUserInfoUserControl1);
             this.tzxPanelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.tzxPanelTop.HasBottomBorder = true;
             this.tzxPanelTop.HasLeftBorder = false;
@@ -609,13 +609,13 @@
             // 
             // topUserInfoUserControl1
             // 
-            this.topUserInfoUserControl1.BackColor = System.Drawing.Color.Transparent;
-            this.topUserInfoUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.topUserInfoUserControl1.Location = new System.Drawing.Point(2, 2);
-            this.topUserInfoUserControl1.Margin = new System.Windows.Forms.Padding(0);
-            this.topUserInfoUserControl1.Name = "topUserInfoUserControl1";
-            this.topUserInfoUserControl1.Size = new System.Drawing.Size(1280, 71);
-            this.topUserInfoUserControl1.TabIndex = 0;
+            //this.topUserInfoUserControl1.BackColor = System.Drawing.Color.Transparent;
+            //this.topUserInfoUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            //this.topUserInfoUserControl1.Location = new System.Drawing.Point(2, 2);
+            //this.topUserInfoUserControl1.Margin = new System.Windows.Forms.Padding(0);
+            //this.topUserInfoUserControl1.Name = "topUserInfoUserControl1";
+            //this.topUserInfoUserControl1.Size = new System.Drawing.Size(1280, 71);
+            //this.topUserInfoUserControl1.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -661,7 +661,6 @@
         private TZXControlLibrary.PanelEx.TzxPanel tzxPanelLeftDown;
         private TZXControlLibrary.PanelEx.TzxPanel tzxPanelRightDown;
         private MainUserControl.BottomUserControl bottomUserControl1;
-        private MainUserControl.TopUserInfoUserControl topUserInfoUserControl1;
         private MainUserControl.CompareUserControl compareUserControl1;
         private MainUserControl.BudgetUserControl budgetUserControl1;
         private TZXControlLibrary.PanelEx.TzxPanel tzxPanel1;
@@ -677,5 +676,6 @@
         private TZXControlLibrary.ButtonEx.TzxRoundedButton tzxRoundedButton1;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton tzxRoundedButton4;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton tzxRoundedButton3;
+        //public MainUserControl.TopUserInfoUserControl topUserInfoUserControl1;
     }
 }

@@ -22,12 +22,13 @@ namespace HomeAccountingSystem.MainUserControl
 
         public TopUserInfoUserControl()
         {
+            if (!this.DesignMode) { }
             InitializeComponent();
         }
 
         public jt_yh_zl m_yhzlModel = null;
 
-        private void TopUserInfoUserControl_Load(object sender, EventArgs e)
+        public void TopUserInfoUserControl_Load(object sender, EventArgs e)
         {
             m_yhzlModel = LoginAccountManager.Instance.getLoginUserModel();
             this.labelUserName.Text = m_yhzlModel.v_yh_name;
