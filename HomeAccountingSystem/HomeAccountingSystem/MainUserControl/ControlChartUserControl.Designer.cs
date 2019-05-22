@@ -34,17 +34,17 @@
             System.Windows.Forms.DataVisualization.Charting.LegendCellColumn legendCellColumn2 = new System.Windows.Forms.DataVisualization.Charting.LegendCellColumn();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelAll = new System.Windows.Forms.Panel();
-            this.panelTime = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.labelBeforeOneDay = new System.Windows.Forms.Label();
             this.panelIncome = new System.Windows.Forms.Panel();
             this.chartExpendData = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panelTime = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.labelBeforeOneDay = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelAll.SuspendLayout();
-            this.panelTime.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panelIncome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartExpendData)).BeginInit();
+            this.panelTime.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panelAll
@@ -57,38 +57,6 @@
             this.panelAll.Padding = new System.Windows.Forms.Padding(10);
             this.panelAll.Size = new System.Drawing.Size(560, 250);
             this.panelAll.TabIndex = 1;
-            // 
-            // panelTime
-            // 
-            this.panelTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.panelTime.Controls.Add(this.comboBox1);
-            this.panelTime.Controls.Add(this.pictureBox3);
-            this.panelTime.Controls.Add(this.labelBeforeOneDay);
-            this.panelTime.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTime.Location = new System.Drawing.Point(10, 10);
-            this.panelTime.Name = "panelTime";
-            this.panelTime.Size = new System.Drawing.Size(540, 34);
-            this.panelTime.TabIndex = 1;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 5);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 22);
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
-            // labelBeforeOneDay
-            // 
-            this.labelBeforeOneDay.AutoSize = true;
-            this.labelBeforeOneDay.Font = new System.Drawing.Font("宋体", 12F);
-            this.labelBeforeOneDay.ForeColor = System.Drawing.Color.White;
-            this.labelBeforeOneDay.Location = new System.Drawing.Point(33, 9);
-            this.labelBeforeOneDay.Name = "labelBeforeOneDay";
-            this.labelBeforeOneDay.Size = new System.Drawing.Size(72, 16);
-            this.labelBeforeOneDay.TabIndex = 3;
-            this.labelBeforeOneDay.Text = "消费分析";
             // 
             // panelIncome
             // 
@@ -104,7 +72,7 @@
             // 
             chartArea1.Name = "ChartArea1";
             this.chartExpendData.ChartAreas.Add(chartArea1);
-            this.chartExpendData.Dock = System.Windows.Forms.DockStyle.Left;
+            this.chartExpendData.Dock = System.Windows.Forms.DockStyle.Fill;
             legendCellColumn1.Name = "Column1";
             legendCellColumn1.Text = "#VALX";
             legendCellColumn2.Name = "Column2";
@@ -126,6 +94,18 @@
             this.chartExpendData.TabIndex = 0;
             this.chartExpendData.Text = "消费分析";
             // 
+            // panelTime
+            // 
+            this.panelTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.panelTime.Controls.Add(this.comboBox1);
+            this.panelTime.Controls.Add(this.pictureBox3);
+            this.panelTime.Controls.Add(this.labelBeforeOneDay);
+            this.panelTime.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTime.Location = new System.Drawing.Point(10, 10);
+            this.panelTime.Name = "panelTime";
+            this.panelTime.Size = new System.Drawing.Size(540, 34);
+            this.panelTime.TabIndex = 1;
+            // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("宋体", 12F);
@@ -134,6 +114,28 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(52, 24);
             this.comboBox1.TabIndex = 5;
+            // 
+            // labelBeforeOneDay
+            // 
+            this.labelBeforeOneDay.AutoSize = true;
+            this.labelBeforeOneDay.Font = new System.Drawing.Font("宋体", 12F);
+            this.labelBeforeOneDay.ForeColor = System.Drawing.Color.White;
+            this.labelBeforeOneDay.Location = new System.Drawing.Point(33, 9);
+            this.labelBeforeOneDay.Name = "labelBeforeOneDay";
+            this.labelBeforeOneDay.Size = new System.Drawing.Size(72, 16);
+            this.labelBeforeOneDay.TabIndex = 3;
+            this.labelBeforeOneDay.Text = "消费分析";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::HomeAccountingSystem.Properties.Resources.会员消费分析_2_;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 22);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
             // 
             // ControlChartUserControl
             // 
@@ -145,11 +147,11 @@
             this.Size = new System.Drawing.Size(560, 250);
             this.Load += new System.EventHandler(this.ControlChartUserControl_Load);
             this.panelAll.ResumeLayout(false);
+            this.panelIncome.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartExpendData)).EndInit();
             this.panelTime.ResumeLayout(false);
             this.panelTime.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panelIncome.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartExpendData)).EndInit();
             this.ResumeLayout(false);
 
         }

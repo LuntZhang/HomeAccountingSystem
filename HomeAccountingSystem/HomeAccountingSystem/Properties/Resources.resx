@@ -805,4 +805,43 @@
   <data name="默认头像" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image\common\默认头像.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="会员消费分析" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\会员消费分析.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="会员消费分析_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\会员消费分析(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="会员消费分析_2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\会员消费分析(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="收入0522" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\收入0522.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="消费" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\消费.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="消费_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\消费(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="规_双箭头" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\规_双箭头.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="计算器" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\计算器.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="计算器_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\计算器(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="记一笔" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\记一笔.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="记一笔_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\记一笔(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="记一笔_2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\记一笔(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="记一笔_3_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\main\记一笔(3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

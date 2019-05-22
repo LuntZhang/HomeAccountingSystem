@@ -51,13 +51,17 @@ namespace HomeAccountingSystem.MainUserControl
                 Label labelDay = this.panelTime.Controls[i] as Label;
                 if (labelDay != null&& labelDay.Name != strLabelName)
                 {
+                    if (labelDay.Text == "记一笔")
+                    {
+                        continue;
+                    }
                     labelDay.ForeColor = Color.White;
                     fontDay = new Font("宋体", 16, FontStyle.Bold);//设置字体的样式（宋体，9号字，有下划线），括号里可根据自己需要修改
                     labelDay.Font = fontDay;
                 }
             }
             // 设置点中的字体颜色
-            label.ForeColor = Color.FromArgb(254,119,66);
+            label.ForeColor = Color.Red;
             Font f = new Font("宋体", 16, FontStyle.Bold | FontStyle.Underline);
             label.Font = f;
 
@@ -183,6 +187,32 @@ namespace HomeAccountingSystem.MainUserControl
             EditIncomeAccountsForm form = new EditIncomeAccountsForm();
             form.ShowDialog();
             getTallyTime();
+        }
+
+        private void pictureBoxExpend_Click(object sender, EventArgs e)
+        {
+            EditSpendingAccountsForm form = new EditSpendingAccountsForm();
+            form.ShowDialog();
+            getTallyTime();
+        }
+
+        private void pictureBoxIncome_Click(object sender, EventArgs e)
+        {
+            EditIncomeAccountsForm form = new EditIncomeAccountsForm();
+            form.ShowDialog();
+            getTallyTime();
+        }
+
+        private void labelWriteABill_MouseLeave(object sender, EventArgs e)
+        {
+            Label label = (Label)sender;
+            label.ForeColor = Color.FromArgb(77, 176, 242);
+        }
+
+        private void labelWriteABill_MouseEnter(object sender, EventArgs e)
+        {
+            Label label = (Label)sender;
+            label.ForeColor = Color.Blue;
         }
     }
 }

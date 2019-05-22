@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditSpendingAccountsForm));
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.btnCancel = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.btnOK = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
@@ -734,6 +735,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(688, 463);
             this.Controls.Add(this.panelEx1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditSpendingAccountsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "支出账目";

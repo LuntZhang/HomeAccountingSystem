@@ -30,11 +30,15 @@ namespace HomeAccountingSystem.MainUserControl
 
         public void TopUserInfoUserControl_Load(object sender, EventArgs e)
         {
-            m_yhzlModel = LoginAccountManager.Instance.getLoginUserModel();
-            this.labelUserName.Text = m_yhzlModel.v_yh_name;
-            this.labelUserName.Text = string.Format("{0}，你好！", m_yhzlModel.v_yh_name);
-            // 转换图片格式
-            this.loadPhoto();
+            if (!this.DesignMode)
+            {
+                m_yhzlModel = LoginAccountManager.Instance.getLoginUserModel();
+                this.labelUserName.Text = m_yhzlModel.v_yh_name;
+                this.labelUserName.Text = string.Format("{0}，你好！", m_yhzlModel.v_yh_name);
+                // 转换图片格式
+                this.loadPhoto();
+            }
+          
         }
 
         // 转换图片格式

@@ -1303,6 +1303,36 @@ namespace HomeAccountingSystem.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 会员消费分析 {
+            get {
+                object obj = ResourceManager.GetObject("会员消费分析", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 会员消费分析_1_ {
+            get {
+                object obj = ResourceManager.GetObject("会员消费分析_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 会员消费分析_2_ {
+            get {
+                object obj = ResourceManager.GetObject("会员消费分析_2_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 余额调整 {
             get {
                 object obj = ResourceManager.GetObject("余额调整", resourceCulture);
@@ -1803,6 +1833,16 @@ namespace HomeAccountingSystem.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 收入0522 {
+            get {
+                object obj = ResourceManager.GetObject("收入0522", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 收银分组 {
             get {
                 object obj = ResourceManager.GetObject("收银分组", resourceCulture);
@@ -1953,6 +1993,26 @@ namespace HomeAccountingSystem.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 消费 {
+            get {
+                object obj = ResourceManager.GetObject("消费", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 消费_1_ {
+            get {
+                object obj = ResourceManager.GetObject("消费_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 用户管理 {
             get {
                 object obj = ResourceManager.GetObject("用户管理", resourceCulture);
@@ -2096,6 +2156,76 @@ namespace HomeAccountingSystem.Properties {
         internal static System.Drawing.Bitmap 补打账单 {
             get {
                 object obj = ResourceManager.GetObject("补打账单", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 规_双箭头 {
+            get {
+                object obj = ResourceManager.GetObject("规_双箭头", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 计算器 {
+            get {
+                object obj = ResourceManager.GetObject("计算器", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 计算器_1_ {
+            get {
+                object obj = ResourceManager.GetObject("计算器_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 记一笔 {
+            get {
+                object obj = ResourceManager.GetObject("记一笔", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 记一笔_1_ {
+            get {
+                object obj = ResourceManager.GetObject("记一笔_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 记一笔_2_ {
+            get {
+                object obj = ResourceManager.GetObject("记一笔_2_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 记一笔_3_ {
+            get {
+                object obj = ResourceManager.GetObject("记一笔_3_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

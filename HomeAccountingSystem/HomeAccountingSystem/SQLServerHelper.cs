@@ -16,7 +16,7 @@ namespace HomeAccountingSystem
     public abstract class SQLServerHelper
     {
         //数据库连接字符串(web.config来配置)，多数据库可使用SQLServerHelperP来实现.
-        public static string connectionString = null;
+        public static string connectionString = "";
         public SQLServerHelper()
         {
         }

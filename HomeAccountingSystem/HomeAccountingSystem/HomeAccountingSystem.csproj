@@ -1031,7 +1031,45 @@
   <ItemGroup>
     <None Include="Resources\image\common\作废.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\image\main\规_双箭头.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\会员消费分析%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\会员消费分析.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\计算器%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\计算器.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\记一笔%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\记一笔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\会员消费分析%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\记一笔%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\记一笔%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\收入0522.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\消费.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image\main\消费%281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -18,6 +18,10 @@ namespace HomeAccountingSystem
     {
         public MainForm()
         {
+            if (this.DesignMode)
+            {
+                SQLServerHelper.connectionString = "";
+            }
             InitializeComponent();
         }
         // 退出系统
@@ -30,12 +34,12 @@ namespace HomeAccountingSystem
             //this.topUserInfoUserControl1.delegateCloseMainPage = delegateCloseMainPage;
         }
 
-        private void delegateCloseMainPage(bool isTuichu)
-        {
-            m_isInquiry = Program.m_MainForm.m_isInquiry;
-            m_isTuichu = isTuichu;
-            this.Close();
-        }
+        //private void delegateCloseMainPage(bool isTuichu)
+        //{
+        //    m_isInquiry = Program.m_MainForm.m_isInquiry;
+        //    m_isTuichu = isTuichu;
+        //    this.Close();
+        //}
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {

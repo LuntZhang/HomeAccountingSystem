@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IncomeAccountsForm));
             this.buttonXSearch = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
@@ -1024,6 +1025,7 @@
             this.Controls.Add(this.gridControlDataList);
             this.Controls.Add(this.panelEx_body_top);
             this.Controls.Add(this.panelEx_top);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "IncomeAccountsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "收入账目";
