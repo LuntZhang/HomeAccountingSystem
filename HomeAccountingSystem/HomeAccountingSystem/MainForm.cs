@@ -31,15 +31,15 @@ namespace HomeAccountingSystem
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            //this.topUserInfoUserControl1.delegateCloseMainPage = delegateCloseMainPage;
+            this.topUserInfoUserControl1.delegateCloseMainPage = delegateCloseMainPage;
         }
 
-        //private void delegateCloseMainPage(bool isTuichu)
-        //{
-        //    m_isInquiry = Program.m_MainForm.m_isInquiry;
-        //    m_isTuichu = isTuichu;
-        //    this.Close();
-        //}
+        private void delegateCloseMainPage(bool isTuichu)
+        {
+            m_isInquiry = Program.m_MainForm.m_isInquiry;
+            m_isTuichu = isTuichu;
+            this.Close();
+        }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
