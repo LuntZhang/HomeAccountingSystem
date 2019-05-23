@@ -17,10 +17,24 @@ namespace HomeAccountingSystem.BLL
 	/// <summary>
 	/// 预算账目表
 	/// </summary>
-	public partial class jt_ys_zm
+	public partial class BudgetAccountsManager
 	{
-		private readonly HomeAccountingSystem.DAL.jt_ys_zm dal=new HomeAccountingSystem.DAL.jt_ys_zm();
-		public jt_ys_zm()
+        #region
+
+        private static BudgetAccountsManager instance = new BudgetAccountsManager();
+
+        public static BudgetAccountsManager Instance
+        {
+            get
+            {
+                return BudgetAccountsManager.instance;
+            }
+        }
+
+        #endregion
+
+        private readonly HomeAccountingSystem.DAL.jt_ys_zm dal=new HomeAccountingSystem.DAL.jt_ys_zm();
+		public BudgetAccountsManager()
 		{}
 		#region  BasicMethod
 

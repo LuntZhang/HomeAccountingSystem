@@ -187,6 +187,7 @@
             this.linkLabelExpendMoney.TabIndex = 0;
             this.linkLabelExpendMoney.TabStop = true;
             this.linkLabelExpendMoney.Text = "0.00";
+            this.linkLabelExpendMoney.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelExpendMoney_LinkClicked);
             // 
             // label1
             // 
@@ -259,6 +260,7 @@
             this.linkLabelIncomeMoney.TabIndex = 1;
             this.linkLabelIncomeMoney.TabStop = true;
             this.linkLabelIncomeMoney.Text = "0.00";
+            this.linkLabelIncomeMoney.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelIncomeMoney_LinkClicked);
             // 
             // label2
             // 

@@ -103,13 +103,6 @@ namespace HomeAccountingSystem
             BaseInfoForm formBaseInfo = new BaseInfoForm();
             formBaseInfo.ShowDialog();
         }
-        
-        // 支出
-        private void btnExpenditure_Click(object sender, EventArgs e)
-        {
-            SpendingAccountsForm form = new SpendingAccountsForm();
-            form.ShowDialog();
-        }
 
         private void btn_Click(object sender, EventArgs e)
         {
@@ -122,9 +115,17 @@ namespace HomeAccountingSystem
             string btnName = btn.Name;
             switch (btnName)
             {
+                case "btnExpenditure":
+                    SpendingAccountsForm formSpend = new SpendingAccountsForm();
+                    formSpend.ShowDialog();
+                    break;
                 case "btnIncome":
-                    IncomeAccountsForm form = new IncomeAccountsForm();
-                    form.ShowDialog();
+                    IncomeAccountsForm formIncome = new IncomeAccountsForm();
+                    formIncome.ShowDialog();
+                    break;
+                case "btnBudget":
+                    BudgetAccountsForm formBudget = new BudgetAccountsForm();
+                    formBudget.ShowDialog();
                     break;
                 default:
                     break;

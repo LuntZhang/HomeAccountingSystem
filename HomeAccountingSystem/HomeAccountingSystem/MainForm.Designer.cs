@@ -418,6 +418,7 @@
             this.btnBudget.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnBudget.Tip = "";
             this.btnBudget.TipColor = System.Drawing.Color.Red;
+            this.btnBudget.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnBorrowing
             // 
@@ -466,7 +467,7 @@
             this.btnExpenditure.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnExpenditure.Tip = "";
             this.btnExpenditure.TipColor = System.Drawing.Color.Red;
-            this.btnExpenditure.Click += new System.EventHandler(this.btnExpenditure_Click);
+            this.btnExpenditure.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnIncome
             // 

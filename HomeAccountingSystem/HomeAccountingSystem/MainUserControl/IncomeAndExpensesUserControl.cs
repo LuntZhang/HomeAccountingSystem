@@ -214,5 +214,17 @@ namespace HomeAccountingSystem.MainUserControl
             Label label = (Label)sender;
             label.ForeColor = Color.Blue;
         }
+
+        private void linkLabelExpendMoney_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SpendingAccountsForm formSpend = new SpendingAccountsForm();
+            formSpend.ShowDialog();
+        }
+
+        private void linkLabelIncomeMoney_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            IncomeAccountsForm formIncome = new IncomeAccountsForm();
+            formIncome.ShowDialog();
+        }
     }
 }

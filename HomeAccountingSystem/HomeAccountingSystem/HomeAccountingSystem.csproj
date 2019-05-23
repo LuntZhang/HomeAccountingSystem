@@ -111,11 +111,23 @@
     <Compile Include="AboutUserInfo\UserPhotoForm.Designer.cs">
       <DependentUpon>UserPhotoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AccountManagement\BudgetAccountsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountManagement\BudgetAccountsForm.Designer.cs">
+      <DependentUpon>BudgetAccountsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AccountManagement\CalculatorForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AccountManagement\CalculatorForm.Designer.cs">
       <DependentUpon>CalculatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountManagement\EditBudgetAccountsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountManagement\EditBudgetAccountsForm.Designer.cs">
+      <DependentUpon>EditBudgetAccountsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="AccountManagement\EditIncomeAccountsForm.cs">
       <SubType>Form</SubType>
@@ -178,7 +190,7 @@
     <Compile Include="BLL\IncomeAccountsManager.cs" />
     <Compile Include="BLL\LoginAccountManager.cs" />
     <Compile Include="BLL\UserInfoManager.cs" />
-    <Compile Include="BLL\jt_ys_zm.cs" />
+    <Compile Include="BLL\BudgetAccountsManager.cs" />
     <Compile Include="BLL\ExpendTypeManager.cs" />
     <Compile Include="BLL\ExpendAccountsManager.cs" />
     <Compile Include="BLL\PaymentTypeManager.cs" />
@@ -272,8 +284,14 @@
     <EmbeddedResource Include="AboutUserInfo\UserPhotoForm.resx">
       <DependentUpon>UserPhotoForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AccountManagement\BudgetAccountsForm.resx">
+      <DependentUpon>BudgetAccountsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AccountManagement\CalculatorForm.resx">
       <DependentUpon>CalculatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountManagement\EditBudgetAccountsForm.resx">
+      <DependentUpon>EditBudgetAccountsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AccountManagement\EditIncomeAccountsForm.resx">
       <DependentUpon>EditIncomeAccountsForm.cs</DependentUpon>

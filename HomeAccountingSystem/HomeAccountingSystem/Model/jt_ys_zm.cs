@@ -23,16 +23,36 @@ namespace HomeAccountingSystem.Model
 		private int _pk;
 		private string _v_yszm_no;
 		private string _v_yszm_name;
-		private DateTime? _t_date_start= DateTime.Now;
-		private DateTime? _t_date_end= DateTime.Now;
-		private decimal? _f_ys_money;
+		private DateTime _t_date_start= DateTime.Now;
+		private DateTime _t_date_end= DateTime.Now;
+		private decimal _f_ys_money;
 		private string _v_remark;
-		private DateTime? _t_create_time= DateTime.Now;
-		private int? _i_delete;
-		/// <summary>
-		/// 
+		private DateTime _t_create_time= DateTime.Now;
+		private int _i_delete;
+        private string _v_jz_user_pk;
+        private string _v_jz_user_name;
+
+        /// <summary>
+		/// 记账人pk
 		/// </summary>
-		public int pk
+		public string v_jz_user_pk
+        {
+            set { _v_jz_user_pk = value; }
+            get { return _v_jz_user_pk; }
+        }
+        /// <summary>
+		///  记账人
+		/// </summary>
+		public string v_jz_user_name
+        {
+            set { _v_jz_user_name = value; }
+            get { return _v_jz_user_name; }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int pk
 		{
 			set{ _pk=value;}
 			get{return _pk;}
@@ -56,7 +76,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 开始时间
 		/// </summary>
-		public DateTime? t_date_start
+		public DateTime t_date_start
 		{
 			set{ _t_date_start=value;}
 			get{return _t_date_start;}
@@ -64,7 +84,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 结束时间
 		/// </summary>
-		public DateTime? t_date_end
+		public DateTime t_date_end
 		{
 			set{ _t_date_end=value;}
 			get{return _t_date_end;}
@@ -72,7 +92,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 预算金额
 		/// </summary>
-		public decimal? f_ys_money
+		public decimal f_ys_money
 		{
 			set{ _f_ys_money=value;}
 			get{return _f_ys_money;}
@@ -88,7 +108,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 创建时间
 		/// </summary>
-		public DateTime? t_create_time
+		public DateTime t_create_time
 		{
 			set{ _t_create_time=value;}
 			get{return _t_create_time;}
@@ -96,7 +116,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 是否删除
 		/// </summary>
-		public int? i_delete
+		public int i_delete
 		{
 			set{ _i_delete=value;}
 			get{return _i_delete;}
