@@ -22,6 +22,8 @@ namespace HomeAccountingSystem.AccountManagement
         // 预算对象
         public jt_ys_zm m_yszmModel = null;
 
+        public  BudgetAccountsForm m_budgetAccountsForm = null;
+
         private void EditBudgetAccountsForm_Load(object sender, EventArgs e)
         {
             this.comboBoxDate.SelectedIndex = 0;

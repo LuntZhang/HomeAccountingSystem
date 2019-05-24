@@ -73,12 +73,7 @@
             this.buttonXDelete = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.buttonXAdd = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             this.panelEx_body_top = new DevComponents.DotNetBar.PanelEx();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.labelX6 = new DevComponents.DotNetBar.LabelX();
-            this.textBoxName = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.comboBoxExType = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonXSearch = new TZXControlLibrary.ButtonEx.TzxButtonEx();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewDataList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
@@ -87,8 +82,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputEndDate)).BeginInit();
             this.panelEx_top.SuspendLayout();
             this.panelEx_body_top.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridViewDataList
@@ -202,15 +195,15 @@
             this.DDno.AppearanceHeader.Options.UseFont = true;
             this.DDno.AppearanceHeader.Options.UseTextOptions = true;
             this.DDno.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.DDno.Caption = "账单编号";
-            this.DDno.FieldName = "v_zczm_no";
+            this.DDno.Caption = "预算编号";
+            this.DDno.FieldName = "v_yszm_no";
             this.DDno.Name = "DDno";
             this.DDno.OptionsColumn.AllowEdit = false;
             this.DDno.OptionsColumn.AllowFocus = false;
             this.DDno.OptionsColumn.AllowSize = false;
             this.DDno.Visible = true;
             this.DDno.VisibleIndex = 1;
-            this.DDno.Width = 100;
+            this.DDno.Width = 120;
             // 
             // TotalMoney
             // 
@@ -222,10 +215,10 @@
             this.TotalMoney.AppearanceHeader.Options.UseFont = true;
             this.TotalMoney.AppearanceHeader.Options.UseTextOptions = true;
             this.TotalMoney.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.TotalMoney.Caption = "消费金额";
+            this.TotalMoney.Caption = "预算金额";
             this.TotalMoney.DisplayFormat.FormatString = "{0:f2}";
             this.TotalMoney.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.TotalMoney.FieldName = "f_zc_money";
+            this.TotalMoney.FieldName = "f_ys_money";
             this.TotalMoney.Name = "TotalMoney";
             this.TotalMoney.OptionsColumn.AllowEdit = false;
             this.TotalMoney.OptionsColumn.AllowFocus = false;
@@ -242,8 +235,8 @@
             this.gridColumn16.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn16.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn16.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn16.Caption = "消费用途";
-            this.gridColumn16.FieldName = "v_zclx_name";
+            this.gridColumn16.Caption = "预算用途";
+            this.gridColumn16.FieldName = "v_yszm_name";
             this.gridColumn16.Name = "gridColumn16";
             this.gridColumn16.OptionsColumn.AllowEdit = false;
             this.gridColumn16.OptionsColumn.AllowFocus = false;
@@ -257,10 +250,10 @@
             this.gridColumn17.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn17.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn17.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn17.Caption = "消费日期";
+            this.gridColumn17.Caption = "开始日期";
             this.gridColumn17.DisplayFormat.FormatString = "{0:yyyy-MM-dd}";
             this.gridColumn17.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
-            this.gridColumn17.FieldName = "t_xf_time";
+            this.gridColumn17.FieldName = "t_date_start";
             this.gridColumn17.Name = "gridColumn17";
             this.gridColumn17.OptionsColumn.AllowEdit = false;
             this.gridColumn17.OptionsColumn.AllowFocus = false;
@@ -278,8 +271,10 @@
             this.gridColumn2.AppearanceHeader.Options.UseFont = true;
             this.gridColumn2.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn2.Caption = "支出用途描述";
-            this.gridColumn2.FieldName = "v_zczm_name";
+            this.gridColumn2.Caption = "结束日期";
+            this.gridColumn2.DisplayFormat.FormatString = "{0:yyyy-MM-dd}";
+            this.gridColumn2.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
+            this.gridColumn2.FieldName = "t_date_end";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.OptionsColumn.AllowFocus = false;
@@ -298,8 +293,6 @@
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.OptionsColumn.AllowEdit = false;
             this.gridColumn14.OptionsColumn.AllowFocus = false;
-            this.gridColumn14.Visible = true;
-            this.gridColumn14.VisibleIndex = 6;
             this.gridColumn14.Width = 100;
             // 
             // gridColumn15
@@ -313,8 +306,6 @@
             this.gridColumn15.Name = "gridColumn15";
             this.gridColumn15.OptionsColumn.AllowEdit = false;
             this.gridColumn15.OptionsColumn.AllowFocus = false;
-            this.gridColumn15.Visible = true;
-            this.gridColumn15.VisibleIndex = 7;
             this.gridColumn15.Width = 100;
             // 
             // WMType
@@ -336,7 +327,7 @@
             this.WMType.OptionsFilter.AllowAutoFilter = false;
             this.WMType.OptionsFilter.AllowFilter = false;
             this.WMType.Visible = true;
-            this.WMType.VisibleIndex = 8;
+            this.WMType.VisibleIndex = 6;
             this.WMType.Width = 100;
             // 
             // TTime
@@ -358,7 +349,7 @@
             this.TTime.OptionsColumn.AllowFocus = false;
             this.TTime.OptionsColumn.AllowSize = false;
             this.TTime.Visible = true;
-            this.TTime.VisibleIndex = 9;
+            this.TTime.VisibleIndex = 7;
             this.TTime.Width = 150;
             // 
             // gridColumn9
@@ -378,7 +369,7 @@
             this.gridColumn9.OptionsColumn.AllowFocus = false;
             this.gridColumn9.OptionsColumn.AllowSize = false;
             this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 10;
+            this.gridColumn9.VisibleIndex = 8;
             this.gridColumn9.Width = 150;
             // 
             // vNo
@@ -551,7 +542,7 @@
             this.gridControlDataList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControlDataList.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gridControlDataList.Font = new System.Drawing.Font("微软雅黑", 11.5F);
-            this.gridControlDataList.Location = new System.Drawing.Point(0, 186);
+            this.gridControlDataList.Location = new System.Drawing.Point(0, 156);
             this.gridControlDataList.LookAndFeel.SkinName = "Office 2010 Silver";
             this.gridControlDataList.LookAndFeel.UseDefaultLookAndFeel = false;
             this.gridControlDataList.MainView = this.gridViewDataList;
@@ -559,10 +550,11 @@
             this.gridControlDataList.Name = "gridControlDataList";
             this.gridControlDataList.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1});
-            this.gridControlDataList.Size = new System.Drawing.Size(1284, 455);
+            this.gridControlDataList.Size = new System.Drawing.Size(1284, 485);
             this.gridControlDataList.TabIndex = 36;
             this.gridControlDataList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewDataList});
+            this.gridControlDataList.DoubleClick += new System.EventHandler(this.buttonXModify_Click);
             // 
             // comboBoxExTIME
             // 
@@ -581,12 +573,13 @@
             this.comboItem10,
             this.comboItem11,
             this.comboItem12});
-            this.comboBoxExTIME.Location = new System.Drawing.Point(10, 43);
+            this.comboBoxExTIME.Location = new System.Drawing.Point(140, 30);
             this.comboBoxExTIME.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxExTIME.Name = "comboBoxExTIME";
             this.comboBoxExTIME.Size = new System.Drawing.Size(95, 29);
             this.comboBoxExTIME.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.comboBoxExTIME.TabIndex = 67;
+            this.comboBoxExTIME.SelectedIndexChanged += new System.EventHandler(this.comboBoxExTIME_SelectedIndexChanged);
             // 
             // comboItem2
             // 
@@ -637,7 +630,7 @@
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelX4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.labelX4.Location = new System.Drawing.Point(123, 25);
+            this.labelX4.Location = new System.Drawing.Point(245, 15);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(90, 26);
             this.labelX4.TabIndex = 63;
@@ -653,7 +646,7 @@
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelX3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.labelX3.Location = new System.Drawing.Point(123, 63);
+            this.labelX3.Location = new System.Drawing.Point(245, 53);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(90, 26);
             this.labelX3.TabIndex = 64;
@@ -674,7 +667,7 @@
             this.dateTimeInputStartDate.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dateTimeInputStartDate.Format = DevComponents.Editors.eDateTimePickerFormat.Custom;
             this.dateTimeInputStartDate.IsPopupCalendarOpen = false;
-            this.dateTimeInputStartDate.Location = new System.Drawing.Point(219, 23);
+            this.dateTimeInputStartDate.Location = new System.Drawing.Point(341, 13);
             // 
             // 
             // 
@@ -729,7 +722,7 @@
             this.dateTimeInputEndDate.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dateTimeInputEndDate.Format = DevComponents.Editors.eDateTimePickerFormat.Custom;
             this.dateTimeInputEndDate.IsPopupCalendarOpen = false;
-            this.dateTimeInputEndDate.Location = new System.Drawing.Point(219, 63);
+            this.dateTimeInputEndDate.Location = new System.Drawing.Point(341, 53);
             // 
             // 
             // 
@@ -810,6 +803,7 @@
             this.buttonXExit.Size = new System.Drawing.Size(80, 40);
             this.buttonXExit.TabIndex = 8;
             this.buttonXExit.Text = "退出";
+            this.buttonXExit.Click += new System.EventHandler(this.buttonXExit_Click);
             // 
             // buttonXRefresh
             // 
@@ -826,6 +820,7 @@
             this.buttonXRefresh.Size = new System.Drawing.Size(80, 40);
             this.buttonXRefresh.TabIndex = 6;
             this.buttonXRefresh.Text = "刷新";
+            this.buttonXRefresh.Click += new System.EventHandler(this.buttonXRefresh_Click);
             // 
             // buttonXModify
             // 
@@ -842,6 +837,7 @@
             this.buttonXModify.Size = new System.Drawing.Size(80, 40);
             this.buttonXModify.TabIndex = 4;
             this.buttonXModify.Text = "修改";
+            this.buttonXModify.Click += new System.EventHandler(this.buttonXModify_Click);
             // 
             // buttonXDelete
             // 
@@ -858,6 +854,7 @@
             this.buttonXDelete.Size = new System.Drawing.Size(80, 40);
             this.buttonXDelete.TabIndex = 3;
             this.buttonXDelete.Text = "删除";
+            this.buttonXDelete.Click += new System.EventHandler(this.buttonXDelete_Click);
             // 
             // buttonXAdd
             // 
@@ -880,15 +877,19 @@
             // 
             this.panelEx_body_top.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx_body_top.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx_body_top.Controls.Add(this.groupBox2);
-            this.panelEx_body_top.Controls.Add(this.groupBox1);
+            this.panelEx_body_top.Controls.Add(this.labelX1);
+            this.panelEx_body_top.Controls.Add(this.comboBoxExTIME);
+            this.panelEx_body_top.Controls.Add(this.labelX4);
+            this.panelEx_body_top.Controls.Add(this.labelX3);
             this.panelEx_body_top.Controls.Add(this.buttonXSearch);
+            this.panelEx_body_top.Controls.Add(this.dateTimeInputStartDate);
+            this.panelEx_body_top.Controls.Add(this.dateTimeInputEndDate);
             this.panelEx_body_top.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx_body_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelEx_body_top.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.panelEx_body_top.Location = new System.Drawing.Point(0, 61);
             this.panelEx_body_top.Name = "panelEx_body_top";
-            this.panelEx_body_top.Size = new System.Drawing.Size(1284, 125);
+            this.panelEx_body_top.Size = new System.Drawing.Size(1284, 95);
             this.panelEx_body_top.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx_body_top.Style.BackColor1.Color = System.Drawing.Color.White;
             this.panelEx_body_top.Style.BackColor2.Color = System.Drawing.Color.White;
@@ -898,99 +899,21 @@
             this.panelEx_body_top.Style.GradientAngle = 90;
             this.panelEx_body_top.TabIndex = 35;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.labelX1);
-            this.groupBox2.Controls.Add(this.labelX6);
-            this.groupBox2.Controls.Add(this.textBoxName);
-            this.groupBox2.Controls.Add(this.comboBoxExType);
-            this.groupBox2.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox2.Location = new System.Drawing.Point(524, 5);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(340, 109);
-            this.groupBox2.TabIndex = 43;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "条件选项";
-            // 
             // labelX1
             // 
             this.labelX1.AutoSize = true;
-            this.labelX1.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.labelX1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelX1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.labelX1.Location = new System.Drawing.Point(55, 63);
+            this.labelX1.Location = new System.Drawing.Point(12, 33);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(90, 26);
-            this.labelX1.TabIndex = 107;
-            this.labelX1.Text = "消费的人：";
-            // 
-            // labelX6
-            // 
-            this.labelX6.AutoSize = true;
-            this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX6.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.labelX6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.labelX6.Location = new System.Drawing.Point(22, 25);
-            this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(123, 26);
-            this.labelX6.TabIndex = 105;
-            this.labelX6.Text = "支出用途选择：";
-            // 
-            // textBoxName
-            // 
-            // 
-            // 
-            // 
-            this.textBoxName.Border.Class = "TextBoxBorder";
-            this.textBoxName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.textBoxName.Location = new System.Drawing.Point(161, 64);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.PreventEnterBeep = true;
-            this.textBoxName.Size = new System.Drawing.Size(142, 27);
-            this.textBoxName.TabIndex = 104;
-            // 
-            // comboBoxExType
-            // 
-            this.comboBoxExType.DisplayMember = "Text";
-            this.comboBoxExType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBoxExType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxExType.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.comboBoxExType.FormattingEnabled = true;
-            this.comboBoxExType.ItemHeight = 23;
-            this.comboBoxExType.Location = new System.Drawing.Point(161, 23);
-            this.comboBoxExType.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBoxExType.Name = "comboBoxExType";
-            this.comboBoxExType.Size = new System.Drawing.Size(142, 29);
-            this.comboBoxExType.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.comboBoxExType.TabIndex = 106;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBoxExTIME);
-            this.groupBox1.Controls.Add(this.labelX4);
-            this.groupBox1.Controls.Add(this.labelX3);
-            this.groupBox1.Controls.Add(this.dateTimeInputStartDate);
-            this.groupBox1.Controls.Add(this.dateTimeInputEndDate);
-            this.groupBox1.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox1.Location = new System.Drawing.Point(6, 5);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(494, 109);
-            this.groupBox1.TabIndex = 44;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "时间选项";
+            this.labelX1.Size = new System.Drawing.Size(123, 26);
+            this.labelX1.TabIndex = 70;
+            this.labelX1.Text = "快速选择时间：";
+            this.labelX1.TextAlignment = System.Drawing.StringAlignment.Far;
             // 
             // buttonXSearch
             // 
@@ -1002,12 +925,13 @@
             this.buttonXSearch.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.buttonXSearch.ForeColor = System.Drawing.Color.White;
             this.buttonXSearch.ImageTextSpace = 5;
-            this.buttonXSearch.Location = new System.Drawing.Point(890, 41);
+            this.buttonXSearch.Location = new System.Drawing.Point(639, 28);
             this.buttonXSearch.Name = "buttonXSearch";
             this.buttonXSearch.Size = new System.Drawing.Size(84, 36);
             this.buttonXSearch.TabIndex = 69;
             this.buttonXSearch.Text = "检索";
             this.buttonXSearch.UseVisualStyleBackColor = false;
+            this.buttonXSearch.Click += new System.EventHandler(this.buttonXSearch_Click);
             // 
             // BudgetAccountsForm
             // 
@@ -1020,6 +944,7 @@
             this.Name = "BudgetAccountsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "账目预算";
+            this.Load += new System.EventHandler(this.BudgetAccountsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewDataList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlDataList)).EndInit();
@@ -1027,10 +952,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputEndDate)).EndInit();
             this.panelEx_top.ResumeLayout(false);
             this.panelEx_body_top.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.panelEx_body_top.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1082,12 +1004,7 @@
         private TZXControlLibrary.ButtonEx.TzxButtonEx buttonXDelete;
         private TZXControlLibrary.ButtonEx.TzxButtonEx buttonXAdd;
         private DevComponents.DotNetBar.PanelEx panelEx_body_top;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private DevComponents.DotNetBar.LabelX labelX1;
-        private DevComponents.DotNetBar.LabelX labelX6;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxName;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxExType;
-        private System.Windows.Forms.GroupBox groupBox1;
         private TZXControlLibrary.ButtonEx.TzxButtonEx buttonXSearch;
+        private DevComponents.DotNetBar.LabelX labelX1;
     }
 }

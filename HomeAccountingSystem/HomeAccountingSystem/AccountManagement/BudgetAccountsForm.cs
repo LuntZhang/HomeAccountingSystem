@@ -6,6 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using HomeAccountingSystem.BLL;
+using HomeAccountingSystem.Model;
+using HomeAccountingSystem.Utility;
 
 namespace HomeAccountingSystem.AccountManagement
 {
@@ -15,6 +18,78 @@ namespace HomeAccountingSystem.AccountManagement
         {
             InitializeComponent();
         }
+        // 选中行
+        private int m_selectRow = 0;
+
+        private void BudgetAccountsForm_Load(object sender, EventArgs e)
+        {
+            this.comboBoxExTIME.SelectedIndex = 0;
+            loadDataList();
+        }
+
+        private void loadDataList()
+        {
+            this.gridControlDataList.DataSource = BudgetAccountsManager.Instance.getBudgetAccountsData(this.dateTimeInputStartDate.Value, this.dateTimeInputEndDate.Value);
+            this.selectRow();
+        }
+
+        /// <summary>
+        /// 选中行
+        /// </summary>
+        public void selectRow()
+        {
+            if (this.gridViewDataList.RowCount == 0)
+            {
+                return;
+            }
+            if (m_selectRow < this.gridViewDataList.RowCount)
+            {
+                this.gridViewDataList.SelectAll();
+                this.gridViewDataList.FocusedRowHandle = m_selectRow;
+            }
+        }
+
+        private void comboBoxExTIME_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string sValue = comboBoxExTIME.SelectedItem.ToString();
+            switch (sValue)
+            {
+                case "全部":
+                    dateTimeInputStartDate.Value = DateTime.Parse("2000-01-01"); ;
+                    dateTimeInputEndDate.Value = DateTime.Now;
+                    break;
+                case "今天":
+                    dateTimeInputStartDate.Value = DateTime.Today;
+                    dateTimeInputEndDate.Value = DateTime.Now;
+                    break;
+                case "昨天":
+                    dateTimeInputStartDate.Value = DateTime.Parse(DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd"));
+                    dateTimeInputEndDate.Value = DateTime.Parse(DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd 23:59:59.9999"));
+                    break;
+                case "前天":
+                    dateTimeInputStartDate.Value = DateTime.Parse(DateTime.Now.AddDays(-2).ToString("yyyy-MM-dd"));
+                    dateTimeInputEndDate.Value = DateTime.Parse(DateTime.Now.AddDays(-2).ToString("yyyy-MM-dd 23:59:59.9999"));
+                    break;
+                case "本周":
+                    dateTimeInputStartDate.Value = DateTime.Parse(DateTime.Now.AddDays(1 - Convert.ToInt32(DateTime.Now.DayOfWeek.ToString("d"))).ToString("yyyy-MM-dd"));
+                    dateTimeInputEndDate.Value = DateTime.Now;
+                    break;
+                case "上周":
+                    dateTimeInputStartDate.Value = DateTime.Parse(DateTime.Now.AddDays(Convert.ToDouble((1 - Convert.ToInt16(DateTime.Now.DayOfWeek))) - 7).ToString("yyyy-MM-dd"));
+                    dateTimeInputEndDate.Value = DateTime.Parse(DateTime.Now.AddDays(Convert.ToDouble(0 - Convert.ToInt16(DateTime.Now.DayOfWeek))).ToString("yyyy-MM-dd 23:59:59.9999"));
+                    break;
+                case "本月":
+                    dateTimeInputStartDate.Value = DateTime.Parse(DateTime.Now.ToString("yyyy-MM-01"));
+                    dateTimeInputEndDate.Value = DateTime.Now;
+                    break;
+                case "本年":
+                    dateTimeInputStartDate.Value = DateTime.Parse(DateTime.Now.ToString("yyyy-01-01"));
+                    dateTimeInputEndDate.Value = DateTime.Now;
+                    break;
+                default:
+                    break;
+            }
+        }
 
         private void buttonXAdd_Click(object sender, EventArgs e)
         {
@@ -22,8 +97,78 @@ namespace HomeAccountingSystem.AccountManagement
             form.ShowDialog();
             if (form.DialogResult == DialogResult.OK)
             {
-                //this.loadDataList();
+                this.loadDataList();
             }
+        }
+
+        private void buttonXModify_Click(object sender, EventArgs e)
+        {
+            if (this.gridViewDataList.SelectedRowsCount == 0)
+            {
+                MessageBox.Show("请选择一条数据！", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            m_selectRow = this.gridViewDataList.FocusedRowHandle;
+            // 取出pk
+            int selectRow = this.gridViewDataList.GetSelectedRows()[0];
+            int pk = Convert.ToInt32(this.gridViewDataList.GetRowCellValue(selectRow, "pk").ToString());
+            jt_ys_zm yszmModel = BudgetAccountsManager.Instance.GetModel(pk);
+            EditBudgetAccountsForm form = new EditBudgetAccountsForm();
+            form.m_yszmModel = yszmModel;
+            form.m_budgetAccountsForm = this;
+            form.ShowDialog();
+
+            if (form.DialogResult == DialogResult.OK)
+            {
+                this.loadDataList();
+            }
+        }
+
+        private void buttonXDelete_Click(object sender, EventArgs e)
+        {
+            if (this.gridViewDataList.SelectedRowsCount == 0)
+            {
+                MessageBox.Show("请选择一条数据！", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!MessageBoxFunction.showQuestionMessageBox("确定要删除这条数据？"))
+            {
+                return;
+            }
+
+            // 取出pk
+            int selectRow = this.gridViewDataList.GetSelectedRows()[0];
+            int pk = Convert.ToInt32(this.gridViewDataList.GetRowCellValue(selectRow, "pk").ToString());
+            bool isSuccess = BudgetAccountsManager.Instance.Delete(pk);
+            if (isSuccess)
+            {
+                MessageBox.Show("删除成功！", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.loadDataList();
+            }
+            else
+            {
+                MessageBox.Show("删除失败！", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void buttonXRefresh_Click(object sender, EventArgs e)
+        {
+            loadDataList();
+        }
+
+        private void buttonXExit_Click(object sender, EventArgs e)
+        {
+            base.Close();
+        }
+
+        private void buttonXSearch_Click(object sender, EventArgs e)
+        {
+            loadDataList();
+        }
+
+        private void gridControlDataList_DoubleClick(object sender, EventArgs e)
+        {
+            loadDataList();
         }
     }
 }

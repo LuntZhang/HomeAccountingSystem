@@ -156,18 +156,43 @@ namespace HomeAccountingSystem.BLL
 		{
 			return dal.GetListByPage( strWhere,  orderby,  startIndex,  endIndex);
 		}
-		/// <summary>
-		/// 分页获取数据列表
-		/// </summary>
-		//public DataSet GetList(int PageSize,int PageIndex,string strWhere)
-		//{
-			//return dal.GetList(PageSize,PageIndex,strWhere);
-		//}
+        /// <summary>
+        /// 分页获取数据列表
+        /// </summary>
+        //public DataSet GetList(int PageSize,int PageIndex,string strWhere)
+        //{
+        //return dal.GetList(PageSize,PageIndex,strWhere);
+        //}
 
-		#endregion  BasicMethod
-		#region  ExtensionMethod
+        #endregion  BasicMethod
+        #region  ExtensionMethod
 
-		#endregion  ExtensionMethod
-	}
+        public DataTable getBudgetAccountsData(DateTime startTime, DateTime endTime)
+        {
+            string strTime = string.Format(" t_date_start>='{0}' and t_date_end<='{1}'", startTime, endTime);
+            string strSql = string.Format(
+                 strTime + "  order by t_create_time desc"
+                );
+            DataTable dataTable = null;
+            DataSet dataSet = this.GetList(strSql);
+            if (dataSet != null && dataSet.Tables.Count > 0)
+            {
+                dataTable = dataSet.Tables[0];
+            }
+            dataTable.Columns.Add("row", typeof(string));
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                int index = 0;
+                foreach (DataRow item in dataTable.Rows)
+                {
+                    index++;
+                    item["row"] = index;
+                }
+            }
+            return dataTable;
+        }
+
+        #endregion  ExtensionMethod
+    }
 }
 
