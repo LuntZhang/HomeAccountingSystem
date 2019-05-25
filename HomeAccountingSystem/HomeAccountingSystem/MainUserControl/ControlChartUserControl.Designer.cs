@@ -37,9 +37,9 @@
             this.panelIncome = new System.Windows.Forms.Panel();
             this.chartExpendData = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panelTime = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.labelBeforeOneDay = new System.Windows.Forms.Label();
+            this.comboBoxExTIME = new System.Windows.Forms.ComboBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.labelBeforeOneDay = new System.Windows.Forms.Label();
             this.panelAll.SuspendLayout();
             this.panelIncome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartExpendData)).BeginInit();
@@ -97,7 +97,7 @@
             // panelTime
             // 
             this.panelTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.panelTime.Controls.Add(this.comboBox1);
+            this.panelTime.Controls.Add(this.comboBoxExTIME);
             this.panelTime.Controls.Add(this.pictureBox3);
             this.panelTime.Controls.Add(this.labelBeforeOneDay);
             this.panelTime.Dock = System.Windows.Forms.DockStyle.Top;
@@ -106,25 +106,15 @@
             this.panelTime.Size = new System.Drawing.Size(540, 34);
             this.panelTime.TabIndex = 1;
             // 
-            // comboBox1
+            // comboBoxExTIME
             // 
-            this.comboBox1.Font = new System.Drawing.Font("宋体", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(485, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(52, 24);
-            this.comboBox1.TabIndex = 5;
-            // 
-            // labelBeforeOneDay
-            // 
-            this.labelBeforeOneDay.AutoSize = true;
-            this.labelBeforeOneDay.Font = new System.Drawing.Font("宋体", 12F);
-            this.labelBeforeOneDay.ForeColor = System.Drawing.Color.White;
-            this.labelBeforeOneDay.Location = new System.Drawing.Point(33, 9);
-            this.labelBeforeOneDay.Name = "labelBeforeOneDay";
-            this.labelBeforeOneDay.Size = new System.Drawing.Size(72, 16);
-            this.labelBeforeOneDay.TabIndex = 3;
-            this.labelBeforeOneDay.Text = "消费分析";
+            this.comboBoxExTIME.Font = new System.Drawing.Font("宋体", 12F);
+            this.comboBoxExTIME.FormattingEnabled = true;
+            this.comboBoxExTIME.Location = new System.Drawing.Point(461, 5);
+            this.comboBoxExTIME.Name = "comboBoxExTIME";
+            this.comboBoxExTIME.Size = new System.Drawing.Size(76, 24);
+            this.comboBoxExTIME.TabIndex = 5;
+            this.comboBoxExTIME.SelectedIndexChanged += new System.EventHandler(this.comboBoxExTIME_SelectedIndexChanged);
             // 
             // pictureBox3
             // 
@@ -136,6 +126,17 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
+            // 
+            // labelBeforeOneDay
+            // 
+            this.labelBeforeOneDay.AutoSize = true;
+            this.labelBeforeOneDay.Font = new System.Drawing.Font("宋体", 12F);
+            this.labelBeforeOneDay.ForeColor = System.Drawing.Color.White;
+            this.labelBeforeOneDay.Location = new System.Drawing.Point(33, 9);
+            this.labelBeforeOneDay.Name = "labelBeforeOneDay";
+            this.labelBeforeOneDay.Size = new System.Drawing.Size(72, 16);
+            this.labelBeforeOneDay.TabIndex = 3;
+            this.labelBeforeOneDay.Text = "消费分析";
             // 
             // ControlChartUserControl
             // 
@@ -164,6 +165,6 @@
         private System.Windows.Forms.Label labelBeforeOneDay;
         private System.Windows.Forms.Panel panelIncome;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartExpendData;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxExTIME;
     }
 }
