@@ -624,6 +624,7 @@
             this.ClientSize = new System.Drawing.Size(1284, 641);
             this.Controls.Add(this.tzxPanelAll);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "家庭记账管理系统";

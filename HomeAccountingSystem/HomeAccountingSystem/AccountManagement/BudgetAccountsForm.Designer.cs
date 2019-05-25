@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BudgetAccountsForm));
             this.gridViewDataList = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DDno = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -203,7 +204,7 @@
             this.DDno.OptionsColumn.AllowSize = false;
             this.DDno.Visible = true;
             this.DDno.VisibleIndex = 1;
-            this.DDno.Width = 120;
+            this.DDno.Width = 150;
             // 
             // TotalMoney
             // 
@@ -259,7 +260,7 @@
             this.gridColumn17.OptionsColumn.AllowFocus = false;
             this.gridColumn17.Visible = true;
             this.gridColumn17.VisibleIndex = 4;
-            this.gridColumn17.Width = 100;
+            this.gridColumn17.Width = 150;
             // 
             // gridColumn2
             // 
@@ -941,6 +942,7 @@
             this.Controls.Add(this.gridControlDataList);
             this.Controls.Add(this.panelEx_body_top);
             this.Controls.Add(this.panelEx_top);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BudgetAccountsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "账目预算";

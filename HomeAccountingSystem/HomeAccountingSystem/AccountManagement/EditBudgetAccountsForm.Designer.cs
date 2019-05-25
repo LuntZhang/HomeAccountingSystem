@@ -28,13 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditBudgetAccountsForm));
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.btnCancel = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.btnOK = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dateTimeTallyDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
+            this.textBoxUserName = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX12 = new DevComponents.DotNetBar.LabelX();
+            this.label9 = new System.Windows.Forms.Label();
+            this.labelX14 = new DevComponents.DotNetBar.LabelX();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dateTimeEnd = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
+            this.labelX7 = new DevComponents.DotNetBar.LabelX();
+            this.textBoxName = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelName = new DevComponents.DotNetBar.LabelX();
             this.btnCalculator = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.comboBoxDate = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.comboItem1 = new DevComponents.Editors.ComboItem();
+            this.comboItem2 = new DevComponents.Editors.ComboItem();
             this.dateTimeStart = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.label6 = new System.Windows.Forms.Label();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
@@ -46,25 +61,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxNo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelNo = new DevComponents.DotNetBar.LabelX();
-            this.label1 = new System.Windows.Forms.Label();
-            this.labelName = new DevComponents.DotNetBar.LabelX();
-            this.textBoxName = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.dateTimeEnd = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
-            this.labelX7 = new DevComponents.DotNetBar.LabelX();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboItem1 = new DevComponents.Editors.ComboItem();
-            this.comboItem2 = new DevComponents.Editors.ComboItem();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dateTimeTallyDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
-            this.textBoxUserName = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX12 = new DevComponents.DotNetBar.LabelX();
-            this.label9 = new System.Windows.Forms.Label();
-            this.labelX14 = new DevComponents.DotNetBar.LabelX();
             this.panelEx1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateTimeStart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateTimeEnd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeTallyDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeEnd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeStart)).BeginInit();
             this.SuspendLayout();
             // 
             // panelEx1
@@ -197,6 +198,244 @@
             this.groupPanel3.TabIndex = 99;
             this.groupPanel3.Text = "预算信息";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(336, 142);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(15, 20);
+            this.label7.TabIndex = 137;
+            this.label7.Text = "*";
+            // 
+            // dateTimeTallyDate
+            // 
+            // 
+            // 
+            // 
+            this.dateTimeTallyDate.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dateTimeTallyDate.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dateTimeTallyDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.dateTimeTallyDate.ButtonDropDown.Visible = true;
+            this.dateTimeTallyDate.CustomFormat = "yyyy-MM-dd";
+            this.dateTimeTallyDate.Enabled = false;
+            this.dateTimeTallyDate.IsPopupCalendarOpen = false;
+            this.dateTimeTallyDate.Location = new System.Drawing.Point(455, 142);
+            // 
+            // 
+            // 
+            this.dateTimeTallyDate.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.dateTimeTallyDate.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dateTimeTallyDate.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.dateTimeTallyDate.MonthCalendar.ClearButtonVisible = true;
+            // 
+            // 
+            // 
+            this.dateTimeTallyDate.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.dateTimeTallyDate.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.dateTimeTallyDate.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.dateTimeTallyDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.dateTimeTallyDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.dateTimeTallyDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.dateTimeTallyDate.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dateTimeTallyDate.MonthCalendar.DisplayMonth = new System.DateTime(2018, 7, 1, 0, 0, 0, 0);
+            this.dateTimeTallyDate.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
+            this.dateTimeTallyDate.MonthCalendar.MarkedDates = new System.DateTime[0];
+            this.dateTimeTallyDate.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.dateTimeTallyDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.dateTimeTallyDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.dateTimeTallyDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.dateTimeTallyDate.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dateTimeTallyDate.MonthCalendar.TodayButtonVisible = true;
+            this.dateTimeTallyDate.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
+            this.dateTimeTallyDate.Name = "dateTimeTallyDate";
+            this.dateTimeTallyDate.Size = new System.Drawing.Size(146, 26);
+            this.dateTimeTallyDate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.dateTimeTallyDate.TabIndex = 136;
+            // 
+            // textBoxUserName
+            // 
+            // 
+            // 
+            // 
+            this.textBoxUserName.Border.Class = "TextBoxBorder";
+            this.textBoxUserName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.textBoxUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.textBoxUserName.Location = new System.Drawing.Point(171, 144);
+            this.textBoxUserName.Name = "textBoxUserName";
+            this.textBoxUserName.PreventEnterBeep = true;
+            this.textBoxUserName.ReadOnly = true;
+            this.textBoxUserName.Size = new System.Drawing.Size(142, 26);
+            this.textBoxUserName.TabIndex = 135;
+            // 
+            // labelX12
+            // 
+            this.labelX12.AutoSize = true;
+            this.labelX12.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX12.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.labelX12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.labelX12.Location = new System.Drawing.Point(350, 142);
+            this.labelX12.Name = "labelX12";
+            this.labelX12.Size = new System.Drawing.Size(90, 26);
+            this.labelX12.TabIndex = 134;
+            this.labelX12.Text = "记账时间：";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(61, 142);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(15, 20);
+            this.label9.TabIndex = 133;
+            this.label9.Text = "*";
+            // 
+            // labelX14
+            // 
+            this.labelX14.AutoSize = true;
+            this.labelX14.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX14.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX14.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.labelX14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.labelX14.Location = new System.Drawing.Point(82, 145);
+            this.labelX14.Name = "labelX14";
+            this.labelX14.Size = new System.Drawing.Size(74, 26);
+            this.labelX14.TabIndex = 132;
+            this.labelX14.Text = "记账人：";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(45, 103);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(15, 20);
+            this.label4.TabIndex = 127;
+            this.label4.Text = "*";
+            // 
+            // dateTimeEnd
+            // 
+            // 
+            // 
+            // 
+            this.dateTimeEnd.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dateTimeEnd.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dateTimeEnd.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.dateTimeEnd.ButtonDropDown.Visible = true;
+            this.dateTimeEnd.CustomFormat = "yyyy-MM-dd";
+            this.dateTimeEnd.IsPopupCalendarOpen = false;
+            this.dateTimeEnd.Location = new System.Drawing.Point(457, 103);
+            // 
+            // 
+            // 
+            this.dateTimeEnd.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.dateTimeEnd.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dateTimeEnd.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.dateTimeEnd.MonthCalendar.ClearButtonVisible = true;
+            // 
+            // 
+            // 
+            this.dateTimeEnd.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.dateTimeEnd.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.dateTimeEnd.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.dateTimeEnd.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.dateTimeEnd.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.dateTimeEnd.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.dateTimeEnd.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dateTimeEnd.MonthCalendar.DisplayMonth = new System.DateTime(2018, 7, 1, 0, 0, 0, 0);
+            this.dateTimeEnd.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
+            this.dateTimeEnd.MonthCalendar.MarkedDates = new System.DateTime[0];
+            this.dateTimeEnd.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.dateTimeEnd.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.dateTimeEnd.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.dateTimeEnd.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.dateTimeEnd.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dateTimeEnd.MonthCalendar.TodayButtonVisible = true;
+            this.dateTimeEnd.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
+            this.dateTimeEnd.Name = "dateTimeEnd";
+            this.dateTimeEnd.Size = new System.Drawing.Size(144, 26);
+            this.dateTimeEnd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.dateTimeEnd.TabIndex = 125;
+            // 
+            // labelX7
+            // 
+            this.labelX7.AutoSize = true;
+            this.labelX7.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX7.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.labelX7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.labelX7.Location = new System.Drawing.Point(352, 103);
+            this.labelX7.Name = "labelX7";
+            this.labelX7.Size = new System.Drawing.Size(90, 26);
+            this.labelX7.TabIndex = 126;
+            this.labelX7.Text = "结束日期：";
+            // 
+            // textBoxName
+            // 
+            // 
+            // 
+            // 
+            this.textBoxName.Border.Class = "TextBoxBorder";
+            this.textBoxName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.textBoxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.textBoxName.Location = new System.Drawing.Point(459, 13);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.PreventEnterBeep = true;
+            this.textBoxName.Size = new System.Drawing.Size(142, 26);
+            this.textBoxName.TabIndex = 124;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(338, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(15, 20);
+            this.label1.TabIndex = 123;
+            this.label1.Text = "*";
+            // 
+            // labelName
+            // 
+            this.labelName.AutoSize = true;
+            this.labelName.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelName.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelName.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.labelName.Location = new System.Drawing.Point(352, 15);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(90, 26);
+            this.labelName.TabIndex = 122;
+            this.labelName.Text = "预算用途：";
+            // 
             // btnCalculator
             // 
             this.btnCalculator.AccessibleName = "2-1100";
@@ -251,6 +490,10 @@
             this.comboBoxDate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.comboBoxDate.TabIndex = 118;
             this.comboBoxDate.SelectedIndexChanged += new System.EventHandler(this.comboBoxDate_SelectedIndexChanged);
+            // 
+            // comboItem2
+            // 
+            this.comboItem2.Text = "本月";
             // 
             // dateTimeStart
             // 
@@ -442,254 +685,13 @@
             this.labelNo.TabIndex = 103;
             this.labelNo.Text = "预算编号：";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(338, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(15, 20);
-            this.label1.TabIndex = 123;
-            this.label1.Text = "*";
-            // 
-            // labelName
-            // 
-            this.labelName.AutoSize = true;
-            this.labelName.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelName.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelName.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.labelName.Location = new System.Drawing.Point(352, 15);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(90, 26);
-            this.labelName.TabIndex = 122;
-            this.labelName.Text = "预算用途：";
-            // 
-            // textBoxName
-            // 
-            // 
-            // 
-            // 
-            this.textBoxName.Border.Class = "TextBoxBorder";
-            this.textBoxName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.textBoxName.Location = new System.Drawing.Point(459, 13);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.PreventEnterBeep = true;
-            this.textBoxName.Size = new System.Drawing.Size(142, 26);
-            this.textBoxName.TabIndex = 124;
-            // 
-            // dateTimeEnd
-            // 
-            // 
-            // 
-            // 
-            this.dateTimeEnd.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dateTimeEnd.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeEnd.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
-            this.dateTimeEnd.ButtonDropDown.Visible = true;
-            this.dateTimeEnd.CustomFormat = "yyyy-MM-dd";
-            this.dateTimeEnd.IsPopupCalendarOpen = false;
-            this.dateTimeEnd.Location = new System.Drawing.Point(457, 103);
-            // 
-            // 
-            // 
-            this.dateTimeEnd.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
-            // 
-            // 
-            // 
-            this.dateTimeEnd.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeEnd.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.dateTimeEnd.MonthCalendar.ClearButtonVisible = true;
-            // 
-            // 
-            // 
-            this.dateTimeEnd.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
-            this.dateTimeEnd.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
-            this.dateTimeEnd.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.dateTimeEnd.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.dateTimeEnd.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.dateTimeEnd.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.dateTimeEnd.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeEnd.MonthCalendar.DisplayMonth = new System.DateTime(2018, 7, 1, 0, 0, 0, 0);
-            this.dateTimeEnd.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
-            this.dateTimeEnd.MonthCalendar.MarkedDates = new System.DateTime[0];
-            this.dateTimeEnd.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
-            // 
-            // 
-            // 
-            this.dateTimeEnd.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.dateTimeEnd.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
-            this.dateTimeEnd.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.dateTimeEnd.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeEnd.MonthCalendar.TodayButtonVisible = true;
-            this.dateTimeEnd.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
-            this.dateTimeEnd.Name = "dateTimeEnd";
-            this.dateTimeEnd.Size = new System.Drawing.Size(144, 26);
-            this.dateTimeEnd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.dateTimeEnd.TabIndex = 125;
-            // 
-            // labelX7
-            // 
-            this.labelX7.AutoSize = true;
-            this.labelX7.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX7.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.labelX7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.labelX7.Location = new System.Drawing.Point(352, 103);
-            this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(90, 26);
-            this.labelX7.TabIndex = 126;
-            this.labelX7.Text = "结束日期：";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(45, 103);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(15, 20);
-            this.label4.TabIndex = 127;
-            this.label4.Text = "*";
-            // 
-            // comboItem2
-            // 
-            this.comboItem2.Text = "本月";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(336, 142);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(15, 20);
-            this.label7.TabIndex = 137;
-            this.label7.Text = "*";
-            // 
-            // dateTimeTallyDate
-            // 
-            // 
-            // 
-            // 
-            this.dateTimeTallyDate.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dateTimeTallyDate.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeTallyDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
-            this.dateTimeTallyDate.ButtonDropDown.Visible = true;
-            this.dateTimeTallyDate.CustomFormat = "yyyy-MM-dd";
-            this.dateTimeTallyDate.Enabled = false;
-            this.dateTimeTallyDate.IsPopupCalendarOpen = false;
-            this.dateTimeTallyDate.Location = new System.Drawing.Point(455, 142);
-            // 
-            // 
-            // 
-            this.dateTimeTallyDate.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
-            // 
-            // 
-            // 
-            this.dateTimeTallyDate.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeTallyDate.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.dateTimeTallyDate.MonthCalendar.ClearButtonVisible = true;
-            // 
-            // 
-            // 
-            this.dateTimeTallyDate.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
-            this.dateTimeTallyDate.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
-            this.dateTimeTallyDate.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.dateTimeTallyDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.dateTimeTallyDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.dateTimeTallyDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.dateTimeTallyDate.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeTallyDate.MonthCalendar.DisplayMonth = new System.DateTime(2018, 7, 1, 0, 0, 0, 0);
-            this.dateTimeTallyDate.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
-            this.dateTimeTallyDate.MonthCalendar.MarkedDates = new System.DateTime[0];
-            this.dateTimeTallyDate.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
-            // 
-            // 
-            // 
-            this.dateTimeTallyDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.dateTimeTallyDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
-            this.dateTimeTallyDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.dateTimeTallyDate.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeTallyDate.MonthCalendar.TodayButtonVisible = true;
-            this.dateTimeTallyDate.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
-            this.dateTimeTallyDate.Name = "dateTimeTallyDate";
-            this.dateTimeTallyDate.Size = new System.Drawing.Size(146, 26);
-            this.dateTimeTallyDate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.dateTimeTallyDate.TabIndex = 136;
-            // 
-            // textBoxUserName
-            // 
-            // 
-            // 
-            // 
-            this.textBoxUserName.Border.Class = "TextBoxBorder";
-            this.textBoxUserName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.textBoxUserName.Location = new System.Drawing.Point(171, 144);
-            this.textBoxUserName.Name = "textBoxUserName";
-            this.textBoxUserName.PreventEnterBeep = true;
-            this.textBoxUserName.ReadOnly = true;
-            this.textBoxUserName.Size = new System.Drawing.Size(142, 26);
-            this.textBoxUserName.TabIndex = 135;
-            // 
-            // labelX12
-            // 
-            this.labelX12.AutoSize = true;
-            this.labelX12.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX12.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.labelX12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.labelX12.Location = new System.Drawing.Point(350, 142);
-            this.labelX12.Name = "labelX12";
-            this.labelX12.Size = new System.Drawing.Size(90, 26);
-            this.labelX12.TabIndex = 134;
-            this.labelX12.Text = "记账时间：";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(61, 142);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(15, 20);
-            this.label9.TabIndex = 133;
-            this.label9.Text = "*";
-            // 
-            // labelX14
-            // 
-            this.labelX14.AutoSize = true;
-            this.labelX14.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX14.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX14.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.labelX14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.labelX14.Location = new System.Drawing.Point(82, 145);
-            this.labelX14.Name = "labelX14";
-            this.labelX14.Size = new System.Drawing.Size(74, 26);
-            this.labelX14.TabIndex = 132;
-            this.labelX14.Text = "记账人：";
-            // 
             // EditBudgetAccountsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(688, 351);
             this.Controls.Add(this.panelEx1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EditBudgetAccountsForm";
@@ -699,9 +701,9 @@
             this.panelEx1.ResumeLayout(false);
             this.groupPanel3.ResumeLayout(false);
             this.groupPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateTimeStart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateTimeEnd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeTallyDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeEnd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeStart)).EndInit();
             this.ResumeLayout(false);
 
         }
