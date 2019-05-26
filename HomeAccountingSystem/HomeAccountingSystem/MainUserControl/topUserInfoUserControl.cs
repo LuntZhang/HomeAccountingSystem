@@ -22,8 +22,11 @@ namespace HomeAccountingSystem.MainUserControl
 
         public TopUserInfoUserControl()
         {
-            if (!this.DesignMode) { }
-            InitializeComponent();
+            if (!this.DesignMode)
+            {
+                InitializeComponent();
+            }
+           
         }
 
         public jt_yh_zl m_yhzlModel = null;

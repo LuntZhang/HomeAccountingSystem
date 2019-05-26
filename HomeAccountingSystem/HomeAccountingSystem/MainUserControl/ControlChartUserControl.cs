@@ -15,7 +15,10 @@ namespace HomeAccountingSystem.MainUserControl
     {
         public ControlChartUserControl()
         {
-            InitializeComponent();
+            if (!this.DesignMode)
+            {
+                InitializeComponent();
+            }
         }
 
         private DateTime m_startTime = Convert.ToDateTime(DateTime.Today.ToString("yyyy-MM-01"));
@@ -46,8 +49,9 @@ namespace HomeAccountingSystem.MainUserControl
 
         private void loadPieChart()
         {
+            this.chartExpendData.Series[0].Points.Clear();
             // 消费用途
-            List<string> xData = new List<string>();
+            List <string> xData = new List<string>();
             // 所占总消费比率
             List<decimal> yData = new List<decimal>();
             // 总金额
@@ -65,6 +69,9 @@ namespace HomeAccountingSystem.MainUserControl
                 this.chartExpendData.Series[0]["PieLabelStyle"] = "Outside";//将文字移到外侧 
                 this.chartExpendData.Series[0]["PieLineColor"] = "Black";//绘制黑色的连线。 
                 this.chartExpendData.Series[0].Points.DataBindXY(xData, yData);
+                this.chartExpendData.Series[0].Label = "#VALX:#PERCENT{P}";
+                this.chartExpendData.Legends[0].CellColumns[0].Text = "#VALX";
+                this.chartExpendData.Legends[0].CellColumns[1].Text = "#VAL{C}";
             }
             else
             {

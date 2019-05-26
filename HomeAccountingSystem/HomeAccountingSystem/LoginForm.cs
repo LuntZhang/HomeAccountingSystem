@@ -16,9 +16,13 @@ namespace HomeAccountingSystem
     {
         public LoginForm()
         {
-            InitializeComponent();
-            // 测试数据库连接
-            DatabaseManager.DatabaseConnection();
+            if (!this.DesignMode)
+            {
+                InitializeComponent();
+                // 测试数据库连接
+                DatabaseManager.DatabaseConnection();
+            }
+            
         }
 
         // 退出

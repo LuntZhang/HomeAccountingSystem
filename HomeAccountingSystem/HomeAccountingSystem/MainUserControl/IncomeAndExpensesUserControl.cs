@@ -23,7 +23,10 @@ namespace HomeAccountingSystem.MainUserControl
     {
         public IncomeAndExpensesUserControl()
         {
-            InitializeComponent();
+            if (!this.DesignMode)
+            {
+                InitializeComponent();
+            }
         }
 
         // 当前是哪天的账目

@@ -18,11 +18,10 @@ namespace HomeAccountingSystem
     {
         public MainForm()
         {
-            if (this.DesignMode)
+            if (!this.DesignMode)
             {
-                SQLServerHelper.connectionString = "";
+                InitializeComponent();
             }
-            InitializeComponent();
         }
         // 退出系统
         public bool m_isTuichu = true;

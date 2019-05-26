@@ -200,6 +200,18 @@ namespace HomeAccountingSystem.BLL
             }
             return dataTable;
         }
+
+        public DataTable getSumData(DateTime startTime, DateTime endTime)
+        {
+            string strTime = string.Format(" where t_xf_time>='{0}' and t_xf_time<='{1}'", startTime, endTime);
+            string strSql = string.Format(
+                 " select  SUM(srzm.f_sr_money) as f_sr_money" +
+                 " from jt_sr_zm as srzm " +
+                 strTime);
+            DataTable dataTable = SQLServerHelper.GetTable(strSql);
+
+            return dataTable;
+        }
         #endregion  ExtensionMethod
     }
 }

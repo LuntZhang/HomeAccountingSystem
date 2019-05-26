@@ -1563,6 +1563,26 @@ namespace HomeAccountingSystem.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 向上箭头 {
+            get {
+                object obj = ResourceManager.GetObject("向上箭头", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 向下箭头 {
+            get {
+                object obj = ResourceManager.GetObject("向下箭头", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 启动 {
             get {
                 object obj = ResourceManager.GetObject("启动", resourceCulture);
@@ -2133,6 +2153,16 @@ namespace HomeAccountingSystem.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 箭头_1_ {
+            get {
+                object obj = ResourceManager.GetObject("箭头_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 类型 {
             get {
                 object obj = ResourceManager.GetObject("类型", resourceCulture);
@@ -2316,6 +2346,16 @@ namespace HomeAccountingSystem.Properties {
         internal static System.Drawing.Bitmap 设置价格 {
             get {
                 object obj = ResourceManager.GetObject("设置价格", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 试算平衡 {
+            get {
+                object obj = ResourceManager.GetObject("试算平衡", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
