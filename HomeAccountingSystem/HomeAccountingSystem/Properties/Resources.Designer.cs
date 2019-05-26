@@ -1843,6 +1843,16 @@ namespace HomeAccountingSystem.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 收支 {
+            get {
+                object obj = ResourceManager.GetObject("收支", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 收银分组 {
             get {
                 object obj = ResourceManager.GetObject("收银分组", resourceCulture);
@@ -2466,6 +2476,26 @@ namespace HomeAccountingSystem.Properties {
         internal static System.Drawing.Bitmap 预算_1_ {
             get {
                 object obj = ResourceManager.GetObject("预算_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 预算_2_ {
+            get {
+                object obj = ResourceManager.GetObject("预算_2_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 预算_3_ {
+            get {
+                object obj = ResourceManager.GetObject("预算_3_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

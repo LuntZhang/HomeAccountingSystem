@@ -212,6 +212,7 @@ namespace HomeAccountingSystem.BLL
                  " group by zclx.pk,zclx.v_zclx_name"
                 );
             DataTable dataTable = SQLServerHelper.GetTable(strSql);
+       
             return dataTable;
         }
 

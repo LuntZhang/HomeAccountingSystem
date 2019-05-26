@@ -192,6 +192,33 @@ namespace HomeAccountingSystem.BLL
             return dataTable;
         }
 
+        public DataTable getBudgetBriefingData(DateTime startTime, DateTime endTime)
+        {
+            string strSql = string.Format(
+                " select * from( "+
+                " (select '消费' as zc, SUM(f_zc_money) as f_money_all"+
+                " from jt_zc_zm as zczm "+
+                " where zczm.t_xf_time >= '{0}' and zczm.t_xf_time <= '{1}')" +
+                " union all" +
+                " (select '预算' as zc, SUM(yszm.f_ys_money) as f_money_all"+
+                " from jt_ys_zm as yszm"+
+                " where yszm.t_date_start >= '{0}' and yszm.t_date_end <= '{1}')  " +
+                ") zm "
+                 , startTime, endTime);
+            DataTable dataTable = null;
+            dataTable = SQLServerHelper.GetTable(strSql);
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                foreach (DataRow item in dataTable.Rows)
+                {
+                    if (string.IsNullOrEmpty(item["f_money_all"].ToString()))
+                    {
+                        item["f_money_all"] = 0.00M;
+                    }
+                }
+            }
+            return dataTable;
+        }
         #endregion  ExtensionMethod
     }
 }

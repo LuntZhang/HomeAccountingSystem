@@ -36,6 +36,7 @@
             this.compareUserControl1 = new HomeAccountingSystem.MainUserControl.CompareUserControl();
             this.budgetUserControl1 = new HomeAccountingSystem.MainUserControl.BudgetUserControl();
             this.tzxPanelLeftDown = new TZXControlLibrary.PanelEx.TzxPanel();
+            this.budgetUserControl2 = new HomeAccountingSystem.MainUserControl.BudgetUserControl();
             this.tzxPanelMainTop = new TZXControlLibrary.PanelEx.TzxPanel();
             this.tzxPanelRightUp = new TZXControlLibrary.PanelEx.TzxPanel();
             this.controlChartUserControl1 = new HomeAccountingSystem.MainUserControl.ControlChartUserControl();
@@ -63,6 +64,7 @@
             this.tzxPanelMain.SuspendLayout();
             this.tzxPanelMainBottom.SuspendLayout();
             this.tzxPanelRightDown.SuspendLayout();
+            this.tzxPanelLeftDown.SuspendLayout();
             this.tzxPanelMainTop.SuspendLayout();
             this.tzxPanelRightUp.SuspendLayout();
             this.tzxPanelLeftUp.SuspendLayout();
@@ -140,7 +142,7 @@
             // 
             // compareUserControl1
             // 
-            this.compareUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.compareUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.compareUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.compareUserControl1.Location = new System.Drawing.Point(0, 0);
             this.compareUserControl1.Name = "compareUserControl1";
@@ -160,6 +162,7 @@
             // 
             this.tzxPanelLeftDown.BorderColor = System.Drawing.Color.Empty;
             this.tzxPanelLeftDown.BorderSize = 0;
+            this.tzxPanelLeftDown.Controls.Add(this.budgetUserControl2);
             this.tzxPanelLeftDown.Dock = System.Windows.Forms.DockStyle.Left;
             this.tzxPanelLeftDown.HasBottomBorder = false;
             this.tzxPanelLeftDown.HasLeftBorder = false;
@@ -169,6 +172,15 @@
             this.tzxPanelLeftDown.Name = "tzxPanelLeftDown";
             this.tzxPanelLeftDown.Size = new System.Drawing.Size(562, 288);
             this.tzxPanelLeftDown.TabIndex = 1;
+            // 
+            // budgetUserControl2
+            // 
+            this.budgetUserControl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.budgetUserControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.budgetUserControl2.Location = new System.Drawing.Point(0, 0);
+            this.budgetUserControl2.Name = "budgetUserControl2";
+            this.budgetUserControl2.Size = new System.Drawing.Size(562, 288);
+            this.budgetUserControl2.TabIndex = 0;
             // 
             // tzxPanelMainTop
             // 
@@ -635,6 +647,7 @@
             this.tzxPanelMain.ResumeLayout(false);
             this.tzxPanelMainBottom.ResumeLayout(false);
             this.tzxPanelRightDown.ResumeLayout(false);
+            this.tzxPanelLeftDown.ResumeLayout(false);
             this.tzxPanelMainTop.ResumeLayout(false);
             this.tzxPanelRightUp.ResumeLayout(false);
             this.tzxPanelLeftUp.ResumeLayout(false);
@@ -678,6 +691,7 @@
         private TZXControlLibrary.ButtonEx.TzxRoundedButton tzxRoundedButton4;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton tzxRoundedButton3;
         private MainUserControl.TopUserInfoUserControl topUserInfoUserControl1;
+        private MainUserControl.BudgetUserControl budgetUserControl2;
         //public MainUserControl.TopUserInfoUserControl topUserInfoUserControl1;
     }
 }

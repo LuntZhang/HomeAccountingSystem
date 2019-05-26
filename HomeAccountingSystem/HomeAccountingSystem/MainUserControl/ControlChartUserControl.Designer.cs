@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.LegendCellColumn legendCellColumn1 = new System.Windows.Forms.DataVisualization.Charting.LegendCellColumn();
-            System.Windows.Forms.DataVisualization.Charting.LegendCellColumn legendCellColumn2 = new System.Windows.Forms.DataVisualization.Charting.LegendCellColumn();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.LegendCellColumn legendCellColumn3 = new System.Windows.Forms.DataVisualization.Charting.LegendCellColumn();
+            System.Windows.Forms.DataVisualization.Charting.LegendCellColumn legendCellColumn4 = new System.Windows.Forms.DataVisualization.Charting.LegendCellColumn();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelAll = new System.Windows.Forms.Panel();
             this.panelIncome = new System.Windows.Forms.Panel();
             this.chartExpendData = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -70,26 +70,26 @@
             // 
             // chartExpendData
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartExpendData.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.chartExpendData.ChartAreas.Add(chartArea2);
             this.chartExpendData.Dock = System.Windows.Forms.DockStyle.Fill;
-            legendCellColumn1.Name = "Column1";
-            legendCellColumn1.Text = "#VALX";
-            legendCellColumn2.Name = "Column2";
-            legendCellColumn2.Text = "#VAL{C}";
-            legend1.CellColumns.Add(legendCellColumn1);
-            legend1.CellColumns.Add(legendCellColumn2);
-            legend1.Name = "LegendMoney";
-            this.chartExpendData.Legends.Add(legend1);
+            legendCellColumn3.Name = "Column1";
+            legendCellColumn3.Text = "#VALX";
+            legendCellColumn4.Name = "Column2";
+            legendCellColumn4.Text = "#VAL{C}";
+            legend2.CellColumns.Add(legendCellColumn3);
+            legend2.CellColumns.Add(legendCellColumn4);
+            legend2.Name = "LegendMoney";
+            this.chartExpendData.Legends.Add(legend2);
             this.chartExpendData.Location = new System.Drawing.Point(0, 0);
             this.chartExpendData.Name = "chartExpendData";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.IsXValueIndexed = true;
-            series1.Label = "#VALX #PERCENT{P}";
-            series1.Legend = "LegendMoney";
-            series1.Name = "Series1";
-            this.chartExpendData.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.IsXValueIndexed = true;
+            series2.Label = "#VALX #PERCENT{P}";
+            series2.Legend = "LegendMoney";
+            series2.Name = "Series1";
+            this.chartExpendData.Series.Add(series2);
             this.chartExpendData.Size = new System.Drawing.Size(540, 196);
             this.chartExpendData.TabIndex = 0;
             this.chartExpendData.Text = "消费分析";
