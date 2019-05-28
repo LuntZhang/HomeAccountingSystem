@@ -1,12 +1,12 @@
-﻿/**  
-* jt_jr_zm.cs
+﻿/** 
+* jt_jc_zm.cs
 *
 * 功 能： N/A
-* 类 名： jt_jr_zm
+* 类 名： jt_jc_zm
 *
 * Ver    变更日期             负责人  变更内容
 * ───────────────────────────────────
-* V0.01  2019-05-10 21:15:52   N/A    初版  
+* V0.01  2019-05-10 21:15:52   N/A    初版                 
 */
 using System;
 using System.Data;
@@ -15,12 +15,27 @@ using HomeAccountingSystem.Model;
 namespace HomeAccountingSystem.BLL
 {
 	/// <summary>
-	/// 借入账目表
+	/// 借出账目表
 	/// </summary>
-	public partial class jt_jr_zm
+	public partial class LoanAccountsManager
 	{
-		private readonly HomeAccountingSystem.DAL.jt_jr_zm dal=new HomeAccountingSystem.DAL.jt_jr_zm();
-		public jt_jr_zm()
+
+        #region
+
+        private static LoanAccountsManager instance = new LoanAccountsManager();
+
+        public static LoanAccountsManager Instance
+        {
+            get
+            {
+                return LoanAccountsManager.instance;
+            }
+        }
+
+        #endregion
+
+        private readonly HomeAccountingSystem.DAL.jt_jc_zm dal=new HomeAccountingSystem.DAL.jt_jc_zm();
+		public LoanAccountsManager()
 		{}
 		#region  BasicMethod
 
@@ -43,7 +58,7 @@ namespace HomeAccountingSystem.BLL
 		/// <summary>
 		/// 增加一条数据
 		/// </summary>
-		public bool Add(HomeAccountingSystem.Model.jt_jr_zm model)
+		public bool Add(HomeAccountingSystem.Model.jt_jc_zm model)
 		{
 			return dal.Add(model);
 		}
@@ -51,7 +66,7 @@ namespace HomeAccountingSystem.BLL
 		/// <summary>
 		/// 更新一条数据
 		/// </summary>
-		public bool Update(HomeAccountingSystem.Model.jt_jr_zm model)
+		public bool Update(HomeAccountingSystem.Model.jt_jc_zm model)
 		{
 			return dal.Update(model);
 		}
@@ -68,7 +83,7 @@ namespace HomeAccountingSystem.BLL
 		/// <summary>
 		/// 得到一个对象实体
 		/// </summary>
-		public HomeAccountingSystem.Model.jt_jr_zm GetModel(int pk)
+		public HomeAccountingSystem.Model.jt_jc_zm GetModel(int pk)
 		{
 			
 			return dal.GetModel(pk);
@@ -91,7 +106,7 @@ namespace HomeAccountingSystem.BLL
 		/// <summary>
 		/// 获得数据列表
 		/// </summary>
-		public List<HomeAccountingSystem.Model.jt_jr_zm> GetModelList(string strWhere)
+		public List<HomeAccountingSystem.Model.jt_jc_zm> GetModelList(string strWhere)
 		{
 			DataSet ds = dal.GetList(strWhere);
 			return DataTableToList(ds.Tables[0]);
@@ -99,13 +114,13 @@ namespace HomeAccountingSystem.BLL
 		/// <summary>
 		/// 获得数据列表
 		/// </summary>
-		public List<HomeAccountingSystem.Model.jt_jr_zm> DataTableToList(DataTable dt)
+		public List<HomeAccountingSystem.Model.jt_jc_zm> DataTableToList(DataTable dt)
 		{
-			List<HomeAccountingSystem.Model.jt_jr_zm> modelList = new List<HomeAccountingSystem.Model.jt_jr_zm>();
+			List<HomeAccountingSystem.Model.jt_jc_zm> modelList = new List<HomeAccountingSystem.Model.jt_jc_zm>();
 			int rowsCount = dt.Rows.Count;
 			if (rowsCount > 0)
 			{
-				HomeAccountingSystem.Model.jt_jr_zm model;
+				HomeAccountingSystem.Model.jt_jc_zm model;
 				for (int n = 0; n < rowsCount; n++)
 				{
 					model = dal.DataRowToModel(dt.Rows[n]);

@@ -54,9 +54,9 @@ namespace HomeAccountingSystem.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into jt_jc_zm(");
-			strSql.Append("pk,v_jczm_no,v_jczm_name,t_jc_time,v_jc_who,f_jc_money,f_accrual,v_jc_name,t_gh_time,i_gh_flag,f_gh_how_money,v_remark,v_jz_user_pk,v_jz_user_name,t_create_time,i_delete)");
+			strSql.Append("v_jczm_no,v_jczm_name,t_jc_time,v_jc_who,f_jc_money,f_accrual,v_jc_name,t_gh_time,i_gh_flag,f_gh_how_money,v_remark,v_jz_user_pk,v_jz_user_name,t_create_time,i_delete)");
 			strSql.Append(" values (");
-			strSql.Append("@pk,@v_jczm_no,@v_jczm_name,@t_jc_time,@v_jc_who,@f_jc_money,@f_accrual,@v_jc_name,@t_gh_time,@i_gh_flag,@f_gh_how_money,@v_remark,@v_jz_user_pk,@v_jz_user_name,@t_create_time,@i_delete)");
+			strSql.Append("@v_jczm_no,@v_jczm_name,@t_jc_time,@v_jc_who,@f_jc_money,@f_accrual,@v_jc_name,@t_gh_time,@i_gh_flag,@f_gh_how_money,@v_remark,@v_jz_user_pk,@v_jz_user_name,@t_create_time,@i_delete)");
 			SqlParameter[] parameters = {
 					new SqlParameter("@pk", SqlDbType.Int,4),
 					new SqlParameter("@v_jczm_no", SqlDbType.VarChar,256),

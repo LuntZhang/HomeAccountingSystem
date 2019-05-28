@@ -126,6 +126,14 @@ namespace HomeAccountingSystem
                     BudgetAccountsForm formBudget = new BudgetAccountsForm();
                     formBudget.ShowDialog();
                     break;
+                case "btnLoan":     // 借出
+                    LoanAccountsForm formLoan = new LoanAccountsForm();
+                    formLoan.ShowDialog();
+                    break;
+                case "btnBorrow":     // 借入
+                    BorrowAccountsForm formBorrow = new BorrowAccountsForm();
+                    formBorrow.ShowDialog();
+                    break;
                 default:
                     break;
             }

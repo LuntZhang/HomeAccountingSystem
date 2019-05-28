@@ -26,7 +26,10 @@ namespace HomeAccountingSystem.MainUserControl
 
         private void BudgetUserControl_Load(object sender, EventArgs e)
         {
-            loadComboBoxSelectDate();
+            if (!this.DesignMode)
+            {
+                loadComboBoxSelectDate();
+            }
         }
 
         private void loadComboBoxSelectDate()

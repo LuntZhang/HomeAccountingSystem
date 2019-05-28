@@ -50,10 +50,10 @@
             this.tzxRoundedButton1 = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.btnReport = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.btnBudget = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
-            this.btnBorrowing = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.btnBorrow = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.btnExpenditure = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.btnIncome = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
-            this.btnLending = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
+            this.btnLoan = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.btnSystemSetting = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.btnInitialValue = new TZXControlLibrary.ButtonEx.TzxRoundedButton();
             this.tzxPanelBottom = new TZXControlLibrary.PanelEx.TzxPanel();
@@ -271,10 +271,10 @@
             this.tzxPanel1.Controls.Add(this.tzxRoundedButton1);
             this.tzxPanel1.Controls.Add(this.btnReport);
             this.tzxPanel1.Controls.Add(this.btnBudget);
-            this.tzxPanel1.Controls.Add(this.btnBorrowing);
+            this.tzxPanel1.Controls.Add(this.btnBorrow);
             this.tzxPanel1.Controls.Add(this.btnExpenditure);
             this.tzxPanel1.Controls.Add(this.btnIncome);
-            this.tzxPanel1.Controls.Add(this.btnLending);
+            this.tzxPanel1.Controls.Add(this.btnLoan);
             this.tzxPanel1.Controls.Add(this.btnSystemSetting);
             this.tzxPanel1.Controls.Add(this.btnInitialValue);
             this.tzxPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -432,29 +432,30 @@
             this.btnBudget.TipColor = System.Drawing.Color.Red;
             this.btnBudget.Click += new System.EventHandler(this.btn_Click);
             // 
-            // btnBorrowing
+            // btnBorrow
             // 
-            this.btnBorrowing.AccessibleName = "2-1100";
-            this.btnBorrowing.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnBorrowing.BaseColor = System.Drawing.Color.Transparent;
-            this.btnBorrowing.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnBorrowing.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnBorrowing.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.btnBorrowing.ForeColor = System.Drawing.Color.Black;
-            this.btnBorrowing.HasArrow = false;
-            this.btnBorrowing.Image = global::HomeAccountingSystem.Properties.Resources.借;
-            this.btnBorrowing.ImageHeight = 50;
-            this.btnBorrowing.ImageTextSpace = 5;
-            this.btnBorrowing.ImageWidth = 50;
-            this.btnBorrowing.Location = new System.Drawing.Point(73, 196);
-            this.btnBorrowing.Name = "btnBorrowing";
-            this.btnBorrowing.Radius = 5;
-            this.btnBorrowing.Size = new System.Drawing.Size(65, 80);
-            this.btnBorrowing.TabIndex = 93;
-            this.btnBorrowing.Text = "借入账目";
-            this.btnBorrowing.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnBorrowing.Tip = "";
-            this.btnBorrowing.TipColor = System.Drawing.Color.Red;
+            this.btnBorrow.AccessibleName = "2-1100";
+            this.btnBorrow.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnBorrow.BaseColor = System.Drawing.Color.Transparent;
+            this.btnBorrow.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnBorrow.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnBorrow.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnBorrow.ForeColor = System.Drawing.Color.Black;
+            this.btnBorrow.HasArrow = false;
+            this.btnBorrow.Image = global::HomeAccountingSystem.Properties.Resources.借;
+            this.btnBorrow.ImageHeight = 50;
+            this.btnBorrow.ImageTextSpace = 5;
+            this.btnBorrow.ImageWidth = 50;
+            this.btnBorrow.Location = new System.Drawing.Point(73, 196);
+            this.btnBorrow.Name = "btnBorrow";
+            this.btnBorrow.Radius = 5;
+            this.btnBorrow.Size = new System.Drawing.Size(65, 80);
+            this.btnBorrow.TabIndex = 93;
+            this.btnBorrow.Text = "借入账目";
+            this.btnBorrow.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnBorrow.Tip = "";
+            this.btnBorrow.TipColor = System.Drawing.Color.Red;
+            this.btnBorrow.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnExpenditure
             // 
@@ -506,29 +507,30 @@
             this.btnIncome.TipColor = System.Drawing.Color.Red;
             this.btnIncome.Click += new System.EventHandler(this.btn_Click);
             // 
-            // btnLending
+            // btnLoan
             // 
-            this.btnLending.AccessibleName = "2-1100";
-            this.btnLending.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnLending.BaseColor = System.Drawing.Color.Transparent;
-            this.btnLending.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnLending.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnLending.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.btnLending.ForeColor = System.Drawing.Color.Black;
-            this.btnLending.HasArrow = false;
-            this.btnLending.Image = global::HomeAccountingSystem.Properties.Resources.借贷_1_;
-            this.btnLending.ImageHeight = 50;
-            this.btnLending.ImageTextSpace = 5;
-            this.btnLending.ImageWidth = 50;
-            this.btnLending.Location = new System.Drawing.Point(3, 196);
-            this.btnLending.Name = "btnLending";
-            this.btnLending.Radius = 5;
-            this.btnLending.Size = new System.Drawing.Size(65, 80);
-            this.btnLending.TabIndex = 90;
-            this.btnLending.Text = "借出账目";
-            this.btnLending.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnLending.Tip = "";
-            this.btnLending.TipColor = System.Drawing.Color.Red;
+            this.btnLoan.AccessibleName = "2-1100";
+            this.btnLoan.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnLoan.BaseColor = System.Drawing.Color.Transparent;
+            this.btnLoan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnLoan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnLoan.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnLoan.ForeColor = System.Drawing.Color.Black;
+            this.btnLoan.HasArrow = false;
+            this.btnLoan.Image = global::HomeAccountingSystem.Properties.Resources.借贷_1_;
+            this.btnLoan.ImageHeight = 50;
+            this.btnLoan.ImageTextSpace = 5;
+            this.btnLoan.ImageWidth = 50;
+            this.btnLoan.Location = new System.Drawing.Point(3, 196);
+            this.btnLoan.Name = "btnLoan";
+            this.btnLoan.Radius = 5;
+            this.btnLoan.Size = new System.Drawing.Size(65, 80);
+            this.btnLoan.TabIndex = 90;
+            this.btnLoan.Text = "借出账目";
+            this.btnLoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnLoan.Tip = "";
+            this.btnLoan.TipColor = System.Drawing.Color.Red;
+            this.btnLoan.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnSystemSetting
             // 
@@ -681,10 +683,10 @@
         private TZXControlLibrary.ButtonEx.TzxRoundedButton btnInitialValue;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton btnReport;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton btnBudget;
-        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnBorrowing;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnBorrow;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton btnExpenditure;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton btnIncome;
-        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnLending;
+        private TZXControlLibrary.ButtonEx.TzxRoundedButton btnLoan;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton btnSystemSetting;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton tzxRoundedButton2;
         private TZXControlLibrary.ButtonEx.TzxRoundedButton tzxRoundedButton1;
