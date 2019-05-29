@@ -936,7 +936,7 @@
             this.Controls.Add(this.panelEx_top);
             this.Name = "BorrowAccountsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "借出账目";
+            this.Text = "借入账目";
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputStartDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputEndDate)).EndInit();

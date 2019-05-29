@@ -155,18 +155,45 @@ namespace HomeAccountingSystem.BLL
 		{
 			return dal.GetListByPage( strWhere,  orderby,  startIndex,  endIndex);
 		}
-		/// <summary>
-		/// 分页获取数据列表
-		/// </summary>
-		//public DataSet GetList(int PageSize,int PageIndex,string strWhere)
-		//{
-			//return dal.GetList(PageSize,PageIndex,strWhere);
-		//}
+        /// <summary>
+        /// 分页获取数据列表
+        /// </summary>
+        //public DataSet GetList(int PageSize,int PageIndex,string strWhere)
+        //{
+        //return dal.GetList(PageSize,PageIndex,strWhere);
+        //}
 
-		#endregion  BasicMethod
-		#region  ExtensionMethod
-
-		#endregion  ExtensionMethod
-	}
+        #endregion  BasicMethod
+        #region  ExtensionMethod
+        public DataTable getLoanAccountsData(DateTime startTime, DateTime endTime)
+        {
+            string strTime = string.Format("t_jc_time>='{0}' and t_jc_time<='{1}'", startTime, endTime);
+            string strSql = string.Format(
+                 strTime + "  order by t_create_time desc"
+                );
+            DataTable dataTable = null;
+            DataSet dataSet = this.GetList(strSql);
+            if (dataSet != null && dataSet.Tables.Count > 0)
+            {
+                dataTable = dataSet.Tables[0];
+            }
+            dataTable.Columns.Add("row", typeof(string));
+            dataTable.Columns.Add("v_accrual", typeof(string));
+            dataTable.Columns.Add("b_gh_flag", typeof(bool));
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                int index = 0;
+                foreach (DataRow item in dataTable.Rows)
+                {
+                    index++;
+                    item["row"] = index;
+                    item["v_accrual"] = item["f_accrual"].ToString() + "%";
+                    item["b_gh_flag"] = item["i_gh_flag"].ToString() == "1" ? true : false;
+                }
+            }
+            return dataTable;
+        }
+        #endregion  ExtensionMethod
+    }
 }
 

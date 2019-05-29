@@ -118,6 +118,7 @@
             this.btnCancel.Text = "取消";
             this.btnCancel.Tip = "";
             this.btnCancel.TipColor = System.Drawing.Color.Red;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOK
             // 
@@ -139,6 +140,7 @@
             this.btnOK.Text = "保存";
             this.btnOK.Tip = "";
             this.btnOK.TipColor = System.Drawing.Color.Red;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // groupPanel1
             // 
@@ -293,7 +295,6 @@
             this.dateTimeInputReturn.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
             this.dateTimeInputReturn.ButtonDropDown.Visible = true;
             this.dateTimeInputReturn.CustomFormat = "yyyy-MM-dd";
-            this.dateTimeInputReturn.Enabled = false;
             this.dateTimeInputReturn.IsPopupCalendarOpen = false;
             this.dateTimeInputReturn.Location = new System.Drawing.Point(464, 15);
             // 
@@ -633,6 +634,7 @@
             this.btnCalculator.Text = "计算器";
             this.btnCalculator.Tip = "";
             this.btnCalculator.TipColor = System.Drawing.Color.Red;
+            this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
             // 
             // dateTimeDate
             // 
@@ -874,6 +876,7 @@
             this.Name = "EditLoanAccountsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "编辑借出账目";
+            this.Load += new System.EventHandler(this.EditLoanAccountsForm_Load);
             this.panelEx1.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();

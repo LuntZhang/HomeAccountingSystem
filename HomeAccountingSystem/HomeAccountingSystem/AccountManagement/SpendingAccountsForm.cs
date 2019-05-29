@@ -200,7 +200,7 @@ namespace HomeAccountingSystem.AccountManagement
 
         private void gridControlDataList_DoubleClick(object sender, EventArgs e)
         {
-            loadDataList();
+            buttonXModify_Click(null, null);
         }
     }
 }
