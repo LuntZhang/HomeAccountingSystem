@@ -39,8 +39,8 @@
             this.chartExpendData = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panelTime = new System.Windows.Forms.Panel();
             this.comboBoxExTIME = new System.Windows.Forms.ComboBox();
-            this.labelBeforeOneDay = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.labelBeforeOneDay = new System.Windows.Forms.Label();
             this.panelAll.SuspendLayout();
             this.panelIncome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartExpendData)).BeginInit();
@@ -50,6 +50,7 @@
             // 
             // panelAll
             // 
+            this.panelAll.BackColor = System.Drawing.Color.Transparent;
             this.panelAll.Controls.Add(this.panelIncome);
             this.panelAll.Controls.Add(this.panelTime);
             this.panelAll.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -142,17 +143,6 @@
             this.comboBoxExTIME.TabIndex = 5;
             this.comboBoxExTIME.SelectedIndexChanged += new System.EventHandler(this.comboBoxExTIME_SelectedIndexChanged);
             // 
-            // labelBeforeOneDay
-            // 
-            this.labelBeforeOneDay.AutoSize = true;
-            this.labelBeforeOneDay.Font = new System.Drawing.Font("宋体", 12F);
-            this.labelBeforeOneDay.ForeColor = System.Drawing.Color.White;
-            this.labelBeforeOneDay.Location = new System.Drawing.Point(33, 9);
-            this.labelBeforeOneDay.Name = "labelBeforeOneDay";
-            this.labelBeforeOneDay.Size = new System.Drawing.Size(72, 16);
-            this.labelBeforeOneDay.TabIndex = 3;
-            this.labelBeforeOneDay.Text = "预算简报";
-            // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
@@ -163,6 +153,17 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
+            // 
+            // labelBeforeOneDay
+            // 
+            this.labelBeforeOneDay.AutoSize = true;
+            this.labelBeforeOneDay.Font = new System.Drawing.Font("宋体", 12F);
+            this.labelBeforeOneDay.ForeColor = System.Drawing.Color.White;
+            this.labelBeforeOneDay.Location = new System.Drawing.Point(33, 9);
+            this.labelBeforeOneDay.Name = "labelBeforeOneDay";
+            this.labelBeforeOneDay.Size = new System.Drawing.Size(72, 16);
+            this.labelBeforeOneDay.TabIndex = 3;
+            this.labelBeforeOneDay.Text = "预算简报";
             // 
             // BudgetUserControl
             // 

@@ -291,7 +291,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tzxPanel1);
             this.Name = "MenuBarUserControl";
             this.Size = new System.Drawing.Size(141, 432);
