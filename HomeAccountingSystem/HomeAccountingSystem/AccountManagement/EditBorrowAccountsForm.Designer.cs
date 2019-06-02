@@ -561,6 +561,7 @@
             this.btnCalculator.Text = "计算器";
             this.btnCalculator.Tip = "";
             this.btnCalculator.TipColor = System.Drawing.Color.Red;
+            this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
             // 
             // groupPanel3
             // 
@@ -761,6 +762,7 @@
             this.btnCancel.Text = "取消";
             this.btnCancel.Tip = "";
             this.btnCancel.TipColor = System.Drawing.Color.Red;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOK
             // 
@@ -782,6 +784,7 @@
             this.btnOK.Text = "保存";
             this.btnOK.Tip = "";
             this.btnOK.TipColor = System.Drawing.Color.Red;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // groupPanel1
             // 
@@ -870,9 +873,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(688, 495);
             this.Controls.Add(this.panelEx1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "EditBorrowAccountsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "编辑借入账目";
+            this.Load += new System.EventHandler(this.EditBorrowAccountsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputReturn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeTallyDate)).EndInit();
             this.groupPanel3.ResumeLayout(false);

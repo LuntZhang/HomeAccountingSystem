@@ -23,19 +23,19 @@ namespace HomeAccountingSystem.Model
 		private int _pk;
 		private string _v_jrzm_no;
 		private string _v_jrzm_name;
-		private DateTime? _t_jr_time= DateTime.Now;
+		private DateTime _t_jr_time= DateTime.Now;
 		private string _v_jr_who;
-		private decimal? _f_jr_money;
-		private decimal? _f_accrual;
+		private decimal _f_jr_money;
+		private decimal _f_accrual;
 		private string _v_jr_name;
-		private DateTime? _t_gh_time= DateTime.Now;
-		private int? _i_gh_flag=0;
-		private decimal? _f_gh_how_money;
+		private DateTime _t_gh_time= DateTime.Now;
+		private int _i_gh_flag=0;
+		private decimal _f_gh_how_money;
 		private string _v_remark;
 		private string _v_jz_user_pk;
 		private string _v_jz_user_name;
-		private DateTime? _t_create_time= DateTime.Now;
-		private int? _i_delete;
+		private DateTime _t_create_time= DateTime.Now;
+		private int _i_delete;
 		/// <summary>
 		/// pk
 		/// </summary>
@@ -63,7 +63,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 借入时间
 		/// </summary>
-		public DateTime? t_jr_time
+		public DateTime t_jr_time
 		{
 			set{ _t_jr_time=value;}
 			get{return _t_jr_time;}
@@ -79,7 +79,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 借了多少
 		/// </summary>
-		public decimal? f_jr_money
+		public decimal f_jr_money
 		{
 			set{ _f_jr_money=value;}
 			get{return _f_jr_money;}
@@ -87,7 +87,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 利息
 		/// </summary>
-		public decimal? f_accrual
+		public decimal f_accrual
 		{
 			set{ _f_accrual=value;}
 			get{return _f_accrual;}
@@ -103,7 +103,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 归还时间
 		/// </summary>
-		public DateTime? t_gh_time
+		public DateTime t_gh_time
 		{
 			set{ _t_gh_time=value;}
 			get{return _t_gh_time;}
@@ -111,7 +111,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 是否归还 0：未归还；1：已归还
 		/// </summary>
-		public int? i_gh_flag
+		public int i_gh_flag
 		{
 			set{ _i_gh_flag=value;}
 			get{return _i_gh_flag;}
@@ -119,7 +119,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 到目前该归还多少
 		/// </summary>
-		public decimal? f_gh_how_money
+		public decimal f_gh_how_money
 		{
 			set{ _f_gh_how_money=value;}
 			get{return _f_gh_how_money;}
@@ -151,7 +151,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 创建时间
 		/// </summary>
-		public DateTime? t_create_time
+		public DateTime t_create_time
 		{
 			set{ _t_create_time=value;}
 			get{return _t_create_time;}
@@ -159,7 +159,7 @@ namespace HomeAccountingSystem.Model
 		/// <summary>
 		/// 是否删除
 		/// </summary>
-		public int? i_delete
+		public int i_delete
 		{
 			set{ _i_delete=value;}
 			get{return _i_delete;}

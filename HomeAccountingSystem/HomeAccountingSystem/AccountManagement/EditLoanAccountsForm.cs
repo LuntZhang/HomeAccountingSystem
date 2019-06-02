@@ -21,8 +21,6 @@ namespace HomeAccountingSystem.AccountManagement
         // 预算对象
         public jt_jc_zm m_jczmModel = null;
 
-        public LoanAccountsForm m_loanAccountsForm = null;
-
         private void EditLoanAccountsForm_Load(object sender, EventArgs e)
         {
             loadPage();

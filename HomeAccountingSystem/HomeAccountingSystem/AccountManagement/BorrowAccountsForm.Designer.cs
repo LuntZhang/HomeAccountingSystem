@@ -29,17 +29,6 @@
         private void InitializeComponent()
         {
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.dateTimeInputStartDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.dateTimeInputEndDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.panelEx_top = new DevComponents.DotNetBar.PanelEx();
@@ -61,8 +50,6 @@
             this.comboItem12 = new DevComponents.Editors.ComboItem();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.buttonXSearch = new TZXControlLibrary.ButtonEx.TzxButtonEx();
-            this.vNo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControlDataList = new DevExpress.XtraGrid.GridControl();
             this.gridViewDataList = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -75,13 +62,26 @@
             this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.WMType = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TTime = new DevExpress.XtraGrid.Columns.GridColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.vNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputStartDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputEndDate)).BeginInit();
             this.panelEx_top.SuspendLayout();
             this.panelEx_body_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlDataList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewDataList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelX3
@@ -99,163 +99,6 @@
             this.labelX3.TabIndex = 64;
             this.labelX3.Text = "结束时间：";
             this.labelX3.TextAlignment = System.Drawing.StringAlignment.Far;
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.AppearanceCell.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridColumn8.AppearanceCell.Options.UseFont = true;
-            this.gridColumn8.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn8.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn8.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridColumn8.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn8.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn8.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn8.Caption = "结束日期";
-            this.gridColumn8.DisplayFormat.FormatString = "yyyy-MM-dd";
-            this.gridColumn8.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
-            this.gridColumn8.FieldName = "t_end_date";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.OptionsColumn.AllowEdit = false;
-            this.gridColumn8.OptionsColumn.AllowFocus = false;
-            this.gridColumn8.OptionsColumn.AllowSize = false;
-            this.gridColumn8.Width = 110;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridColumn3.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn3.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn3.Caption = "周一";
-            this.gridColumn3.ColumnEdit = this.repositoryItemCheckEdit1;
-            this.gridColumn3.FieldName = "b_1";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.OptionsColumn.AllowEdit = false;
-            this.gridColumn3.OptionsColumn.AllowFocus = false;
-            this.gridColumn3.Width = 50;
-            // 
-            // repositoryItemCheckEdit1
-            // 
-            this.repositoryItemCheckEdit1.AutoHeight = false;
-            this.repositoryItemCheckEdit1.Caption = "Check";
-            this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridColumn4.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn4.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn4.Caption = "周二";
-            this.gridColumn4.ColumnEdit = this.repositoryItemCheckEdit1;
-            this.gridColumn4.FieldName = "b_2";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.OptionsColumn.AllowEdit = false;
-            this.gridColumn4.OptionsColumn.AllowFocus = false;
-            this.gridColumn4.Width = 50;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridColumn6.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn6.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn6.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn6.Caption = "周三";
-            this.gridColumn6.ColumnEdit = this.repositoryItemCheckEdit1;
-            this.gridColumn6.FieldName = "b_3";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.OptionsColumn.AllowEdit = false;
-            this.gridColumn6.OptionsColumn.AllowFocus = false;
-            this.gridColumn6.Width = 50;
-            // 
-            // gridColumn10
-            // 
-            this.gridColumn10.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridColumn10.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn10.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn10.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn10.Caption = "周四";
-            this.gridColumn10.ColumnEdit = this.repositoryItemCheckEdit1;
-            this.gridColumn10.FieldName = "b_4";
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.OptionsColumn.AllowEdit = false;
-            this.gridColumn10.OptionsColumn.AllowFocus = false;
-            this.gridColumn10.Width = 50;
-            // 
-            // gridColumn11
-            // 
-            this.gridColumn11.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridColumn11.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn11.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn11.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn11.Caption = "周五";
-            this.gridColumn11.ColumnEdit = this.repositoryItemCheckEdit1;
-            this.gridColumn11.FieldName = "b_5";
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.OptionsColumn.AllowEdit = false;
-            this.gridColumn11.OptionsColumn.AllowFocus = false;
-            this.gridColumn11.Width = 50;
-            // 
-            // gridColumn12
-            // 
-            this.gridColumn12.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridColumn12.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn12.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn12.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn12.Caption = "周六";
-            this.gridColumn12.ColumnEdit = this.repositoryItemCheckEdit1;
-            this.gridColumn12.FieldName = "b_6";
-            this.gridColumn12.Name = "gridColumn12";
-            this.gridColumn12.OptionsColumn.AllowEdit = false;
-            this.gridColumn12.OptionsColumn.AllowFocus = false;
-            this.gridColumn12.Width = 50;
-            // 
-            // gridColumn13
-            // 
-            this.gridColumn13.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridColumn13.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn13.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn13.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn13.Caption = "周日";
-            this.gridColumn13.ColumnEdit = this.repositoryItemCheckEdit1;
-            this.gridColumn13.FieldName = "b_7";
-            this.gridColumn13.Name = "gridColumn13";
-            this.gridColumn13.OptionsColumn.AllowEdit = false;
-            this.gridColumn13.OptionsColumn.AllowFocus = false;
-            this.gridColumn13.Width = 50;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.AppearanceCell.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridColumn7.AppearanceCell.Options.UseFont = true;
-            this.gridColumn7.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn7.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn7.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridColumn7.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn7.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn7.Caption = "开始日期";
-            this.gridColumn7.DisplayFormat.FormatString = "yyyy-MM-dd";
-            this.gridColumn7.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
-            this.gridColumn7.FieldName = "t_start_date";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.OptionsColumn.AllowEdit = false;
-            this.gridColumn7.OptionsColumn.AllowFocus = false;
-            this.gridColumn7.OptionsColumn.AllowSize = false;
-            this.gridColumn7.Width = 110;
-            // 
-            // gridColumn18
-            // 
-            this.gridColumn18.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F);
-            this.gridColumn18.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn18.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn18.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn18.Caption = "日期(1号~31号)";
-            this.gridColumn18.FieldName = "v_month_date";
-            this.gridColumn18.Name = "gridColumn18";
-            this.gridColumn18.OptionsColumn.AllowEdit = false;
-            this.gridColumn18.OptionsColumn.AllowFocus = false;
-            this.gridColumn18.Width = 120;
             // 
             // dateTimeInputStartDate
             // 
@@ -407,6 +250,7 @@
             this.buttonXExit.Size = new System.Drawing.Size(80, 40);
             this.buttonXExit.TabIndex = 8;
             this.buttonXExit.Text = "退出";
+            this.buttonXExit.Click += new System.EventHandler(this.buttonXExit_Click);
             // 
             // buttonXRefresh
             // 
@@ -423,6 +267,7 @@
             this.buttonXRefresh.Size = new System.Drawing.Size(80, 40);
             this.buttonXRefresh.TabIndex = 6;
             this.buttonXRefresh.Text = "刷新";
+            this.buttonXRefresh.Click += new System.EventHandler(this.buttonXRefresh_Click);
             // 
             // buttonXModify
             // 
@@ -439,6 +284,7 @@
             this.buttonXModify.Size = new System.Drawing.Size(80, 40);
             this.buttonXModify.TabIndex = 4;
             this.buttonXModify.Text = "修改";
+            this.buttonXModify.Click += new System.EventHandler(this.buttonXModify_Click);
             // 
             // buttonXDelete
             // 
@@ -455,6 +301,7 @@
             this.buttonXDelete.Size = new System.Drawing.Size(80, 40);
             this.buttonXDelete.TabIndex = 3;
             this.buttonXDelete.Text = "删除";
+            this.buttonXDelete.Click += new System.EventHandler(this.buttonXDelete_Click);
             // 
             // buttonXAdd
             // 
@@ -538,6 +385,7 @@
             this.comboBoxExTIME.Size = new System.Drawing.Size(95, 29);
             this.comboBoxExTIME.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.comboBoxExTIME.TabIndex = 67;
+            this.comboBoxExTIME.SelectedIndexChanged += new System.EventHandler(this.comboBoxExTIME_SelectedIndexChanged);
             // 
             // comboItem2
             // 
@@ -611,33 +459,7 @@
             this.buttonXSearch.TabIndex = 69;
             this.buttonXSearch.Text = "检索";
             this.buttonXSearch.UseVisualStyleBackColor = false;
-            // 
-            // vNo
-            // 
-            this.vNo.Caption = "pk";
-            this.vNo.FieldName = "pk";
-            this.vNo.Name = "vNo";
-            this.vNo.Width = 20;
-            // 
-            // gridColumn9
-            // 
-            this.gridColumn9.AppearanceCell.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridColumn9.AppearanceCell.Options.UseFont = true;
-            this.gridColumn9.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn9.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn9.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridColumn9.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn9.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn9.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn9.Caption = "备注";
-            this.gridColumn9.FieldName = "v_remark";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.OptionsColumn.AllowEdit = false;
-            this.gridColumn9.OptionsColumn.AllowFocus = false;
-            this.gridColumn9.OptionsColumn.AllowSize = false;
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 8;
-            this.gridColumn9.Width = 150;
+            this.buttonXSearch.Click += new System.EventHandler(this.buttonXSearch_Click);
             // 
             // gridControlDataList
             // 
@@ -657,6 +479,7 @@
             this.gridControlDataList.TabIndex = 42;
             this.gridControlDataList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewDataList});
+            this.gridControlDataList.DoubleClick += new System.EventHandler(this.gridControlDataList_DoubleClick);
             // 
             // gridViewDataList
             // 
@@ -769,8 +592,8 @@
             this.DDno.AppearanceHeader.Options.UseFont = true;
             this.DDno.AppearanceHeader.Options.UseTextOptions = true;
             this.DDno.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.DDno.Caption = "预算编号";
-            this.DDno.FieldName = "v_yszm_no";
+            this.DDno.Caption = "编号";
+            this.DDno.FieldName = "v_jrzm_no";
             this.DDno.Name = "DDno";
             this.DDno.OptionsColumn.AllowEdit = false;
             this.DDno.OptionsColumn.AllowFocus = false;
@@ -789,16 +612,16 @@
             this.TotalMoney.AppearanceHeader.Options.UseFont = true;
             this.TotalMoney.AppearanceHeader.Options.UseTextOptions = true;
             this.TotalMoney.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.TotalMoney.Caption = "预算金额";
+            this.TotalMoney.Caption = "借入金额";
             this.TotalMoney.DisplayFormat.FormatString = "{0:f2}";
             this.TotalMoney.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.TotalMoney.FieldName = "f_ys_money";
+            this.TotalMoney.FieldName = "f_jr_money";
             this.TotalMoney.Name = "TotalMoney";
             this.TotalMoney.OptionsColumn.AllowEdit = false;
             this.TotalMoney.OptionsColumn.AllowFocus = false;
             this.TotalMoney.OptionsColumn.AllowSize = false;
             this.TotalMoney.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "f_zc_money", "{0:f2}")});
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "f_jc_money", "{0:f2}")});
             this.TotalMoney.Visible = true;
             this.TotalMoney.VisibleIndex = 2;
             this.TotalMoney.Width = 120;
@@ -809,13 +632,13 @@
             this.gridColumn16.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn16.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn16.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn16.Caption = "预算用途";
-            this.gridColumn16.FieldName = "v_yszm_name";
+            this.gridColumn16.Caption = "借入描述";
+            this.gridColumn16.FieldName = "v_jrzm_name";
             this.gridColumn16.Name = "gridColumn16";
             this.gridColumn16.OptionsColumn.AllowEdit = false;
             this.gridColumn16.OptionsColumn.AllowFocus = false;
             this.gridColumn16.Visible = true;
-            this.gridColumn16.VisibleIndex = 3;
+            this.gridColumn16.VisibleIndex = 6;
             this.gridColumn16.Width = 120;
             // 
             // gridColumn17
@@ -824,15 +647,15 @@
             this.gridColumn17.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn17.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn17.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn17.Caption = "开始日期";
+            this.gridColumn17.Caption = "借出日期";
             this.gridColumn17.DisplayFormat.FormatString = "{0:yyyy-MM-dd}";
             this.gridColumn17.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
-            this.gridColumn17.FieldName = "t_date_start";
+            this.gridColumn17.FieldName = "t_jr_time";
             this.gridColumn17.Name = "gridColumn17";
             this.gridColumn17.OptionsColumn.AllowEdit = false;
             this.gridColumn17.OptionsColumn.AllowFocus = false;
             this.gridColumn17.Visible = true;
-            this.gridColumn17.VisibleIndex = 4;
+            this.gridColumn17.VisibleIndex = 5;
             this.gridColumn17.Width = 150;
             // 
             // gridColumn2
@@ -845,15 +668,15 @@
             this.gridColumn2.AppearanceHeader.Options.UseFont = true;
             this.gridColumn2.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn2.Caption = "结束日期";
+            this.gridColumn2.Caption = "归还日期";
             this.gridColumn2.DisplayFormat.FormatString = "{0:yyyy-MM-dd}";
             this.gridColumn2.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
-            this.gridColumn2.FieldName = "t_date_end";
+            this.gridColumn2.FieldName = "t_gh_time";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 5;
+            this.gridColumn2.VisibleIndex = 7;
             this.gridColumn2.Width = 150;
             // 
             // gridColumn14
@@ -862,11 +685,13 @@
             this.gridColumn14.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn14.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn14.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn14.Caption = "谁消费的";
-            this.gridColumn14.FieldName = "v_who";
+            this.gridColumn14.Caption = "向谁借的";
+            this.gridColumn14.FieldName = "v_jr_who";
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.OptionsColumn.AllowEdit = false;
             this.gridColumn14.OptionsColumn.AllowFocus = false;
+            this.gridColumn14.Visible = true;
+            this.gridColumn14.VisibleIndex = 3;
             this.gridColumn14.Width = 100;
             // 
             // gridColumn15
@@ -875,11 +700,14 @@
             this.gridColumn15.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn15.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn15.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn15.Caption = "支付方式";
-            this.gridColumn15.FieldName = "v_zffs_name";
+            this.gridColumn15.Caption = "利息";
+            this.gridColumn15.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
+            this.gridColumn15.FieldName = "v_accrual";
             this.gridColumn15.Name = "gridColumn15";
             this.gridColumn15.OptionsColumn.AllowEdit = false;
             this.gridColumn15.OptionsColumn.AllowFocus = false;
+            this.gridColumn15.Visible = true;
+            this.gridColumn15.VisibleIndex = 11;
             this.gridColumn15.Width = 100;
             // 
             // WMType
@@ -901,7 +729,7 @@
             this.WMType.OptionsFilter.AllowAutoFilter = false;
             this.WMType.OptionsFilter.AllowFilter = false;
             this.WMType.Visible = true;
-            this.WMType.VisibleIndex = 6;
+            this.WMType.VisibleIndex = 8;
             this.WMType.Width = 100;
             // 
             // TTime
@@ -923,8 +751,202 @@
             this.TTime.OptionsColumn.AllowFocus = false;
             this.TTime.OptionsColumn.AllowSize = false;
             this.TTime.Visible = true;
-            this.TTime.VisibleIndex = 7;
+            this.TTime.VisibleIndex = 9;
             this.TTime.Width = 150;
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.AppearanceCell.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn9.AppearanceCell.Options.UseFont = true;
+            this.gridColumn9.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn9.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn9.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn9.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn9.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn9.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn9.Caption = "备注";
+            this.gridColumn9.FieldName = "v_remark";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.OptionsColumn.AllowEdit = false;
+            this.gridColumn9.OptionsColumn.AllowFocus = false;
+            this.gridColumn9.OptionsColumn.AllowSize = false;
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 10;
+            this.gridColumn9.Width = 150;
+            // 
+            // vNo
+            // 
+            this.vNo.Caption = "pk";
+            this.vNo.FieldName = "pk";
+            this.vNo.Name = "vNo";
+            this.vNo.Width = 20;
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.AppearanceCell.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn7.AppearanceCell.Options.UseFont = true;
+            this.gridColumn7.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn7.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn7.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn7.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn7.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn7.Caption = "开始日期";
+            this.gridColumn7.DisplayFormat.FormatString = "yyyy-MM-dd";
+            this.gridColumn7.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
+            this.gridColumn7.FieldName = "t_start_date";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.OptionsColumn.AllowEdit = false;
+            this.gridColumn7.OptionsColumn.AllowFocus = false;
+            this.gridColumn7.OptionsColumn.AllowSize = false;
+            this.gridColumn7.Width = 110;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.AppearanceCell.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn8.AppearanceCell.Options.UseFont = true;
+            this.gridColumn8.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn8.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn8.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn8.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn8.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn8.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn8.Caption = "结束日期";
+            this.gridColumn8.DisplayFormat.FormatString = "yyyy-MM-dd";
+            this.gridColumn8.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
+            this.gridColumn8.FieldName = "t_end_date";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.OptionsColumn.AllowEdit = false;
+            this.gridColumn8.OptionsColumn.AllowFocus = false;
+            this.gridColumn8.OptionsColumn.AllowSize = false;
+            this.gridColumn8.Width = 110;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn3.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn3.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn3.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn3.Caption = "借入的人";
+            this.gridColumn3.FieldName = "v_jr_name";
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.OptionsColumn.AllowEdit = false;
+            this.gridColumn3.OptionsColumn.AllowFocus = false;
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 4;
+            this.gridColumn3.Width = 100;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn4.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn4.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn4.Caption = "是否已归还";
+            this.gridColumn4.ColumnEdit = this.repositoryItemCheckEdit1;
+            this.gridColumn4.FieldName = "b_gh_flag";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.OptionsColumn.AllowEdit = false;
+            this.gridColumn4.OptionsColumn.AllowFocus = false;
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 12;
+            this.gridColumn4.Width = 100;
+            // 
+            // repositoryItemCheckEdit1
+            // 
+            this.repositoryItemCheckEdit1.AutoHeight = false;
+            this.repositoryItemCheckEdit1.Caption = "Check";
+            this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn6.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn6.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn6.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn6.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn6.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn6.Caption = "归还多少";
+            this.gridColumn6.DisplayFormat.FormatString = "{0:f}";
+            this.gridColumn6.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.gridColumn6.FieldName = "f_gh_how_money";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.OptionsColumn.AllowEdit = false;
+            this.gridColumn6.OptionsColumn.AllowFocus = false;
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 13;
+            this.gridColumn6.Width = 120;
+            // 
+            // gridColumn10
+            // 
+            this.gridColumn10.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn10.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn10.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn10.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn10.Caption = "周四";
+            this.gridColumn10.ColumnEdit = this.repositoryItemCheckEdit1;
+            this.gridColumn10.FieldName = "b_4";
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.OptionsColumn.AllowEdit = false;
+            this.gridColumn10.OptionsColumn.AllowFocus = false;
+            this.gridColumn10.Width = 50;
+            // 
+            // gridColumn11
+            // 
+            this.gridColumn11.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn11.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn11.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn11.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn11.Caption = "周五";
+            this.gridColumn11.ColumnEdit = this.repositoryItemCheckEdit1;
+            this.gridColumn11.FieldName = "b_5";
+            this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.OptionsColumn.AllowEdit = false;
+            this.gridColumn11.OptionsColumn.AllowFocus = false;
+            this.gridColumn11.Width = 50;
+            // 
+            // gridColumn12
+            // 
+            this.gridColumn12.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn12.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn12.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn12.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn12.Caption = "周六";
+            this.gridColumn12.ColumnEdit = this.repositoryItemCheckEdit1;
+            this.gridColumn12.FieldName = "b_6";
+            this.gridColumn12.Name = "gridColumn12";
+            this.gridColumn12.OptionsColumn.AllowEdit = false;
+            this.gridColumn12.OptionsColumn.AllowFocus = false;
+            this.gridColumn12.Width = 50;
+            // 
+            // gridColumn13
+            // 
+            this.gridColumn13.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn13.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn13.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn13.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn13.Caption = "周日";
+            this.gridColumn13.ColumnEdit = this.repositoryItemCheckEdit1;
+            this.gridColumn13.FieldName = "b_7";
+            this.gridColumn13.Name = "gridColumn13";
+            this.gridColumn13.OptionsColumn.AllowEdit = false;
+            this.gridColumn13.OptionsColumn.AllowFocus = false;
+            this.gridColumn13.Width = 50;
+            // 
+            // gridColumn18
+            // 
+            this.gridColumn18.AppearanceHeader.Font = new System.Drawing.Font("微软雅黑", 10.5F);
+            this.gridColumn18.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn18.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn18.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn18.Caption = "日期(1号~31号)";
+            this.gridColumn18.FieldName = "v_month_date";
+            this.gridColumn18.Name = "gridColumn18";
+            this.gridColumn18.OptionsColumn.AllowEdit = false;
+            this.gridColumn18.OptionsColumn.AllowFocus = false;
+            this.gridColumn18.Width = 120;
             // 
             // BorrowAccountsForm
             // 
@@ -937,7 +959,8 @@
             this.Name = "BorrowAccountsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "借入账目";
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
+            this.Load += new System.EventHandler(this.BorrowAccountsForm_Load);
+            this.Click += new System.EventHandler(this.BorrowAccountsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputStartDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputEndDate)).EndInit();
             this.panelEx_top.ResumeLayout(false);
@@ -945,6 +968,7 @@
             this.panelEx_body_top.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlDataList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewDataList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -952,17 +976,6 @@
         #endregion
 
         private DevComponents.DotNetBar.LabelX labelX3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn18;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput dateTimeInputStartDate;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput dateTimeInputEndDate;
         private DevComponents.DotNetBar.PanelEx panelEx_top;
@@ -984,8 +997,6 @@
         private DevComponents.Editors.ComboItem comboItem12;
         private DevComponents.DotNetBar.LabelX labelX4;
         private TZXControlLibrary.ButtonEx.TzxButtonEx buttonXSearch;
-        private DevExpress.XtraGrid.Columns.GridColumn vNo;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
         private DevExpress.XtraGrid.GridControl gridControlDataList;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewDataList;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
@@ -998,5 +1009,18 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
         private DevExpress.XtraGrid.Columns.GridColumn WMType;
         private DevExpress.XtraGrid.Columns.GridColumn TTime;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraGrid.Columns.GridColumn vNo;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn18;
     }
 }
