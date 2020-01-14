@@ -12,8 +12,8 @@ namespace HomeAccountingSystem
     public class DatabaseManager
     {
         private static string CONST_USER = "sa";
-        private static string CONST_PWD = "sa";
-        public static string selectedDBName = "jtjz_dd";
+        private static string CONST_PWD = "123456";
+        public static string selectedDBName = "jtjz_db";
         public static string connectionString = null;
 
         public static void initConnect(string sUrl, string database, string user, string pwd)
