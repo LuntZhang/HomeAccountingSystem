@@ -103,7 +103,9 @@ namespace HomeAccountingSystem.AccountManagement
                     dateTimeInputEndDate.Value = DateTime.Parse(DateTime.Now.AddDays(-2).ToString("yyyy-MM-dd 23:59:59.9999"));
                     break;
                 case "本周":
-                    dateTimeInputStartDate.Value = DateTime.Parse(DateTime.Now.AddDays(1 - Convert.ToInt32(DateTime.Now.DayOfWeek.ToString("d"))).ToString("yyyy-MM-dd"));
+                    int day = Convert.ToInt32(DateTime.Now.DayOfWeek.ToString("d"));
+                    day = day == 0 ? 7 : day;
+                    dateTimeInputStartDate.Value = DateTime.Parse(DateTime.Now.AddDays(1 - day).ToString("yyyy-MM-dd"));
                     dateTimeInputEndDate.Value = DateTime.Now;
                     break;
                 case "上周":

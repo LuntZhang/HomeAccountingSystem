@@ -97,7 +97,7 @@ namespace HomeAccountingSystem.AccountManagement
                 this.dateTimeDate.Value = DateTime.Today;
                 this.textBoxDescription.Text = "";
                 // 账目支出记账信息
-                this.textBoxWho.Text = "";
+                this.textBoxWho.Text = LoginAccountManager.Instance.getLoginUserModel().v_yh_name; ;
                 this.comboBoxPayType.SelectedIndex = 0;
                 this.textBoxUserName.Text = LoginAccountManager.Instance.getLoginUserModel().v_yh_name;
                 this.dateTimeTallyDate.Value = DateTime.Now;
